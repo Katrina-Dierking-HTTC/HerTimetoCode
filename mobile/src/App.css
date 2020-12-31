@@ -1,0 +1,100 @@
+
+
+@media (prefers-reduced-motion: no-preference) {
+  
+}
+
+.App-header {
+  background-color:none;
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color:black;
+}
+
+.HomeHeader {
+  border: 1px solid blue;
+  position:absolute;
+  top:45%;
+}
+
+.corner-logo {
+  padding: 2%;
+}
+
+.topPink {
+  position:absolute;
+  top:5%;
+  z-index:1;
+  min-width:100%;
+}
+
+.topBlue {
+  position:absolute;
+  top:7.2%;
+  z-index:2;
+  min-width:100%;
+}
+
+.title {
+  position:absolute;
+  top:20%;
+  z-index:2;
+  min-width:99%;
+}
+
+.titleP {
+  position:absolute;
+  top:27%;
+  left:23%;
+  z-index:2;
+  color:white;
+  font-size: .85rem;
+}
+
+.intro {
+  margin-top:70%;
+  padding: 3%;
+  font-size:.80rem;
+  text-align:center;
+}
+
+.intro span {
+  font-style:italic;
+}
+
+.step1 .step2 .step3 {
+  background:white;
+  -ms-transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.step1:hover .step2:hover .step3:hover {
+  background:#e21979;
+  -ms-transform:rotate(15deg);
+  -webkit-transform:rotate(15deg);
+  transform: rotate(15deg);
+}
+
+.stepsContainer {
+  border: 1px solid #0b667b;
+  padding:5% 5% 2%;
+  margin: 0 2%;
+}
+.stepsBox {
+  display:flex;
+  justify-content:space-evenly;
+  /* border: 1px solid #0b667b;
+  padding:8% 10% 10%;
+  margin: 0 2%; */
+}
+
+.stepsDesc {
+  font-size:1rem;
+  padding-top: 3%;
+}
+

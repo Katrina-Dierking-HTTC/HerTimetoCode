@@ -67,7 +67,7 @@
 }
 
 .intro {
-  margin-top:60%;
+  margin-top:70%;
   padding: 3%;
   font-size:.80rem;
   text-align:center;
@@ -337,12 +337,11 @@
 .icons {
   position:fixed;
   z-index:3;
-  bottom:2%;
-  padding: 0 10%;
+  bottom:1%;
+  padding: 1%;
   display:flex;
-  justify-content: space-evenly;
+  justify-content: center;
   min-width: 100%;
-  padding:0;
 }
 
 .home, .cart, .blog, .email {

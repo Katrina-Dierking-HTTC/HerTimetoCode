@@ -26,11 +26,11 @@
   padding:4% 4% 0 0;
 }
 
-.HomeHeader {
+/* .HomeHeader {
   border: 1px solid blue;
   position:absolute;
   top:45%;
-}
+} */
 
 .corner-logo {
   padding: 2%;
@@ -67,191 +67,45 @@
 }
 
 .intro {
-  margin-top:70%;
+  margin-top:40%;
   padding: 3%;
   font-size:.80rem;
-  text-align:center;
+  text-align:right;
 }
 
-.intro span {
-  font-style:italic;
+.pic {
+  display: flex;
+  flex-direction:column;
+  max-width: 40%;
+  margin-left: 3%;
+  position:absolute;
+  
 }
 
-/* .card1{ 
-
-  -ms-transition: 0.7s;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  position:relative;
-  display:inline-block;
+.stepsContainer {
+  border: 1.5px solid #0b667b;
+  padding:5% 5% 2%;
+  margin: 5%;
 }
 
-.card1 .step1b {
-  display:none;
-  position:abosolute;
-  top:0;
-  left:0;
-  z-index:99;
-}
-
-.card1:hover .step1b {
-  display:inline;
-}
-
-.card1:hover .step1{
-  display:none;
-  -ms-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}  */
-
-/* 
- .step1 {
-  z-index: 2;
-  -ms-transition: 0.7s;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+/* .stepsBox {
+  margin-left:5%;
 } */
 
- 
-.card1 .step1 {
-  background-color:white;
-  /* animation: fadeOut ease 10s;
-  -webkit-animation: fadeOut ease 10s;
-  -moz-animation: fadeOut ease 10s;
-  -o-animation: fadeOut ease 10s;
-  -ms-animation: fadeOut ease 10s; */
+.step1 {
+  background:white;
+  -ms-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+} 
 
-  -ms-transform: 3s;
-  -webkit-transform: 3s;
-  transform: 3s;
- 
-  -ms-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-
-  position:absolute;
-  left:14%;
-  z-index:1;
-  margin-top:1%;
-}
-    @keyframes fadeOut {
-      0% {
-        opacity:1;
-      }
-      100% {
-        opacity:0;
-      }
-    }
-
-    @-moz-keyframes fadeOut {
-      0% {
-        opacity:1;
-      }
-      100% {
-        opacity:0;
-      }
-    }
-
-    @-webkit-keyframes fadeOut {
-      0% {
-        opacity:1;
-      }
-      100% {
-        opacity:0;
-      }
-    }
-
-    @-o-keyframes fadeOut {
-      0% {
-        opacity:1;
-      }
-      100% {
-        opacity:0;
-      }
-    }
-
-    @-ms-keyframes fadeOut {
-      0% {
-        opacity:1;
-      }
-      100% {
-        opacity:0;
-    }
-    }
-
-
-
-  
-.step1b {
-  animation: fadeIn ease 12s;
-  -webkit-animation: fadeIn ease 12s;
-  -moz-animation: fadeIn ease 12s;
-  -o-animation: fadeIn ease 12s;
-  -ms-animation: fadeIn ease 12s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity:0;
+  .step1:hover {
+    background: url('./images/Home_Blue-Print.png') 
+repeat;
+    -ms-transform:rotate(360deg) ;
+    -webkit-transform:rotate(360deg) ;
+    transform: rotate(360deg);
   }
-  100% {
-    opacity:1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-}
-}
-
-.step1p {
-  color:#e21979;
-  /* margin-top:-40%;
-  padding-left:25%; */
-  position:absolute;
-  top:83.5%;
-  left:29.4%;
-  transform: translate(-80%, -20%);
-  z-index:3;
-
-}
-
-.card1:hover .step1 {
-  display:none;
-
-}
 
 
 .step2 {
@@ -276,17 +130,10 @@
 }
 
 .step3:hover {
-  background: url('./images/grad2.png') no-repeat;
+  background: url('./images/Home_community.png') no-repeat;
   -ms-transform:rotate(360deg) ;
   -webkit-transform:rotate(360deg) ;
   transform: rotate(360deg);
-}
-
-.stepsContainer {
-  border: 1.5px solid #0b667b;
-  padding:5% 5% 2%;
-  margin: 5%;
-
 }
 
 
@@ -302,21 +149,27 @@
   padding: 5% 3% 1%  5%;
 }
 
-.testimonial-block {
-  font-size: .70rem;
-  color:white;
-  background-color: #0d748b;
-  padding:3%;
-  margin:6% 0;
-  box-shadow: 1px .5px 8px 3px rgb(50, 50, 50);
-}
-
 .testbox {
   border: .2px dotted paleturquoise;
   padding:1%;
+  display:flex;
+  justify-content: center;
+}
+
+.testbox .testP{
+  position:absolute;
+  top:131%;
+  left:10;
+  z-index:1;
+  font-size:.85rem;
+  color:white;
+  max-width: 70%;
+  padding: 5%;
+
 }
 .footer {
   max-height: 3%;
+  padding-top:10%;
 }
 
 .footer .pink {

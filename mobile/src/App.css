@@ -26,12 +26,6 @@
   padding:4% 4% 0 0;
 }
 
-/* .HomeHeader {
-  border: 1px solid blue;
-  position:absolute;
-  top:45%;
-} */
-
 .corner-logo {
   padding: 2%;
 }
@@ -67,7 +61,7 @@
 }
 
 .intro {
-  margin-top:40%;
+  margin-top:30%;
   padding: 3%;
   font-size:.80rem;
   text-align:right;
@@ -76,10 +70,19 @@
 .pic {
   display: flex;
   flex-direction:column;
-  max-width: 40%;
+  max-width: 30%;
   margin-left: 3%;
   position:absolute;
-  
+  z-index:99;
+
+}
+
+.HomeImg {
+  position:absolute;
+  z-index:99;
+  margin-top:11%;
+  max-width: 87%;
+  left: 7%;
 }
 
 .stepsContainer {
@@ -88,11 +91,7 @@
   margin: 5%;
 }
 
-/* .stepsBox {
-  margin-left:5%;
-} */
-
-.step1 {
+/* .step1 {
   background:white;
   -ms-transition: 0.4s;
   -webkit-transition: 0.4s;
@@ -105,7 +104,7 @@ repeat;
     -ms-transform:rotate(360deg) ;
     -webkit-transform:rotate(360deg) ;
     transform: rotate(360deg);
-  }
+  } */
 
 
 .step2 {

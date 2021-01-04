@@ -1,5 +1,8 @@
 import React from 'react'
+import RevealLeft from './RevealLeft'
+// import { Image, Reveal } from 'semantic-ui-react'
 import step1 from '../../images/step1.png'
+import HomeBP from '../../images/HomeBP.png'
 import step2 from '../../images/step2.png'
 import step3 from '../../images/step3.png'
 
@@ -10,9 +13,13 @@ export default function Steps () {
         <div className="stepsContainer">
             <div className = "stepsBox">
                     
-                    <img src={step1} className = "step1" alt="step 1 to becoming a web developer" />
+                    {/* <img src={step1} className = "step1" alt="step 1 to becoming a web developer" />
                     <img src={step2} className = "step2" alt="step 2 to becoming a web developer" />
-                    <img src={step3} className = "step3" alt="step3 to becoming a web developer" />
+                    <img src={step3} className = "step3" alt="step3 to becoming a web developer" /> */}
+
+               
+                    <RevealLeft />
+                
             </div>
             <div className="stepsDesc">
                     <p>In just three easy steps, you can start your journey

@@ -89,59 +89,41 @@
   border: 1.5px solid #0b667b;
   padding:5% 5% 2%;
   margin: 5%;
+
 }
 
-/* .step1 {
-  background:white;
-  -ms-transition: 0.4s;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-} 
-
-  .step1:hover {
-    background: url('./images/Home_Blue-Print.png') 
-repeat;
-    -ms-transform:rotate(360deg) ;
-    -webkit-transform:rotate(360deg) ;
-    transform: rotate(360deg);
-  } */
-
-
-.step2 {
-  background:white;
-  -ms-transition: 0.4s;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-} 
-
-  .step2:hover {
-    background: url('./images/hover_cover.png') no-repeat;
-    -ms-transform:rotate(360deg) ;
-    -webkit-transform:rotate(360deg) ;
-    transform: rotate(360deg);
-  }
-
-.step3 {
-  background:white;
-  -ms-transition: 0.4s;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.step3:hover {
-  background: url('./images/Home_community.png') no-repeat;
-  -ms-transform:rotate(360deg) ;
-  -webkit-transform:rotate(360deg) ;
-  transform: rotate(360deg);
-}
-
-
-.stepsBox {
+.RevealBox {
   display:flex;
-  justify-content:space-evenly;
+} 
+
+.rev1, .rev2, .rev3 {
+  min-width:100px;
+  min-height:100px;
+  margin-left: 3%;
+}
+/* .rev1 {
+  background-color:blue;
+}
+.rev2 {
+  background-color:green;
 }
 
+.rev3 {
+  background-color: purple;
+} */
 
+.BP, .comm {
+  margin-left: -5%;
+}
+ .WB{
+   padding: 17% 0% 0% 38%;
+   min-width: 55px;
+   min-height: 55px;
+ }
+
+ .comm {
+   padding: 20% 0% 0% 10%;
+ }
 
 .stepsDesc {
   font-size: .75rem;

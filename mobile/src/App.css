@@ -4,6 +4,10 @@
   
 }
 
+* {
+  border: 1px solid red;
+}
+
 .App-header {
   background-color:none;
   min-height: 100vh;
@@ -30,6 +34,10 @@
   padding: 2%;
 }
 
+.header {
+  min-width:100%;
+  margin-top:3%;
+}
 .topPink {
   position:absolute;
   top:5%;
@@ -84,11 +92,27 @@
   max-width: 87%;
   left: 7%;
 }
+.intro-text {
+  margin-top: 15%;
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-end;
+}
+.intro-text .hi {
+  font-size:48px;
+  color: #878183;
+  padding:-10%;
+}
+
+.Katrina {
+  margin-top:5%;
+}
+
 
 .stepsContainer {
   border: 1.5px solid #0b667b;
   padding:5% 5% 2%;
-  margin: 5%;
+  margin: 50% 5% 5% 5%;
 
 }
 
@@ -101,16 +125,6 @@
   min-height:100px;
   margin-left: 3%;
 }
-/* .rev1 {
-  background-color:blue;
-}
-.rev2 {
-  background-color:green;
-}
-
-.rev3 {
-  background-color: purple;
-} */
 
 .BP, .comm {
   margin-left: -5%;
@@ -122,7 +136,7 @@
  }
 
  .comm {
-   padding: 20% 0% 0% 10%;
+   padding: 12% 0% 0% 10%;
  }
 
 .stepsDesc {
@@ -139,7 +153,7 @@
 
 .testbox .testP{
   position:absolute;
-  top:131%;
+  top:89%;
   left:10;
   z-index:1;
   font-size:.85rem;
@@ -195,24 +209,3 @@
 }
 
 
-
-/* 
-.pink {
-  z-index:1;
-  left:0;
-  bottom:0;
-  position:fixed;
-  overflow:hidden;
-}
-
-.blue{
-  z-index:2;
-  left:0;
-  bottom:0;
-  position:fixed;
-  overflow:hidden;
-}
-
-.home {
-  box-shadow: (x-value)
-} */

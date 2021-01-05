@@ -12,7 +12,7 @@ export default function Header () {
             <img src={topPink} className = "topPink" alt="tie-died pink background"/>
             <img src={topBlue} className = "topBlue" alt ="granulated blue background"/>
             <img src={title} className = "title" alt = "her time to code cursive" />
-            <p className = "titleP">because when women and tech collide
+            <p className = "titleP">When women and tech collide
             anything is possible</p>
         </div>
         </>

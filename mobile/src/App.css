@@ -23,11 +23,11 @@
   top:0;
 
 }
-@media screen and (max-width:501px) {
+/* @media screen and (max-width:500px) {
 .menu, .menu-bar {
   display:none;
   }
-}
+} */
 
 
 /* .topSection .hamburger {

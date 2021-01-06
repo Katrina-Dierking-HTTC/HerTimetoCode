@@ -10,6 +10,7 @@
     "react-dom": "^17.0.1",
     "react-js-pagination": "^3.0.3",
     "react-lottie": "^1.2.3",
+    "react-responsive": "^8.2.0",
     "react-scripts": "4.0.1",
     "react-tooltip": "^4.2.11",
     "semantic-ui-css": "^2.4.1",

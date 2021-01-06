@@ -14,7 +14,7 @@ export default function Intro () {
                 <h1 className = "hi">Hi,</h1>
                 <h3 className = "Katrina">I'm Katrina Dierking</h3>
                 <p className = "home-intro">I give women the tools they need today to 
-                 become the skilled web developers of tomorrow. </p>
+                 become skilled web developers of tomorrow. </p>
             </div>
     </section>
     );

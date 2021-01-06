@@ -23,6 +23,12 @@
   top:0;
 
 }
+@media screen and (max-width:501px) {
+.menu, .menu-bar {
+  display:none;
+  }
+}
+
 
 /* .topSection .hamburger {
   max-width:40px;

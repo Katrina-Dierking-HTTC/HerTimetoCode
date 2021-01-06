@@ -15,9 +15,9 @@ export default function Top () {
                 {/* <img src = {hamburger} alt="hamburger menu" className = "hamburger" /> */}
 
                <section className = "hamburger">
-                    <ul class="menu">
+                
+                    <ul className="menu">
                         <li title="home"><a href="#" class="menu-button home">menu</a></li>
-
                         <li title="search"><a href="#" class="search">search</a></li>
                         <li title="pencil"><a href="#" class="pencil">pencil</a></li>
                         <li title="about"><a href="#" class="active about">about</a></li>
@@ -25,7 +25,7 @@ export default function Top () {
                         <li title="contact"><a href="#" class="contact">contact</a></li>
                     </ul>
 
-                    <ul class="menu-bar">
+                    <ul className="menu-bar">
                         <li><a href="#" class="menu-button">Menu</a></li>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>

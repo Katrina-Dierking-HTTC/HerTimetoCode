@@ -35,17 +35,19 @@
   margin-top:3%;
 }
 .topPink {
-  position:absolute;
+  position:fixed;
   top:5%;
   z-index:1;
   min-width:100%;
+  max-height: 30%;
 }
 
 .topBlue {
-  position:absolute;
-  top:7.2%;
+  position:fixed;
+  top:6.2%;
   z-index:2;
   min-width:100%;
+  max-height: 30%;
 }
 
 .title {
@@ -69,14 +71,15 @@
   margin-top:30%;
   padding: 3%;
   font-size:.80rem;
-  text-align:right;
+  text-align:left;
+  padding-left: 10%;
 }
 
 .pic {
   display: flex;
   flex-direction:column;
   max-width: 30%;
-  margin-left: 3%;
+  margin-left: -2%;
   position:absolute;
   z-index:99;
 
@@ -88,21 +91,25 @@
   margin-top:11%;
   max-width: 87%;
   left: 7%;
+  box-shadow: 1px .5px 6px 1px black;
 }
-.intro-text {
-  margin-top: 15%;
-  display:flex;
+.intro-text { 
+   margin-top: 15%;
+  /* display:flex;
   flex-direction:column;
-  justify-content: flex-end;
+  justify-content: flex-start; */
+  position:absolute;
+  z-index: 9999;
+  padding: 0;
 }
 .intro-text .hi {
   font-size:48px;
   color: #878183;
-  padding:-10%;
-}
+  margin-left: 40%;
+} 
 
 .Katrina {
-  margin-top:5%;
+  margin-top:1%;
 }
 
 
@@ -142,42 +149,43 @@
 }
 
 .testbox {
-  border: .2px dotted paleturquoise;
-  padding:1%;
+  /* border: .2px dotted paleturquoise; */
   display:flex;
   justify-content: center;
+  /* position:absolute;
+  z-index: 999999; */
+  min-width: 100%;
+  margin-bottom:20%;
 }
-
-.testbox .testP{
+ .testP{
+  /* background-color:green; */
   position:absolute;
-  top:89%;
-  left:10;
   z-index:1;
   font-size:.85rem;
   color:white;
-  max-width: 70%;
-  padding: 5%;
-
+  max-width: 60%;
+  padding: 8% 6%;
+  margin-left: 7%;
 }
-.footer {
+/* .footer {
   max-height: 3%;
   padding-top:10%;
 }
 
 .footer .pink {
-  position:fixed;
+  position:absolute;
   bottom:0;
-  z-index:0;
+  z-index:1;
   min-width:115%;
 } 
 
  .footer .blue {
-  position:fixed;
+  position:absolute;
   bottom:0;
   min-width:100%;
   z-index:2;
   min-width:120%;
-}
+} */
 
 .icons {
   position:fixed;
@@ -187,16 +195,21 @@
   display:flex;
   justify-content: center;
   min-width: 100%;
+  /* background-color: #0b667b; */
+  /* background-color: lightblack; */
+  box-shadow: 1px .5px 8px 1px black;
 }
 
 .home, .cart, .blog, .email {
   -ms-transition: 0.4s;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  padding: .3%;
+  margin-left: 4%;
 }
 
 .home:hover, .cart:hover, .blog:hover, .email:hover{
-  box-shadow: 1px .5px 8px 3px white;
+  box-shadow: 1px .5px 8px 3px #0b667b;
   border-radius: 50%;
 
   -ms-transform:rotate(360deg) ;

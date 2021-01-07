@@ -3,7 +3,6 @@ import Home_testimonial from '../../images/Home_testimonial.png'
 
 export default function Testimonials () {
     return (
-       <div className = "testimonial-block">
            <div className="testbox">
                 <img src = {Home_testimonial} alt= "testimonial background block" className = "testimonialBlock" />
                 <p className = "testP"> “I am forever grateful for [Katrina’s] notes throughout the program that were not only thorough, 
@@ -11,6 +10,5 @@ export default function Testimonials () {
                  ~ M. Morris, 
                 Full Stack Web Dev Student</p>
             </div>
-       </div>
     )
 }

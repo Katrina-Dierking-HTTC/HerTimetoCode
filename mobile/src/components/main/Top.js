@@ -7,6 +7,9 @@ import styled from 'styled-components'
 export default function Top () {
 
     const isPhone = useMediaQuery({query: '(max-width: 500px)'})
+    const isTablet = useMediaQuery({query:'(min-width: 501px)'})
+    const isBetween = useMediaQuery({query:'(min-width: 501px)' && '(max-width: 800px)'})
+    const isDesktop = useMediaQuery({query: '(min-width:801px)'})
 
     const [open, setOpen] = useState(false);
 
@@ -17,14 +20,11 @@ export default function Top () {
 
     return (
         <>
-
-        <div className="topSection">
                 <img src={logo} alt="girl at desk"  className = "corner-logo"/>
         
+                {isPhone &&
                <Wrapper>
                     <HeaderWrapper id='header'>
-                        <div>
-                        {/* <h3>Menu Demo</h3> */}
                         <MenuToggle onClick={toggleMenu} open={open}>
                             <RotateContainer open={open}>
                             <span  />
@@ -32,23 +32,40 @@ export default function Top () {
                             <span  />
                             </RotateContainer>
                             </MenuToggle>
-                        </div>
                     </HeaderWrapper>
                     <MenuWrapper open={open}>
                         <Menu open={open}>
-                        <a href='/'>Home</a>
-                        <a href='/'>About</a>
-                        <a href='/'>Contact</a>
+                        <MenuItem a href='/'>Home</MenuItem>
+                        <MenuItem a href='/'>About</MenuItem>
+                        <MenuItem a href='/'>Blog</MenuItem>
+                        <MenuItem a href='/'>Shop</MenuItem>
+                        <MenuItem a href='/'>Community</MenuItem>
+                        <MenuItem a href='/'>Contact</MenuItem>
                          </Menu>
                     </MenuWrapper>
                </Wrapper>
-        </div>
+                }
+
+                {isTablet && 
+                    <DropDown>
+                            <Item a href='/'>Home</Item>
+                            <Item a href='/'>About</Item>
+                            <Item a href='/'>Blog</Item>
+                            <Item a href='/'>Shop</Item>
+                            <Item a href='/'>Community</Item>
+                            <Item a href='/'>Contact</Item>
+                    </DropDown>                }
+        
 
 
         </>
     )
 }
 
+const MenuItem = styled.div `
+    font-size: 1rem;
+    color:white;
+`
 const Menu = styled.div `
 display:flex;
 flex-direction:column;
@@ -64,7 +81,7 @@ const  HeaderWrapper = styled.header`
   padding: 10px 0;
   color: #0b667bff;
   position: fixed;
-  left: 0;
+  left: 10;
   top: 0;
   right: 0;
   bottom: auto;
@@ -126,10 +143,24 @@ const  MenuWrapper = styled.div`
   left: 0;
   z-index: 99999;
   margin-top: 66px;
-  width: 100%;
+  width: 50%;
   transition: ${(props) =>
   props.open ? 'all 0.25s ease-out' : 'all 0.6s ease-out'};
   box-shadow: 0px 4px 20px -5px #e8e8e8;
   padding: 12px;
 
 `;
+
+const DropDown = styled.div `
+    max-width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+`
+const Item = styled.div`
+    color:black;
+    font-size: 1rem;
+    // background-color: pink;
+    padding: 0 1%;
+    z-index: 999990;
+`

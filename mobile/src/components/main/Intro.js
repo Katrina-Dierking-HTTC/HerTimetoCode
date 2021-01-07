@@ -1,8 +1,17 @@
 import React from 'react'
 import Home_me from '../../images/Home_me.png'
 import Home_frame from '../../images/Home_frame.png'
+import {useMediaQuery} from 'react-responsive'
 
 export default function Intro () {
+
+    
+    const isPhone = useMediaQuery({query: '(max-width: 500px)'})
+    const isTablet = useMediaQuery({query:'(min-width: 501px)'})
+    const isBetween = useMediaQuery({query:'(min-width: 501px)' && '(max-width: 800px)'})
+    const isDesktop = useMediaQuery({query: '(min-width:801px)'})
+
+
     return (
         <section className="intro">
             <div className = "pic">

@@ -14,8 +14,8 @@ export default function Home () {
     return (
         <>
          <Top />
-        <Header />
-        <Intro />
+        {/* <Header /> */}
+        {/* <Intro /> */}
         <Steps />
         <Testimonials />
         <FooterNav />

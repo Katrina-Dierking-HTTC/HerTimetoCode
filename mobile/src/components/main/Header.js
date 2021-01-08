@@ -20,12 +20,12 @@ export default function Header () {
             <img src={topPink} className = "topPink" alt="tie-dyed pink background"/>
             <img src={topBlue} className = "topBlue" alt ="granulated blue background"/>
             
-                <div>
+                {/* <div>
                 <img src={title} className = "title" alt = "her time to code cursive" />
       
                 <p className = "titleP">When women and tech collide
                     anything is possible</p>
-                </div>
+                </div> */}
 
         </div>
         </>

@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {useMediaQuery} from 'react-responsive'
 import logo from '../../images/logo.png'
 import styled from 'styled-components'
+import name from '../../images/name.png'
 // import hamburger from '../../images/hamburger.png'
 
 export default function Top () {
@@ -20,8 +21,10 @@ export default function Top () {
 
     return (
         <>
-                <img src={logo} alt="girl at desk"  className = "corner-logo"/>
-        
+          <div className = "topHeading">
+                {/* <img src={logo} alt="girl at desk"  className = "corner-logo"/> */}
+                <img src={name} className = "title" alt = "her time to code cursive" />
+          </div>   
                 {isPhone &&
                <Wrapper>
                     <HeaderWrapper id='header'>
@@ -54,7 +57,8 @@ export default function Top () {
                             <Item a href='/'>Shop</Item>
                             <Item a href='/'>Community</Item>
                             <Item a href='/'>Contact</Item>
-                    </DropDown>                }
+                    </DropDown>                
+                }
         
 
 
@@ -156,11 +160,12 @@ const DropDown = styled.div `
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+    border: 1px solid black;
+    padding: .5%;
+    
 `
 const Item = styled.div`
     color:black;
     font-size: 1rem;
-    // background-color: pink;
-    padding: 0 1%;
     z-index: 999990;
 `

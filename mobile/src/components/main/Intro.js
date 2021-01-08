@@ -13,6 +13,8 @@ export default function Intro () {
 
 
     return (
+        <>
+        {isTablet &&
         <section className="intro">
             <div className = "pic">
                  <img src = {Home_frame} alt = "frame around Katrina's picture on home page" className = "frame" />
@@ -25,6 +27,8 @@ export default function Intro () {
                 <p className = "home-intro">I give women the tools they need today to 
                  become skilled web developers of tomorrow. </p>
             </div>
-    </section>
+        </section>
+        }
+        </>
     );
 }

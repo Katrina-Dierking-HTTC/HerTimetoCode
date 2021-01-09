@@ -3,6 +3,7 @@ import {useMediaQuery} from 'react-responsive'
 import logo from '../../images/logo.png'
 import styled from 'styled-components'
 import name from '../../images/name.png'
+import httc4 from '../../images/httc4.png'
 // import hamburger from '../../images/hamburger.png'
 
 export default function Top () {
@@ -20,13 +21,14 @@ export default function Top () {
 
 
     return (
-        <>
-          <div className = "topHeading">
-                {/* <img src={logo} alt="girl at desk"  className = "corner-logo"/> */}
-                <img src={name} className = "title" alt = "her time to code cursive" />
-          </div>   
+        <> 
                 {isPhone &&
+                
                <Wrapper>
+
+              <div className = "wordLogo">
+                <p className = "httcLogo"> {`<HTT`}<span className ="code"><i>{`Code />`}</i></span> </p>
+                </div>
                     <HeaderWrapper id='header'>
                         <MenuToggle onClick={toggleMenu} open={open}>
                             <RotateContainer open={open}>
@@ -51,6 +53,9 @@ export default function Top () {
 
                 {isTablet && 
                     <DropDown>
+                      <div className = "wordLogo">
+                        <p className = "httcLogo"> {`<HTTC`}<span className ="code"><i>{`Code />`}</i></span> </p>
+                        </div>
                             <Item a href='/'>Home</Item>
                             <Item a href='/'>About</Item>
                             <Item a href='/'>Blog</Item>
@@ -59,6 +64,11 @@ export default function Top () {
                             <Item a href='/'>Contact</Item>
                     </DropDown>                
                 }
+
+<div className = "topHeading">
+                {/* <img src={logo} alt="girl at desk"  className = "corner-logo"/> */}
+                {/* <img src={name} className = "title" alt = "her time to code cursive" /> */}
+          </div>  
         
 
 
@@ -82,7 +92,7 @@ const  Wrapper = styled.div`
 `;
 
 const  HeaderWrapper = styled.header`
-  padding: 10px 0;
+  padding: 18px 4%;
   color: #0b667bff;
   position: fixed;
   left: 10;
@@ -105,7 +115,7 @@ const  MenuToggle = styled.div`
     position: absolute;
     height: 4px;
     width: 100%;
-    background: #0b667bff;;
+    background: #17c436;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -135,7 +145,7 @@ const  MenuToggle = styled.div`
 const  RotateContainer = styled.div`
   height: 100%;
   width: 100%;
-  transition: ${(props) => props.open ? 'all 0.25s ease-in-out' : 'all 0.25s ease-in-out'};
+  transition: ${(props) => props.open ? 'all 0.7s ease-in-out' : 'all 0.25s ease-in-out'};
   transform: ${(props) => (props.open ? 'rotate(-45deg)' : 'none')};
 `;
 
@@ -146,10 +156,10 @@ const  MenuWrapper = styled.div`
   top: ${(props) => (props.open ? '0' : '-100%')};
   left: 0;
   z-index: 99999;
-  margin-top: 66px;
+  margin-top: 0;
   width: 50%;
   transition: ${(props) =>
-  props.open ? 'all 0.25s ease-out' : 'all 0.6s ease-out'};
+  props.open ? 'all 0.5s ease-out' : 'all 0.6s ease-out'};
   box-shadow: 0px 4px 20px -5px #e8e8e8;
   padding: 12px;
 
@@ -159,13 +169,17 @@ const DropDown = styled.div `
     max-width: 100%;
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    border: 1px solid black;
-    padding: .5%;
-    
+    justify-content: space-around;
+    // border: 1px solid black;
+    // border-bottom: 2px solid #0b667bff;    
+    // background: #0b667bff;
+    background-image: linear-gradient(180deg, #0b667bff , #e21979);
+    box-shadow: 1px .5px 8px 1px black;
+
 `
 const Item = styled.div`
-    color:black;
-    font-size: 1rem;
+    margin-top: 3%;
+    color:white;
+    font-size: .85rem;
     z-index: 999990;
 `

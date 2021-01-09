@@ -54,7 +54,7 @@ export default function Top () {
                 {isTablet && 
                     <DropDown>
                       <div className = "wordLogo">
-                        <p className = "httcLogo"> {`<HTTC`}<span className ="code"><i>{`Code />`}</i></span> </p>
+                        <p className = "httcLogo"> {`<HTT`}<span className ="code"><i>{`Code />`}</i></span> </p>
                         </div>
                             <Item a href='/'>Home</Item>
                             <Item a href='/'>About</Item>
@@ -92,7 +92,7 @@ const  Wrapper = styled.div`
 `;
 
 const  HeaderWrapper = styled.header`
-  padding: 18px 4%;
+  padding: 10px 4%;
   color: #0b667bff;
   position: fixed;
   left: 10;
@@ -104,8 +104,8 @@ const  HeaderWrapper = styled.header`
 
 const  MenuToggle = styled.div`
   z-index: 9999;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   transform: rotate(0deg);
   transition: all 0.25s ease-in;
   cursor: pointer;
@@ -113,7 +113,7 @@ const  MenuToggle = styled.div`
   span {
     display: block;
     position: absolute;
-    height: 4px;
+    height: 2px;
     width: 100%;
     background: #17c436;
     border-radius: 9px;
@@ -170,15 +170,15 @@ const DropDown = styled.div `
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    // border: 1px solid black;
-    // border-bottom: 2px solid #0b667bff;    
-    // background: #0b667bff;
-    background-image: linear-gradient(180deg, #0b667bff , #e21979);
-    box-shadow: 1px .5px 8px 1px black;
+    border-bottom: 2px solid #0b667bff;    
+    // background-image: linear-gradient(180deg, #0b667bff , #e21979);
+    background-image: linear-gradient(to right, rgb(11,102,123), rgb(226,25,121));
+    padding-bottom: 2%;
+    box-shadow: 1px .5px 10px 1px black;
 
 `
 const Item = styled.div`
-    margin-top: 3%;
+    margin-top: 5%;
     color:white;
     font-size: .85rem;
     z-index: 999990;

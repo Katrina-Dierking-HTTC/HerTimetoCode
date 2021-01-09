@@ -4,9 +4,9 @@
   
 } */
 
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 
 .App-header {
   background-color:none;
@@ -38,6 +38,7 @@
   margin: 1% 0;
   border: .5px solid white;
   background-image: linear-gradient(180deg, #0b667bff , #e21979);
+ 
   box-shadow: 1px .5px 10px 1px black;
 }
 .httcLogo {
@@ -198,7 +199,8 @@
   /* background-color: #0b667b; */
   /* background-color: lightblack; */
   box-shadow: 1px .5px 8px 1px black;
-  background-image: linear-gradient(180deg,  #e21979, #0b667bff);
+  /* background-image: linear-gradient(180deg,  #e21979, #0b667bff); */
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(226,25,121));
 }
 
 .home, .cart, .blog, .email {

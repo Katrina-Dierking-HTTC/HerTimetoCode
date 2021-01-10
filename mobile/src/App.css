@@ -143,13 +143,23 @@
 
 .heroH2 {
   color: #e21979;
+  font-size: 1.3rem;
+}
+
+.hero2H2 {
+  color: #e21979;
   font-size: 2rem;
+}
+
+.heroH3 {
+  font-size: 1rem;
 }
 
 .stepsContainer {
   border: 1.5px solid #0b667b;
   padding:5% 5% 2%;
-  margin: 15% 5% 5% 5%;
+  margin: 20% 5% 5% 5%;
+  position:absolute;
 
 }
 

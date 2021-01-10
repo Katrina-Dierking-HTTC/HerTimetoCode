@@ -55,13 +55,16 @@ export default function Top () {
                     <DropDown>
                       <div className = "wordLogo">
                         <p className = "httcLogo"> {`<HTT`}<span className ="code"><i>{`Code />`}</i></span> </p>
-                        </div>
+                      </div>
+
+                    
                             <Item a href='/'>Home</Item>
                             <Item a href='/'>About</Item>
                             <Item a href='/'>Blog</Item>
                             <Item a href='/'>Shop</Item>
                             <Item a href='/'>Community</Item>
                             <Item a href='/'>Contact</Item>
+                      
                     </DropDown>                
                 }
 

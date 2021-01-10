@@ -8,9 +8,9 @@ import Home from "./components/staticPages/Home"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+     
         <Home />
-      </header>
+  
     </div>
   );
 }

@@ -3,24 +3,22 @@
 @media (prefers-reduced-motion: no-preference) {
   
 } */
-
-/* * {
+/* 
+* {
   border: 1px solid red;
 } */
 
-.App-header {
+/* .App-header {
   background-color:none;
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color:black;
-}
+} */
 
-.topHeading{
+/* .topHeading{
   max-width: 100%;
   max-height: 40%;
-  /* display:flex;
-  flex-direction:row; */
-}
+} */
 
 /* .corner-logo {
   padding: 2%;
@@ -132,16 +130,32 @@
   margin-top:1%;
 }
 
+.cta {
+  color:pink;
+  size: 1rem;
+  border: 2px solid green;
+}
+
+.hero {
+  min-width: 100%;
+  /* max-height: 20%; */
+}
+
+.heroH2 {
+  color: #e21979;
+  font-size: 2rem;
+}
 
 .stepsContainer {
   border: 1.5px solid #0b667b;
   padding:5% 5% 2%;
-  margin: 50% 5% 5% 5%;
+  margin: 15% 5% 5% 5%;
 
 }
 
 .RevealBox {
   display:flex;
+  justify-content: space-between;
 } 
 
 .rev1, .rev2, .rev3 {

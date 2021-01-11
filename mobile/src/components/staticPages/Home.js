@@ -16,9 +16,9 @@ export default function Home () {
         <>
          <Top />
          <Hero />
-        {/* <Header /> */}
+        {/* <Header />  */}
         {/* <Intro /> */}
-        <Steps />
+        {/* <Steps /> */}
         {/* <Testimonials /> */}
         <FooterNav />
        

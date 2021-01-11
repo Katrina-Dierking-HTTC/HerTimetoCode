@@ -18,10 +18,13 @@ export default function Hero () {
         <HeroWrapper>
             <img src = {blogImg} className = "hero" alt = "hero section with call to action" />
                 <HeroText> 
-                    <h2 className= "heroH2"><i>If you've ever dreamed of living life on your own terms
-                         and having the financial security to do it, </i>
+                    <h2 className= "heroH2"><i><span className = "yourYear">2021 is YOUR YEAR!!</span>
+                        <br />
+                        <br />
+                        It's time you had the life you deserve and the financial freedom to live it!</i>
                     </h2>
-                    <h3 className = "heroH3">becoming a <span className = "webdev">Web Developer</span> is the answer and I can help you get there.</h3>
+                    <h3 className = "heroH3">Becoming a <span className = "webdev">Web Developer</span> is the answer 
+                    <br />and I can help you get there.</h3>
                 </HeroText>
         </HeroWrapper>
         }
@@ -30,10 +33,12 @@ export default function Hero () {
         <HeroWrapper2>
             <img src = {blogImg} className = "hero" alt = "hero section with call to action" />
             <HeroText2> 
-                <h2 className= "hero2H2"><i>If you've ever dreamed of living life on your own terms
-                    and having the financial security to do it, </i>
+                <h2 className= "hero2H2"><i>Was 2020 enough to make you want a change? 
+                        <br />
+                        <br />
+                        Are you looking for a new career that gives you the financial freedom to have the life you've always wanted?  </i>
                 </h2>
-                <h3 className = "hero2H3">becoming a <span className = "webdev">Web Developer</span> is the answer and I can help you get there.</h3>
+                <h3 className = "hero2H3">Becoming a <span className = "webdev">Web Developer</span> is the answer and I can help you get there.</h3>
             </HeroText2>
         </HeroWrapper2>
         }
@@ -46,16 +51,17 @@ export default function Hero () {
 const HeroWrapper = styled.div`
     display:flex; 
     flex-direction: column;
+    position:fixed;
 `
 
 const HeroText = styled.div `
-    margin:-53% 30% 0% 2%;
+    margin:-57% 20% 0% 2%;
     padding: 0 2%;
     border-top: 4px solid #0b667b;
     border-left:4px solid #0b667b;
     border-right: 2px solid #353535;
     border-bottom: 2px solid #353535;
-    padding: 10px;
+    // padding: 10px;
     // background: #f0f0f0;
 
 `

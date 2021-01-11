@@ -130,14 +130,16 @@
   margin-top:1%;
 }
 
-.cta {
+/* .cta {
   color:pink;
   size: 1rem;
   border: 2px solid green;
-}
+} */
 
 .hero {
   min-width: 100%;
+  padding-bottom: 2%;
+  border-bottom: 50px solid #0b667b;
   /* max-height: 20%; */
 }
 
@@ -155,6 +157,10 @@
   font-size: 1rem;
 }
 
+/* .myVector {
+  max-width: 50%;
+  position:fixed;
+} */
 .stepsContainer {
   border: 1.5px solid #0b667b;
   padding:5% 5% 2%;

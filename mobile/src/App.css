@@ -139,7 +139,7 @@
 .hero {
   min-width: 100%;
   padding-bottom: 2%;
-  border-bottom: 50px solid #0b667b;
+  /* border-bottom: 50px solid #0b667b; */
   /* max-height: 20%; */
 }
 
@@ -161,6 +161,16 @@
   max-width: 50%;
   position:fixed;
 } */
+
+.cta-backdrop {
+  max-width: 100%;
+  background-color: #0b667b;
+  max-height: 50%;
+}
+
+.cta-backdrop p {
+  color:white;
+}
 .stepsContainer {
   border: 1.5px solid #0b667b;
   padding:5% 5% 2%;

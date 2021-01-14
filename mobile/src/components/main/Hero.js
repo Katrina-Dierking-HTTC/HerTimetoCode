@@ -1,5 +1,5 @@
 import React from 'react'
-import blogImg from '../../images/blogImg.png'
+import heroImg from '../../images/heroImg.png'
 import styled from 'styled-components'
 import {useMediaQuery} from 'react-responsive'
 
@@ -16,7 +16,7 @@ export default function Hero () {
 
         {isPhone &&
         <HeroWrapper>
-            <img src = {blogImg} className = "hero" alt = "hero section with call to action" />
+            <img src = {heroImg} className = "hero" alt = "hero section with call to action" />
                 <HeroText> 
                     <h2 className= "heroH2"><i><span className = "yourYear">2021 is YOUR YEAR!!</span>
                         <br />
@@ -31,7 +31,7 @@ export default function Hero () {
 
         {isTablet &&
         <HeroWrapper2>
-            <img src = {blogImg} className = "hero" alt = "hero section with call to action" />
+            <img src = {heroImg} className = "hero" alt = "hero section with call to action" />
             <HeroText2> 
                 <h2 className= "hero2H2"><i>Was 2020 enough to make you want a change? 
                         <br />

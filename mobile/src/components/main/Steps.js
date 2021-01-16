@@ -31,4 +31,11 @@ const StepWrapper = styled.div`
     padding:5% 5% 2%;
     // margin: 3% 5% 2% 3%;
     position:absolute;
+
+    .stepsDesc {
+        font-size: .75rem;
+        padding: 2% 3% 1%  5%;
+        // border: 2px solid black;
+        margin-top: -5%;
+      }
 `

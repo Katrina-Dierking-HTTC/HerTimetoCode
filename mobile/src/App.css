@@ -166,13 +166,6 @@
 .cta-backdrop p {
   color:white;
 }
-/* .stepsContainer {
-  border: 1.5px solid #0b667b;
-  padding:5% 5% 2%;
-  margin: 20% 5% 5% 5%;
-  position:absolute;
-
-} */
 
 .RevealBox {
   display:flex;
@@ -182,8 +175,22 @@
 .rev1, .rev2, .rev3 {
   min-width:100px;
   min-height:100px;
-  margin-left: 3%;
+  margin-left: -1%;
 }
+
+
+.oct1P, .oct2P, .oct3P{
+  font-size: .60rem;
+  text-align:center;
+  padding:3%;
+  margin-left: 35%;
+}
+
+/* .oct2P {
+  font-size: .70rem;
+  text-align:center;
+  margin-left:20%;
+} */
 
 .BP, .comm {
   margin-left: -5%;
@@ -198,13 +205,7 @@
    padding: 12% 0% 0% 10%;
  }
 
-.stepsDesc {
-  font-size: .75rem;
-  padding: 5% 3% 1%  5%;
-}
-
 .testbox {
-  /* border: .2px dotted paleturquoise; */
   display:flex;
   justify-content: center;
   /* position:absolute;

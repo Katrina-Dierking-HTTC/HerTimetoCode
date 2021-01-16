@@ -19,20 +19,25 @@ export default function Intro () {
         <>
 
         {isPhone &&
+            <section>
             <MeWrapper>
                 <div className = "phoneTopPic">
-
                     <img src = {me} className = "me" alt = "Katrina Dierking | Founder of Her Time to Code"/>
                 </div>
 
                 <IntroText>
                     <img src = {Hi} className = "name" alt = "introduction from Katrina Dierking | Founder of Her Time to Code" />
-                    {/* <h1 className = "hi1">Hi,</h1>
-                    <h3 className = "Katrina1">I'm Katrina Dierking</h3> */}
                     <p className = "introP">I give women the tools they need today to 
                     become skilled web developers of tomorrow. </p>
                 </IntroText>
             </MeWrapper>
+
+                <CTAWrap>
+                    <p className = "CtaP"> Get your FREE Web Developer Course Blueprint {`>>`}</p>
+                    <button className = "CtaButton">Get it now!</button>
+                </CTAWrap>
+            </section>
+                
         }
 
 
@@ -54,6 +59,8 @@ export default function Intro () {
     );
 }
 
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const MeWrapper = styled.div `
     max-width: 100%;
     display:flex;
@@ -83,5 +90,29 @@ const IntroText = styled.div`
     .introP {
         font-size: .80rem;
         margin-left: 3%;
+    }
+`
+
+const CTAWrap = styled.div`
+    background-color: #EFE1CD;
+    max-width: 100%;
+    max-width: 100%;
+    display:flex;
+    flex-direction:row;
+    background-image: linear-gradient(to right, rgb(251,240,208), rgb(237,208,171));
+
+    .CtaP{
+        max-width: 75%;
+        font-size: .75rem;
+        text-align:center;
+        padding: 2%;
+        margin-top: 2%;
+
+    }
+
+    .CtaButton {
+        font-size: .70rem;
+        background-color: #17c436;
+        margin: 3%;
     }
 `

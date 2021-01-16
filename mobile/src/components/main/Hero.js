@@ -1,5 +1,8 @@
 import React from 'react'
-import heroImg from '../../images/heroImg.png'
+import hero from '../../images/hero.png'
+// import cursive from '../../images/cursive.png'
+// import sub from '../../images/sub.png'
+import top from '../../images/top.png'
 import styled from 'styled-components'
 import {useMediaQuery} from 'react-responsive'
 
@@ -16,30 +19,36 @@ export default function Hero () {
 
         {isPhone &&
         <HeroWrapper>
-            <img src = {heroImg} className = "hero" alt = "hero section with call to action" />
-                <HeroText> 
+            <img src = {hero} className = "hero" alt = "hero section with call to action" />
+            <img src = {top} className = "top" alt = "Her Time to Code Title and Subtitle" />
+            {/* <img src = {cursive} className = "cursive" alt = "her time to code written in blue cursive" /> */}
+            {/* <img src = {sub} className = "sub" alt= "Her time to code subtitle" /> */}
+                {/* <HeroText> 
                     <h2 className= "heroH2"><i><span className = "yourYear">2021 is YOUR YEAR!!</span>
                         <br />
                         <br />
-                        It's time you had the life you deserve and the financial freedom to live it!</i>
+                     It's time you had the life you deserve and the financial freedom to live it!</i>
                     </h2>
                     <h3 className = "heroH3">Becoming a <span className = "webdev">Web Developer</span> is the answer 
                     <br />and I can help you get there.</h3>
-                </HeroText>
+                </HeroText> */}
         </HeroWrapper>
         }
 
         {isTablet &&
         <HeroWrapper2>
-            <img src = {heroImg} className = "hero" alt = "hero section with call to action" />
-            <HeroText2> 
+            <img src = {hero} className = "hero" alt = "hero section with call to action" />
+            <img src = {top} className = "top" alt = "Her Time to Code Title and Subtitle" />
+            {/* <img src = {cursive} className = "cursive" alt = "her time to code written in blue cursive" />
+            <img src = {sub} className = "sub" alt= "Her time to code subtitle" /> */}
+            {/* <HeroText2> 
                 <h2 className= "hero2H2"><i>Was 2020 enough to make you want a change? 
                         <br />
                         <br />
                         Are you looking for a new career that gives you the financial freedom to have the life you've always wanted?  </i>
                 </h2>
                 <h3 className = "hero2H3">Becoming a <span className = "webdev">Web Developer</span> is the answer and I can help you get there.</h3>
-            </HeroText2>
+            </HeroText2> */}
         </HeroWrapper2>
         }
 
@@ -52,6 +61,19 @@ const HeroWrapper = styled.div`
     display:flex; 
     flex-direction: column;
     position:fixed;
+
+    .hero {
+        max-width: 100%;
+        padding-bottom: 2%;
+    }
+
+    .top {
+        max-width:50%;
+        margin-top:-30%;
+        margin-left: 3%;
+        // border: 1px solid red;
+    }
+
 `
 
 const HeroText = styled.div `

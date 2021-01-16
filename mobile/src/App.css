@@ -23,10 +23,20 @@
 }
 
 .code {
-  color: #e21979;
+  /* color: #e21979; */
+  color: black;
   text-decoration: italitize;
 }
+/* .cursive {
+  max-width:50%;
+  margin-top:-30%;
+  margin-left: 3%;
+  border: 1px solid red;
+} */
 
+.me {
+  max-width: 50%;
+}
 .title{
   max-width: 70%;
   max-height: 10%;
@@ -115,12 +125,14 @@
   border: 2px solid green;
 } */
 
-.hero {
-  min-width: 100%;
+/* .hero {
+  max-width: 100%;
   padding-bottom: 2%;
+  border:1px solid red;
   /* border-bottom: 50px solid #0b667b; */
-  /* max-height: 20%; */
-}
+  /* max-height: 20%;
+ } */
+
 
 .heroH2 {
   color: slategray;

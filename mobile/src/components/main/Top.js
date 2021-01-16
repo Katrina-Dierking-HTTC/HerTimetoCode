@@ -22,10 +22,8 @@ export default function Top () {
 
     return (
         <> 
-                {isPhone &&
-                
-               <Wrapper>
-
+            {isPhone &&
+              <Wrapper>
               <div className = "wordLogo">
                 <p className = "httcLogo"> {`<HTT`}<span className ="code"><i>{`Code />`}</i></span> </p>
                 </div>
@@ -91,6 +89,10 @@ flex-direction:column;
 const  Wrapper = styled.div`
   * {
     box-sizing: border-box;
+  }
+
+  .sub {
+    margin-top:10%;
   }
 `;
 

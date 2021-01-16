@@ -166,13 +166,13 @@
 .cta-backdrop p {
   color:white;
 }
-.stepsContainer {
+/* .stepsContainer {
   border: 1.5px solid #0b667b;
   padding:5% 5% 2%;
   margin: 20% 5% 5% 5%;
   position:absolute;
 
-}
+} */
 
 .RevealBox {
   display:flex;

@@ -20,7 +20,7 @@ export default function Home () {
          {/* <CTA />  */}
         {/* <Header />  */}
         <Intro />
-        {/* <Steps /> */}
+        <Steps />
         {/* <Testimonials /> */}
         <FooterNav />
        

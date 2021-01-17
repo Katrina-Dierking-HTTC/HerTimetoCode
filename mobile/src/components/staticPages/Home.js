@@ -4,7 +4,6 @@ import Top from '../main/Top'
 import Header from '../main/Header'
 import Steps from '../main/Steps'
 import Hero from '../main/Hero'
-import CTA from '../main/CTA'
 import Intro from '../main/Intro'
 import Testimonials from '../main/Testimonials'
 import FooterNav from '../main/FooterNav'
@@ -17,11 +16,9 @@ export default function Home () {
         <>
          <Top />
          <Hero />
-         {/* <CTA />  */}
-        {/* <Header />  */}
         <Intro />
         <Steps />
-        {/* <Testimonials /> */}
+        <Testimonials />
         <FooterNav />
        
 

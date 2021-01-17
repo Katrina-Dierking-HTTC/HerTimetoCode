@@ -29,6 +29,7 @@ export default function Intro () {
                     <img src = {Hi} className = "name" alt = "introduction from Katrina Dierking | Founder of Her Time to Code" />
                     <p className = "introP">I give women the tools they need today to 
                     become skilled web developers of tomorrow. </p>
+                    <hr></hr>
                 </IntroText>
             </MeWrapper>
 
@@ -79,7 +80,7 @@ const IntroText = styled.div`
     max-width: 50%;
     margin-left: -10%;
     margin-top: 5%;
-    padding: 4%;
+    padding: 2%;
     
 
     .name {
@@ -96,7 +97,7 @@ const IntroText = styled.div`
 `
 
 const CTAWrap = styled.div`
-    margin-top: -1.1%;
+    margin-top: -4.1%;
     background-color: #EFE1CD;
     max-width: 100%;
     max-width: 100%;

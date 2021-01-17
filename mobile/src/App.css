@@ -45,7 +45,7 @@
 }
 
 
-.header {
+/* .header {
   min-width:100%;
   margin-top:3%;
 }
@@ -63,7 +63,7 @@
   z-index:2;
   min-width:100%;
   max-height: 30%;
-}
+} */
 
 
 
@@ -103,7 +103,7 @@
   left: 7%;
   box-shadow: 1px .5px 6px 1px black;
 }
-.intro-text { 
+/* .intro-text { 
   margin-top: 15%;
   position:absolute;
   z-index: 9999;
@@ -117,7 +117,7 @@
 
 .Katrina {
   margin-top:1%;
-}
+} */
 
 /* .cta {
   color:pink;
@@ -156,7 +156,7 @@
   max-width: 50%;
   position:fixed;
 } */
-
+/* 
 .cta-backdrop {
   max-width: 100%;
   background-color: #0b667b;
@@ -165,7 +165,7 @@
 
 .cta-backdrop p {
   color:white;
-}
+} */
 
 .RevealBox {
   display:flex;

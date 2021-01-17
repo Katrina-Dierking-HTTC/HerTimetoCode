@@ -3,11 +3,11 @@ import Home_testimonial from '../../images/Home_testimonial.png'
 import Lyndsi from '../../images/Lyndsi.png'
 import william from '../../images/william.png'
 import Buddy from '../../images/Buddy.png'
-import alexis from '../../images/alexis.png'
+import alexis from '../../images/alexis.png' 
+import { flip } from 'react-animations'
+import styled , {keyframes} from 'styled-components'
 
-
-
-import styled from 'styled-components'
+const flipAnimation = keyframes `${flip}`;
 
 export default function Testimonials () {
     return (
@@ -57,5 +57,10 @@ const TestimonialWrapper = styled.div`
         margin-top: -50%;
         margin-left: -7%;
         border-radius: 50%;
+        
+    }
+
+    .Lyndsi:hover, .william:hover, .Buddy:hover, .alexis:hover {
+        animation: 1.5s ${flipAnimation};
     }
 `

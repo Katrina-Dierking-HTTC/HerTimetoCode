@@ -1,6 +1,4 @@
 import React from 'react'
-import Home_me from '../../images/Home_me.png'
-import Home_frame from '../../images/Home_frame.png'
 import Hi from '../../images/Hi.png'
 import me from '../../images/me.png'
 import {useMediaQuery} from 'react-responsive'

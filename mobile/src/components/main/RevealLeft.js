@@ -22,16 +22,6 @@ const RevealLeft = () => {
                 <p className = "oct1P">Tools</p>
                 </Reveal.Content>
             </Reveal>
-           
-
-            {/* <Reveal animated='rotate left' className = "rev2">
-                <Reveal.Content visible>
-                <Image src={Poly2} alt = "step 2"/>
-                </Reveal.Content>
-                <Reveal.Content hidden>
-                <Image src = {WB1} alt = "Workbook" className = "WB"/>
-                </Reveal.Content>
-            </Reveal> */}
 
             <Reveal animated='small fade' className = 'rev2'>
                 <Reveal.Content visible>

@@ -27,9 +27,10 @@ export default function Intro () {
                     <img src = {Hi} className = "name" alt = "introduction from Katrina Dierking | Founder of Her Time to Code" />
                     <p className = "introP">I give women the tools they need today to 
                     become skilled web developers of tomorrow. </p>
-                    <hr></hr>
+                
                 </IntroText>
             </MeWrapper>
+            <hr></hr>
 
                 <CTAWrap>
                     <p className = "CtaP"> FREE Web Developer Course Blueprint {`>>`}</p>

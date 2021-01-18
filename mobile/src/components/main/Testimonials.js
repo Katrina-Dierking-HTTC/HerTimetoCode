@@ -3,6 +3,7 @@ import Home_testimonial from '../../images/Home_testimonial.png'
 import Lyndsi from '../../images/Lyndsi.png'
 import william from '../../images/william.png'
 import Buddy from '../../images/Buddy.png'
+import Btest from '../../images/Btest.png'
 import alexis from '../../images/alexis.png' 
 import Ltest from '../../images/Ltest.png'
 import { flip } from 'react-animations'
@@ -32,6 +33,7 @@ export default function Testimonials () {
 
                 <div className = "test3">
                 <img src = {Buddy} className = "Buddy" alt = "Buddy's testimonial" />
+                <img src = {Btest} className = "hide3" alt = "Buddy's written testimonial" />
                 </div>
 
                 <div className = "test4">
@@ -49,7 +51,7 @@ export default function Testimonials () {
 const TestimonialWrapper = styled.div`
     background-image: linear-gradient(to right, rgb(11,102,123), rgb(226,25,121));
     padding: 2%;
-    margin: 48% 0% 3% 0%;
+    margin: 48% 0% 5% 0%;
     position:absolute;
     z-index: 99999;
 
@@ -81,15 +83,25 @@ const TestimonialWrapper = styled.div`
 
     }
 
-    .hide1 {
+    .hide1, .hide3 {
         display:none;
     }
     
-    .Lyndsi:hover + .hide1 {
+    .Lyndsi:hover + .hide1{
         color:black;
         display:block;
         max-width: 90vw;
         margin-left: 2%
+        // position: absolute;
+        // z-index: 99999:
+    }
+
+    .Buddy:hover + .hide3{
+        color:black;
+        display:block;
+        max-width: 90vw;
+        margin-left: -245%;
+
         // position: absolute;
         // z-index: 99999:
     }

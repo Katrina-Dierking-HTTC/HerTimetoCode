@@ -103,35 +103,6 @@
   left: 7%;
   box-shadow: 1px .5px 6px 1px black;
 }
-/* .intro-text { 
-  margin-top: 15%;
-  position:absolute;
-  z-index: 9999;
-  padding: 0;
-}
-.intro-text .hi {
-  font-size:48px;
-  color: #878183;
-  margin-left: 40%;
-} 
-
-.Katrina {
-  margin-top:1%;
-} */
-
-/* .cta {
-  color:pink;
-  size: 1rem;
-  border: 2px solid green;
-} */
-
-/* .hero {
-  max-width: 100%;
-  padding-bottom: 2%;
-  border:1px solid red;
-  /* border-bottom: 50px solid #0b667b; */
-  /* max-height: 20%;
- } */
 
 
 .heroH2 {
@@ -152,20 +123,6 @@
   font-size: 1rem;
 }
 
-/* .myVector {
-  max-width: 50%;
-  position:fixed;
-} */
-/* 
-.cta-backdrop {
-  max-width: 100%;
-  background-color: #0b667b;
-  max-height: 50%;
-}
-
-.cta-backdrop p {
-  color:white;
-} */
 
 .RevealBox {
   display:flex;
@@ -224,14 +181,26 @@
   margin-left: 7%;
 }
 
-.icons {
+.footer {
   position:fixed;
-  z-index:3;
-  bottom:1%;
-  padding: 1%;
+  z-index:10;
+  bottom: 0; 
+  padding: 2%;
+  margin-bottom: 7%;
+  min-width: 100%;
+  overflow:hidden;
+}
+
+.icons {
+  /* position:fixed;
+  z-index:3; */
+  /* bottom:1%;
+  padding: 1%;*/
+  
   display:flex;
   justify-content: center;
   min-width: 100%;
+  border: 2px solid #0b667b;
   /* background-color: #0b667b; */
   /* background-color: lightblack; */
   box-shadow: 1px .5px 8px 1px black;

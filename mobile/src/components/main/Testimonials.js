@@ -4,6 +4,7 @@ import Lyndsi from '../../images/Lyndsi.png'
 import william from '../../images/william.png'
 import Buddy from '../../images/Buddy.png'
 import alexis from '../../images/alexis.png' 
+import Ltest from '../../images/Ltest.png'
 import { flip } from 'react-animations'
 import styled , {keyframes} from 'styled-components'
 import Swal from 'sweetalert2'
@@ -16,10 +17,12 @@ export default function Testimonials () {
     return (
         <>
            <TestimonialWrapper>
+
                 <div className = "test1">
-                    <img src = {Lyndsi} className = "Lyndsi" alt = "Lyndsi's testimonial" />
-                
-                        {/* <p className = "hideL">Katrina's notes have detailed illustrations that demonstrate the material in a nice, visually-pleasing way. A nice change of pace, as compared to many other instructional materials that are mostly just blocks of text. I recommended her notes to any students I had that were struggling with the content, they helped many struggling students. I've used them myself!</p> */}
+
+                    <img src = {Lyndsi} className = "Lyndsi" alt = "Lyndsi's profile picture" />
+                    <img src = {Ltest} className = "hide1" alt = "Lyndi's written testimonial" />
+                    <br></br>
                 
                 </div>
 
@@ -45,28 +48,31 @@ export default function Testimonials () {
 
 const TestimonialWrapper = styled.div`
     background-image: linear-gradient(to right, rgb(11,102,123), rgb(226,25,121));
-    padding: 2% 0% 2% 0%;
-    margin-top: 60%;
+    padding: 2%;
+    margin: 48% 0% 3% 0%;
     position:absolute;
-    min-width: 100%;
-    max-height: 20%;
-    display:flex;
+    z-index: 99999;
 
+    min-width: 100%;
+    display:flex;
+  
 
     .test1, .test2, .test3, .test4 {
         border-radius: 50%;
         min-width: 23%;
-        margin: 1%;
+        margin: 1.5%;
         padding: 0% 1%;
+        flex-direction: column;
     }
 
 
     .Lyndsi, .william, .Buddy, .alexis {
-        max-width: 80px;
+        max-width: 80%;
         border: 2px solid #e21979;
-        margin-top: -50%;
+        margin-top: -30%;
         margin-left: -7%;
         border-radius: 50%;
+        box-shadow: 1px .5px 10px 1px black;
         
     }
 
@@ -75,15 +81,17 @@ const TestimonialWrapper = styled.div`
 
     }
 
-    .hideL {
+    .hide1 {
         display:none;
     }
     
-    .Lyndsi:hover + .hideL {
+    .Lyndsi:hover + .hide1 {
         color:black;
-        display:flex;
-        flex-direction:column;
-        min-width: 100%;
+        display:block;
+        max-width: 90vw;
+        margin-left: 2%
+        // position: absolute;
+        // z-index: 99999:
     }
 
 `

@@ -1,10 +1,12 @@
 import React from 'react'
 import Home_testimonial from '../../images/Home_testimonial.png'
 import Lyndsi from '../../images/Lyndsi.png'
-import william from '../../images/william.png'
+import William from '../../images/William.png'
+import Wtest from '../../images/Wtest.png'
 import Buddy from '../../images/Buddy.png'
 import Btest from '../../images/Btest.png'
-import alexis from '../../images/alexis.png' 
+import Jenn from '../../images/Jenn.png' 
+import Jtest from '../../images/Jtest.png' 
 import Ltest from '../../images/Ltest.png'
 import { flip } from 'react-animations'
 import styled , {keyframes} from 'styled-components'
@@ -28,7 +30,8 @@ export default function Testimonials () {
                 </div>
 
                 <div className = "test2">
-                <img src = {william} className = "william" alt = "william's testimonial" />
+                <img src = {William} className = "William" alt = "william's profile picture" />
+                <img src = {Wtest} className = "hide2" alt = "William Herman's testimony for Her Time to Code" />
                 </div>
 
                 <div className = "test3">
@@ -37,7 +40,8 @@ export default function Testimonials () {
                 </div>
 
                 <div className = "test4">
-                <img src = {alexis} className = "alexis" alt = "alexis's testimonial" />
+                <img src = {Jenn} className = "Jenn" alt = "Jenn's testimonial" />
+                <img src = {Jtest} className = "hide4" alt = "Jenn's written testimonial" />
                 </div>
                 
             </TestimonialWrapper>
@@ -51,11 +55,12 @@ export default function Testimonials () {
 const TestimonialWrapper = styled.div`
     background-image: linear-gradient(to right, rgb(11,102,123), rgb(226,25,121));
     padding: 2%;
-    margin: 48% 0% 5% 0%;
+    margin: 45% 0% 7% 0%;
     position:absolute;
     z-index: 99999;
 
     min-width: 100%;
+    min-height: 10vh;
     display:flex;
   
 
@@ -68,44 +73,53 @@ const TestimonialWrapper = styled.div`
     }
 
 
-    .Lyndsi, .william, .Buddy, .alexis {
+    .Lyndsi, .William, .Buddy, .Jenn {
         max-width: 80%;
         border: 2px solid #e21979;
-        margin-top: -30%;
+        margin-top: -35%;
         margin-left: -7%;
         border-radius: 50%;
         box-shadow: 1px .5px 10px 1px black;
+        z-index: 99999999;
         
     }
 
-    .Lyndsi:hover, .william:hover, .Buddy:hover, .alexis:hover {
+    .Lyndsi:hover, .William:hover, .Buddy:hover, .Jenn:hover {
         animation: 1.5s ${flipAnimation};
+        z-index: 99999;
 
     }
 
-    .hide1, .hide3 {
+    .hide1, .hide2, .hide3, .hide4 {
         display:none;
     }
     
     .Lyndsi:hover + .hide1{
-        color:black;
         display:block;
         max-width: 90vw;
         margin-left: 2%
-        // position: absolute;
-        // z-index: 99999:
+    }
+
+    .William:hover + .hide2 {
+        display:block;
+        max-width: 90vw;
+        margin-left: -120%;
+        margin-top: -7%;
     }
 
     .Buddy:hover + .hide3{
-        color:black;
         display:block;
         max-width: 90vw;
         margin-left: -245%;
-
-        // position: absolute;
-        // z-index: 99999:
+        margin-top: -7%;
     }
 
+    .Jenn:hover + .hide4 {
+        display:block;
+        max-width: 90vw;
+        margin-left: -360%;
+        margin-top: -7%;
+    }
 `
 
 

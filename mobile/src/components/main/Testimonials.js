@@ -71,15 +71,17 @@ const TestimonialWrapper = styled.div`
     .Lyndsi, .william, .Buddy, .alexis {
         max-width: 80%;
         border: 2px solid #e21979;
-        margin-top: -30%;
+        margin-top: -35%;
         margin-left: -7%;
         border-radius: 50%;
         box-shadow: 1px .5px 10px 1px black;
+        z-index: 99999999;
         
     }
 
     .Lyndsi:hover, .william:hover, .Buddy:hover, .alexis:hover {
         animation: 1.5s ${flipAnimation};
+        z-index: 99999;
 
     }
 
@@ -88,7 +90,7 @@ const TestimonialWrapper = styled.div`
     }
     
     .Lyndsi:hover + .hide1{
-        color:black;
+        // color:black;
         display:block;
         max-width: 90vw;
         margin-left: 2%
@@ -97,13 +99,11 @@ const TestimonialWrapper = styled.div`
     }
 
     .Buddy:hover + .hide3{
-        color:black;
+        // color:black;
         display:block;
         max-width: 90vw;
         margin-left: -245%;
-
-        // position: absolute;
-        // z-index: 99999:
+        margin-top: -7%;
     }
 
 `

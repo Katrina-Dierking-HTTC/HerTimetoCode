@@ -182,11 +182,11 @@
 }
 
 .footer {
-  position:fixed;
+  position:absolute;
   z-index:10;
   bottom: 0; 
   padding: 2%;
-  margin-bottom: 7%;
+  /* margin-bottom: 1%; */
   min-width: 100%;
   overflow:hidden;
 }

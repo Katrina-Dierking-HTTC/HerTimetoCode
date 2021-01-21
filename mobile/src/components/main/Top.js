@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
 import {useMediaQuery} from 'react-responsive'
-import logo from '../../images/logo.png'
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import styled from 'styled-components'
-import name from '../../images/name.png'
-import httc4 from '../../images/httc4.png'
+import About from '../../components/staticPages/About'
+import Home from '../../components/staticPages/Home'
+
 // import hamburger from '../../images/hamburger.png'
 
 export default function Top () {
@@ -38,12 +39,18 @@ export default function Top () {
                     </HeaderWrapper>
                     <MenuWrapper open={open}>
                         <Menu open={open}>
-                        <MenuItem a href='/'>Home</MenuItem>
-                        <MenuItem a href='/about'>About</MenuItem>
-                        <MenuItem a href='/'>Blog</MenuItem>
-                        <MenuItem a href='/'>Shop</MenuItem>
-                        <MenuItem a href='/'>Community</MenuItem>
-                        <MenuItem a href='/'>Contact</MenuItem>
+                          <Router>
+                              <MenuItem><Link to='/'>Home</Link></MenuItem>
+                              <MenuItem><Link to='/about'>About</Link></MenuItem>
+                              <MenuItem><Link to='/blog'>Blog</Link></MenuItem>
+                              <MenuItem><Link to='/shop'>Shop</Link></MenuItem>
+                              <MenuItem><Link to='/community'>Community</Link></MenuItem>
+                              <MenuItem><Link to='/Contact'>Contact</Link></MenuItem>
+
+                              <Route exact path='/' component={Home} />
+                              <Route path = '/about' component={About} />
+                              {/* <Route path = '/blog' component={Blog} /> */}
+                          </Router>
                          </Menu>
                     </MenuWrapper>
                </Wrapper>

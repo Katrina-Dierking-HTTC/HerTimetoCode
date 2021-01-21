@@ -39,7 +39,7 @@ export default function Top () {
                     <MenuWrapper open={open}>
                         <Menu open={open}>
                         <MenuItem a href='/'>Home</MenuItem>
-                        <MenuItem a href='/'>About</MenuItem>
+                        <MenuItem a href='/about'>About</MenuItem>
                         <MenuItem a href='/'>Blog</MenuItem>
                         <MenuItem a href='/'>Shop</MenuItem>
                         <MenuItem a href='/'>Community</MenuItem>
@@ -57,7 +57,7 @@ export default function Top () {
 
                     
                             <Item a href='/'>Home</Item>
-                            <Item a href='/'>About</Item>
+                            <Item a href='/about'>About</Item>
                             <Item a href='/'>Blog</Item>
                             <Item a href='/'>Shop</Item>
                             <Item a href='/'>Community</Item>

@@ -39,7 +39,7 @@ export default function Top () {
                             <MenuItem><Link to ='/'>Home</Link></MenuItem>
                             <MenuItem><Link to ='/about'>About</Link></MenuItem>
                             <MenuItem><Link to ='/shop'>Shop</Link></MenuItem>
-                            <MenuItem><Link to ='/blog'>Blog</Link></MenuItem>
+                            <MenuItem><Link to ='https://blog.hertimetocode.com/'>Blog</Link></MenuItem>
                             <MenuItem><Link to ='/community'>Community</Link></MenuItem>
                             <MenuItem><Link to ='/contact'>Contact</Link></MenuItem>
                           </Menu>

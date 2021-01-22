@@ -13,11 +13,11 @@ document.head.appendChild(styleLink);
 
 
 ReactDOM.render(
-  // <React.StrictMode>
+  
     <Router>
       <App />
     </Router>,
-  // </React.StrictMode>,
+
   document.getElementById('root')
 );
 

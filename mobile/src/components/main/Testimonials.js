@@ -1,5 +1,4 @@
 import React from 'react'
-import Home_testimonial from '../../images/Home_testimonial.png'
 import Lyndsi from '../../images/Lyndsi.png'
 import William from '../../images/William.png'
 import Wtest from '../../images/Wtest.png'
@@ -10,7 +9,7 @@ import Jtest from '../../images/Jtest.png'
 import Ltest from '../../images/Ltest.png'
 import { flip } from 'react-animations'
 import styled , {keyframes} from 'styled-components'
-import Swal from 'sweetalert2'
+
 
 const flipAnimation = keyframes `${flip}`;
 
@@ -23,14 +22,14 @@ export default function Testimonials () {
 
                 <div className = "test1">
 
-                    <img src = {Lyndsi} className = "Lyndsi" alt = "Lyndsi's profile picture" />
+                    <img src = {Lyndsi} className = "Lyndsi" alt = "Lyndsi's profile" />
                     <img src = {Ltest} className = "hide1" alt = "Lyndi's written testimonial" />
                     <br></br>
                 
                 </div>
 
                 <div className = "test2">
-                <img src = {William} className = "William" alt = "william's profile picture" />
+                <img src = {William} className = "William" alt = "william's profile" />
                 <img src = {Wtest} className = "hide2" alt = "William Herman's testimony for Her Time to Code" />
                 </div>
 

@@ -1,18 +1,15 @@
 import React, {useState} from 'react'
 import {useMediaQuery} from 'react-responsive'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import styled from 'styled-components'
-import About from '../../components/staticPages/About'
-import Home from '../../components/staticPages/Home'
 
-// import hamburger from '../../images/hamburger.png'
 
 export default function Top () {
 
     const isPhone = useMediaQuery({query: '(max-width: 500px)'})
     const isTablet = useMediaQuery({query:'(min-width: 501px)'})
-    const isBetween = useMediaQuery({query:'(min-width: 501px)' && '(max-width: 800px)'})
-    const isDesktop = useMediaQuery({query: '(min-width:801px)'})
+    // const isBetween = useMediaQuery({query:'(min-width: 501px)' && '(max-width: 800px)'})
+    // const isDesktop = useMediaQuery({query: '(min-width:801px)'})
 
     const [open, setOpen] = useState(false);
 

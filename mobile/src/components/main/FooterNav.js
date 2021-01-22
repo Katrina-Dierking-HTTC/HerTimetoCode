@@ -4,8 +4,6 @@ import blog from '../../images/blog.png'
 import cart from '../../images/cart.png'
 import email from '../../images/email.png'
 import home from '../../images/home.png'
-import footer2 from '../../images/footer2.png'
-import footer3 from '../../images/footer3.png'
 
 
 export default function FooterNav () {

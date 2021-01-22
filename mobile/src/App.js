@@ -2,18 +2,28 @@ import logo from './logo.svg';
 import './App.css';
 // import './Menu.css';
 import Home from "./components/staticPages/Home"
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import About from "./components/staticPages/About"
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
 
 
 
 
 function App() {
   return (
+    <>
     <div className="App">
      
-        <Route exact path = "/" component = {Home} />
+        {/* <Home /> */}
   
     </div>
+    
+    <Router>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route path = '/about' component={About} />
+      </Switch>
+    </Router>  
+  </>
   );
 }
 

@@ -23,19 +23,6 @@ export default function Top () {
 
     return (
         <> 
-         {/* <Router>
-              <Link to='/'>Home</Link>
-              <Link to='/about'>About</Link>
-              <Link to='/blog'>Blog</Link>
-              <Link to='/shop'>Shop</Link>
-              <Link to='/community'>Community</Link>
-              <Link to='/Contact'>Contact</Link>
-
-              <Route exact path='/' component={Home} />
-              <Route path = '/about' component={About} />
-          </Router> */}
-
-
             {isPhone &&
               <Wrapper>
               <div className = "wordLogo">
@@ -52,12 +39,12 @@ export default function Top () {
                     </HeaderWrapper>
                     <MenuWrapper open={open}>
                         <Menu open={open}>
-                            <MenuItem a href ='/'>Home</MenuItem>
-                            <MenuItem a href='/about'>About</MenuItem>
-                            <MenuItem a href ='/blog'>Blog</MenuItem>
-                            <MenuItem a href ='/shop'>Shop</MenuItem>
-                            <MenuItem a href ='/community'>Community</MenuItem>
-                            <MenuItem a href ='/Contact'>Contact</MenuItem>
+                            <MenuItem><Link to ='/'>Home</Link></MenuItem>
+                            <MenuItem><Link to ='/about'>About</Link></MenuItem>
+                            <MenuItem><Link to ='/shop'>Shop</Link></MenuItem>
+                            <MenuItem><Link to ='/blog'>Blog</Link></MenuItem>
+                            <MenuItem><Link to ='/community'>Community</Link></MenuItem>
+                            <MenuItem><Link to ='/contact'>Contact</Link></MenuItem>
                           </Menu>
                     </MenuWrapper>
                </Wrapper>
@@ -80,6 +67,7 @@ export default function Top () {
                       
                     </DropDown>                
                 }
+
         </>
     )
 }

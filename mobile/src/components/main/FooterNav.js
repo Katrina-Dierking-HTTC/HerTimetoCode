@@ -16,7 +16,7 @@ export default function FooterNav () {
                 <img src={home} className="home" alt="home icon"/>
                 <img src={blog} className="blog" alt="blog icon" />
                 <img src={cart} className="cart" alt="shopping cart"/>
-                <img src={email} className="email" alt="email icon"/>
+                <a href = "mailto:katrina@hertimetocode.com"><img src={email} className="email" alt="email icon"/></a>
             </div>
         </div>
         </>

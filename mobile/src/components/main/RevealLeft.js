@@ -1,12 +1,10 @@
 import React from 'react'
 import { Image, Reveal } from 'semantic-ui-react'
 import oct1 from '../../images/oct1.png'
-import BP from '../../images/BP.png'
 import oct2 from '../../images/oct2.png'
 import WB1 from '../../images/WB1.png'
 import oct3 from '../../images/oct3.png'
 import Home_community from '../../images/Home_community.png'
-import styled from 'styled-components'
 
 const RevealLeft = () => {
 

@@ -1,9 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-// import './Menu.css';
+
+import './App.css'
 import Home from "./components/staticPages/Home"
 import About from "./components/staticPages/About"
-import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 
 
@@ -15,7 +14,7 @@ function App() {
      
         {/* <Home /> */}
   
-    </div>
+     </div> 
     
     <Router>
       <Switch>

@@ -39,7 +39,8 @@ export default function Top () {
                             <MenuItem><Link to ='/'>Home</Link></MenuItem>
                             <MenuItem><Link to ='/about'>About</Link></MenuItem>
                             <MenuItem><Link to ='/shop'>Shop</Link></MenuItem>
-                            <MenuItem><Link to ='https://blog.hertimetocode.com/'>Blog</Link></MenuItem>
+                            <MenuItem><a href ='https://blog.hertimetocode.com' target="_blank" rel="noopener noreferrer">Blog</a></MenuItem>
+
                             <MenuItem><Link to ='/community'>Community</Link></MenuItem>
                             <MenuItem><Link to ='/contact'>Contact</Link></MenuItem>
                           </Menu>
@@ -56,7 +57,8 @@ export default function Top () {
 
                     
                             <Item a href='/'>Home</Item>
-                            <Item a href='/about'>About</Item>
+                            <Item a ='/about'>About</Item>
+
                             <Item a href='/'>Blog</Item>
                             <Item a href='/'>Shop</Item>
                             <Item a href='/'>Community</Item>

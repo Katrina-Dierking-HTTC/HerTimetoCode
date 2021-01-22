@@ -40,7 +40,6 @@ export default function Top () {
                             <MenuItem><Link to ='/about'>About</Link></MenuItem>
                             <MenuItem><Link to ='/shop'>Shop</Link></MenuItem>
                             <MenuItem><a href ='https://blog.hertimetocode.com' target="_blank" rel="noopener noreferrer">Blog</a></MenuItem>
-
                             <MenuItem><Link to ='/community'>Community</Link></MenuItem>
                             <MenuItem><Link to ='/contact'>Contact</Link></MenuItem>
                           </Menu>

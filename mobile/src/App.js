@@ -20,6 +20,12 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path = '/about' component={About} />
+        <Route path = '/blog'
+            component = {() => {
+            global.window && (global.window.location.href = 'https://blog.hertimetocode.com/');
+            return null;
+          }}
+          />
       </Switch>
     </Router>  
   </>

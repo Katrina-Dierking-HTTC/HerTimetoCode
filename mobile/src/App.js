@@ -13,7 +13,7 @@ function App() {
     <>
     <div className="App">
      
-        <Home />
+        {/* <Home /> */}
   
     </div>
     

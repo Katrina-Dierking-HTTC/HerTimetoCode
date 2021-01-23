@@ -1,22 +1,51 @@
 import React from 'react'
+import Button from '../main/Button'
 import styled from 'styled-components'
 
-const ItemInfo = ({  title, img, description, price}) => {
+
+const ItemInfo = ({  title, image, description, price}) => {
     return (
+    <>
         <ItemInfoWrap>
             <ul>
-                <p className = "info">{title}</p>
-                <img alt = "item"></img>
+                <div className = "infoTop">
+                    <p className = "info">{title}</p>
+                    <p className = "infoP">{price}</p>
+                </div>
+                <img src= {image} className = "itemImg"/>
                 <p className = "infoDesc">{description}</p>
-                <p className = "info">{price}</p>
+                
             </ul>
+            <Button />
         </ItemInfoWrap>
+       
+    </>
     );
 };
 
 export default ItemInfo;
 
 const ItemInfoWrap = styled.div`
-    border: 2px solid red;
+    border-bottom: 2px solid #e21979;
     padding: 2%;
+    
+
+    .infoTop {
+        max-width: 90%;
+        padding: 1%;
+        display:flex;
+        justify-content:space-between;
+    }
+    .info {
+        font-size: 1.2rem;
+        max-width: 60%;
+    }
+
+    .infoP{
+        font-size: 1.2rem;
+        padding:1%;
+    }
+    .itemImg {
+        box-shadow: 1px .5px 8px 2px black;
+    }
 `

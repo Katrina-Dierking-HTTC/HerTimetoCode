@@ -7,12 +7,12 @@ const ItemCard = ({propsFromShop}) => {
 
     return (
         <CardWrap>
-            <h4 className = "cardH2">HTTC Product: </h4>
             <ItemInfo
                 title = {propsFromShop.title}
-                img = {propsFromShop.img}
-                description = {propsFromShop.description}
                 price= {propsFromShop.price}
+                image = {propsFromShop.image}
+                description = {propsFromShop.description}
+                
             />
         </CardWrap>
     )
@@ -21,7 +21,6 @@ const ItemCard = ({propsFromShop}) => {
 export default ItemCard;
 
 const CardWrap = styled.div`
-    border: 2px solid blue;
     padding: 2%;
     margin:2%;
 `

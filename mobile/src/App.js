@@ -3,6 +3,7 @@ import './App.css'
 import Home from "./components/staticPages/Home"
 import About from "./components/staticPages/About"
 import Contact from "./components/staticPages/Contact"
+import Shop from "./components/staticPages/Shop"
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route path = '/about' component={About} />
         <Route path = '/contact' component={Contact} />
+        <Route path = '/shop' component={Shop} />
       
       </Switch>
     </Router>  

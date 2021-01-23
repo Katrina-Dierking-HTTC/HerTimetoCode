@@ -1,10 +1,11 @@
 import {v4 as uuid} from 'uuid'
+import JSGlance from './images/JSGlance.png'
 
 export const itemData = [
     {
         id: uuid(),
         title: "JavaScript at a Glance",
-        img: "",
+        image: JSGlance,
         description: "",
         price: "$27"
     },

@@ -1,16 +1,22 @@
 import React from 'react'
+import Button from '../main/Button'
 import styled from 'styled-components'
 
-const ItemInfo = ({  title, img, description, price}) => {
+
+const ItemInfo = ({  title, image, description, price}) => {
     return (
+    <>
         <ItemInfoWrap>
             <ul>
                 <p className = "info">{title}</p>
-                <img alt = "item"></img>
+                <img src= {image} alt = "item"/>
                 <p className = "infoDesc">{description}</p>
                 <p className = "info">{price}</p>
             </ul>
+            <Button />
         </ItemInfoWrap>
+       
+    </>
     );
 };
 

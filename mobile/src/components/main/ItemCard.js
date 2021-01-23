@@ -10,7 +10,7 @@ const ItemCard = ({propsFromShop}) => {
             <h4 className = "cardH2">HTTC Product: </h4>
             <ItemInfo
                 title = {propsFromShop.title}
-                img = {propsFromShop.img}
+                image = {propsFromShop.image}
                 description = {propsFromShop.description}
                 price= {propsFromShop.price}
             />

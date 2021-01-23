@@ -28,10 +28,10 @@ export default function Shop () {
 }
 
 const ShopBody = styled.div`
-    border: 1px solid black;
+    padding: 2%;
 `
 
 const ItemWrap = styled.div`
-    border: 3px solid green;
+
     margin-bottom:5%;
 `

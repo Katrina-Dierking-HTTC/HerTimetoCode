@@ -6,7 +6,7 @@ export const itemData = [
         title: "JavaScript at a Glance",
         img: "",
         description: "",
-        price: $27
+        price: "$27"
     },
 
     {
@@ -14,7 +14,7 @@ export const itemData = [
         title: "HTML/CSS at a Glance",
         img: "",
         description: "",
-        price: $27
+        price: "$27"
     }, 
 
     {
@@ -22,7 +22,7 @@ export const itemData = [
         title: "JavaScript Workbook",
         img: "",
         description: "",
-        price: $47
+        price: "$47"
     }, 
 
     {
@@ -30,7 +30,7 @@ export const itemData = [
         title: "React Workbook",
         img: "",
         description: "",
-        price: $47
+        price: "$47"
     }, 
 
     {
@@ -38,6 +38,6 @@ export const itemData = [
         title: "React at a Glance",
         img: "",
         description: "",
-        price: $27
+        price: "$27"
     }
 ]

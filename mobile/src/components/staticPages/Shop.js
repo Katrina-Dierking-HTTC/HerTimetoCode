@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {itemData} from '../itemData'
+import ItemCard from '../main/ItemCard'
 import Top from '../main/Top'
 import FooterNav from '../main/FooterNav'
 import styled from 'styled-components'
 
 export default function Shop () {
+    const [data] = useState(itemData);
     return (
         <>
             <Top />
@@ -13,14 +16,9 @@ export default function Shop () {
                 <hr></hr>
 
                 <ItemWrap>
-                    <h4>JavaScript At a Glance</h4>
-                    <div className = "ItemBody">
-                        <img></img>
-                    </div>
-                    <div className = "ItemDescription">
-                        <p>about this product</p>
-                    </div>
-                    <button className = "itemButton">Buy Now</button>
+                   {data.map((item, index) => (
+                       <ItemCard propsFromShop={item} key ={index} />
+                   ))}
                 </ItemWrap>
             </ShopBody>
             <FooterNav />

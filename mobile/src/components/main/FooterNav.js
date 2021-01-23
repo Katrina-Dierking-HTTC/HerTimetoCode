@@ -13,9 +13,9 @@ export default function FooterNav () {
             {/* <img src={footer3} className="pink" alt="pink tie died in footer" />
             <img src={footer2} className="blue" alt="blue tie died in footer" /> */}
             <div className="icons">
-                <img src={home} className="home" alt="home icon"/>
-                <img src={blog} className="blog" alt="blog icon" />
-                <img src={cart} className="cart" alt="shopping cart"/>
+                <a href = "/"><img src={home} className="home" alt="home icon"/></a>
+                <a href = "https://blog.hertimetocode.com"><img src={blog} className="blog" alt="blog icon" /></a>
+                <a href = "/shop"><img src={cart} className="cart" alt="shopping cart"/></a>
                 <a href = "mailto:katrina@hertimetocode.com"><img src={email} className="email" alt="email icon"/></a>
             </div>
         </div>

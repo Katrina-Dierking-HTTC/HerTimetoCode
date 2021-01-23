@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const ItemInfo = ({ title, img, description, price}) => {
+const ItemInfo = ({  title, img, description, price}) => {
     return (
         <ItemInfoWrap>
             <ul>
                 <p className = "info">{title}</p>
-                <img></img>
-                <p className = "info">{description}</p>
+                <img alt = "item"></img>
+                <p className = "infoDesc">{description}</p>
                 <p className = "info">{price}</p>
             </ul>
         </ItemInfoWrap>

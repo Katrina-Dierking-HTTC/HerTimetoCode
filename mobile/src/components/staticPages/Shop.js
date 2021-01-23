@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {itemData} from '../itemData'
+import {itemData} from '../../itemData'
 import ItemCard from '../main/ItemCard'
 import Top from '../main/Top'
 import FooterNav from '../main/FooterNav'
@@ -21,6 +21,7 @@ export default function Shop () {
                    ))}
                 </ItemWrap>
             </ShopBody>
+            <br></br>
             <FooterNav />
         </>
     )
@@ -31,5 +32,6 @@ const ShopBody = styled.div`
 `
 
 const ItemWrap = styled.div`
-    border: 1px solid green;
+    border: 3px solid green;
+    margin-bottom:5%;
 `

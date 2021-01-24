@@ -65,8 +65,9 @@ const MeWrapper = styled.div `
     max-width: 100%;
     display:flex;
     flex-direction:row;
-    margin-top: 25%;
+    margin-top: 1%;
     margin-left: 2%;
+    z-index: 99999;
 
 
     .me {
@@ -87,6 +88,7 @@ const IntroText = styled.div`
         padding-bottom: 7%;
         margin-left: -25%;
         margin-top:-10%;
+        z-index: 99999;
     }
 
     .introP {

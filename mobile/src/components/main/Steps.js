@@ -29,8 +29,9 @@ const StepWrapper = styled.div`
     max-width: 100%;
     // border: 10px solid #0b667b;
     padding:5% 5% 2%;
+    margin-top: 10%;
     // margin: 3% 5% 2% 3%;
-    position:absolute;
+    // position:absolute;
 
     .stepsDesc {
         font-size: .75rem;

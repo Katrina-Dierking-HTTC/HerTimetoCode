@@ -54,8 +54,8 @@ export default function Testimonials () {
 const TestimonialWrapper = styled.div`
     background-image: linear-gradient(to right, rgb(11,102,123), rgb(226,25,121));
     padding: 2%;
-    margin: 45% 0% 7% 0%;
-    position:absolute;
+    margin: 8% 0% 15% 0%;
+    // position:absolute;
     z-index: 99999;
 
     min-width: 100%;

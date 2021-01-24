@@ -1,6 +1,7 @@
 import React from 'react'
-import hero from '../../images/hero.png'
-import top from '../../images/top.png'
+import dots from '../../images/dots.png'
+import cursive1 from '../../images/cursive1.png'
+import mobileHTTC from '../../images/mobileHTTC.png'
 import styled from 'styled-components'
 import {useMediaQuery} from 'react-responsive'
 
@@ -17,16 +18,16 @@ export default function Hero () {
 
         {isPhone &&
         <HeroWrapper>
-            <img src = {hero} className = "hero" alt = "hero section with call to action" />
-            <img src = {top} className = "top" alt = "Her Time to Code Title and Subtitle" />
+            <img src = {dots} className = "hero" alt = "hero section with call to action" />
+            <img src = {mobileHTTC} className = "top" alt = "HTTC logo in cursive" />
    
         </HeroWrapper>
         }
 
         {isTablet &&
         <HeroWrapper2>
-            <img src = {hero} className = "hero" alt = "hero section with call to action" />
-            <img src = {top} className = "top" alt = "Her Time to Code Title and Subtitle" />
+            <img src = {dots} className = "hero" alt = "hero section with call to action" />
+            <img src = {cursive1} className = "top2" alt = "Her Time to Code Title and Subtitle" />
         
         </HeroWrapper2>
         }
@@ -39,18 +40,21 @@ export default function Hero () {
 const HeroWrapper = styled.div`
     display:flex; 
     flex-direction: column;
-    position:fixed;
+    margin-top:2%;
+    min-width:100%;
 
     .hero {
         max-width: 100%;
-        padding-bottom: 2%;
+        margin-top: 1%;
+        opacity: 0.25;
+        z-index:0;
     }
 
     .top {
-        max-width:50%;
-        margin-top:-30%;
-        margin-left: 3%;
-        // border: 1px solid red;
+        max-width:100%;
+        margin-top:-65%;
+        padding:1%;
+        z-index: 99999;
     }
 
 `

@@ -1,8 +1,17 @@
-import {v4 as uuid} from 'uuid'
+
 
 export const itemData = [
     {
-        id: uuid(),
+        id: 1,
+        title: "HTML/CSS at a Glance",
+        image: 'https://blog.hertimetocode.com/wp-content/uploads/2021/01/HMTL-mock2.png',
+        description: "",
+        price: "$27"
+    }, 
+   
+   
+    {
+        id: 2,
         title: "JavaScript at a Glance",
         image: 'https://blog.hertimetocode.com/wp-content/uploads/2021/01/JS-at-a-Glance-Mockup2.png',
         description: "",
@@ -10,15 +19,15 @@ export const itemData = [
     },
 
     {
-        id: uuid(),
-        title: "HTML/CSS at a Glance",
+        id: 3,
+        title: "React at a Glance",
         img: "",
         description: "",
         price: "$27"
-    }, 
+    },
 
     {
-        id: uuid(),
+        id: 4,
         title: "JavaScript Workbook",
         img: "",
         description: "",
@@ -26,18 +35,11 @@ export const itemData = [
     }, 
 
     {
-        id: uuid(),
+        id: 5,
         title: "React Workbook",
         img: "",
         description: "",
         price: "$47"
-    }, 
-
-    {
-        id: uuid(),
-        title: "React at a Glance",
-        img: "",
-        description: "",
-        price: "$27"
     }
+
 ]

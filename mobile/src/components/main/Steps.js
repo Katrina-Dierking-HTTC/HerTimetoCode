@@ -1,10 +1,10 @@
 import React from 'react'
+import Media from 'react-media'
 import RevealLeft from './RevealLeft'
 import styled from 'styled-components'
 
-
-
 export default function Steps () {
+
     return (
         <>
         
@@ -25,18 +25,26 @@ export default function Steps () {
     )
 }
 
+
+
+//////////////////////////////////////////////////////////////////
+
 const StepWrapper = styled.div`
-    max-width: 100%;
-    // border: 10px solid #0b667b;
+    max-width: 80vw;
     padding:5% 5% 2%;
-    margin-top: 10%;
-    // margin: 3% 5% 2% 3%;
-    // position:absolute;
+    margin: 0 10%;
+    display:flex;
+  
+    justify-content: space-around;
+
 
     .stepsDesc {
-        font-size: .75rem;
-        padding: 2% 3% 1%  5%;
-        // border: 2px solid black;
-        margin-top: -5%;
+        font-size: 1rem;
+    
+        margin-top: -2%;
+        align-text: center;
+        padding-left: 5%;
+
       }
 `
+

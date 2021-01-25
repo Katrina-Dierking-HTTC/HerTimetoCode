@@ -25,7 +25,7 @@ export default function Intro () {
                         <hr></hr>
 
                             <CTAWrap>
-                                <p className = "CtaP"> FREE Web Developer Course Blueprint {`>>`}</p>
+                                <p className = "CtaP"> FREE Web Developer Course Blueprint  {` >>>`}</p>
                                 <button className = "CtaButton">Get it now!</button>
                             </CTAWrap>
                         </section>
@@ -41,7 +41,7 @@ const MeWrapper = styled.div `
     display:flex;
     position:relative;
     flex-direction:row;
-    margin-top: -30%;
+    margin-top: -50%;
     margin-left: 2%;
     z-index: 99999;
 
@@ -53,7 +53,7 @@ const MeWrapper = styled.div `
 `
 
 const IntroText = styled.div`
-    max-width: 50%;
+    max-width: 50vw;
     margin-left: -10%;
     margin-top: 5%;
     padding: 2%;
@@ -83,20 +83,25 @@ const CTAWrap = styled.div`
     flex-direction:row;
     background-image: linear-gradient(to right, rgb(251,240,208), rgb(237,208,171));
     box-shadow: 1px .5px 5px 1px black;
+    border: 1px solid red;
 
     .CtaP{
-        min-width: 70vw;
-        font-size: 1rem;
+        max-width: 90vw;
+        max-height: 3vh;
+        font-size: 1.2rem;
         text-align:center;
-        padding: 2% 2%;
-        margin-top: 2%;
+        padding: 5%;
+        margin: 2%;
+        border: 1px solid purple;
     }
 
     .CtaButton {
-        min-width: 25vw;
-        font-size: .85rem;
+        min-width: 20vw;
+        font-size: 1.2rem;
         background-color: #17c436;
-        margin:3%;
+        margin:5%;
+        padding: 2%;
+        border: 1px solid blue;
     }
 `
 

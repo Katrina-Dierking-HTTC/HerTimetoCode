@@ -8,8 +8,8 @@ export default function Top () {
 
     const isPhone = useMediaQuery({query: '(max-width: 500px)'})
     const isTablet = useMediaQuery({query:'(min-width: 501px)'})
-    // const isBetween = useMediaQuery({query:'(min-width: 501px)' && '(max-width: 800px)'})
-    // const isDesktop = useMediaQuery({query: '(min-width:801px)'})
+    const isBetween = useMediaQuery({query:'(min-width: 501px)' && '(max-width: 800px)'})
+    const isDesktop = useMediaQuery({query: '(min-width:801px)'})
 
     const [open, setOpen] = useState(false);
 
@@ -55,13 +55,12 @@ export default function Top () {
                       </div>
 
                     
-                            <Item a href='/'>Home</Item>
-                            <Item a ='/about'>About</Item>
-
-                            <Item a href='/'>Blog</Item>
-                            <Item a href='/'>Shop</Item>
-                            <Item a href='/'>Community</Item>
-                            <Item a href='/'>Contact</Item>
+                            <Item><Link to ='/'>Home</Link></Item>
+                            <Item><Link to ='/about'>About</Link></Item>
+                            <Item><Link to ='/shop'>Shop</Link></Item>
+                            <Item><a href ='https://blog.hertimetocode.com' target="_blank" rel="noopener noreferrer">Blog</a></Item>
+                            <Item><Link to ='/community'>Community</Link></Item>
+                            <Item><Link to ='/contact'>Contact</Link></Item>
                       
                     </DropDown>                
                 }
@@ -173,6 +172,7 @@ const DropDown = styled.div `
     background-image: linear-gradient(to right, rgb(11,102,123), rgb(226,25,121));
     padding-bottom: 2%;
     box-shadow: 1px .5px 10px 1px black;
+    z-index:99999;
 
 `
 const Item = styled.div`

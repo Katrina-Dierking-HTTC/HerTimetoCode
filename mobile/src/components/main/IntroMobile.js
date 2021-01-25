@@ -1,5 +1,5 @@
 import React from 'react'
-import Hi from '../../images/Hi.png'
+import hi1 from '../../images/hi1.png'
 import me from '../../images/me.png'
 
 import styled from 'styled-components'
@@ -16,7 +16,7 @@ export default function Intro () {
                             </div>
 
                             <IntroText>
-                                <img src = {Hi} className = "name" alt = "introduction from Katrina Dierking | Founder of Her Time to Code" />
+                                <img src = {hi1} className = "name" alt = "introduction from Katrina Dierking | Founder of Her Time to Code" />
                                 <p className = "introP">I give women the tools they need today to 
                                 become skilled web developers of tomorrow. </p>
                             
@@ -41,36 +41,34 @@ const MeWrapper = styled.div `
     display:flex;
     position:relative;
     flex-direction:row;
-    margin-top: -50%;
+    margin-top: -45%;
     margin-left: 2%;
     z-index: 99999;
 
 
     .me {
         max-width: 25vw;
-        // padding-top:1%;
     }
 `
 
 const IntroText = styled.div`
     max-width: 50vw;
     margin-left: -10%;
-    margin-top: 5%;
+    margin-top: 2%;
     padding: 2%;
     
 
     .name {
-        max-width: 35vw;
+        max-width: 25vw;
         padding-bottom: 2%;
         margin-left: 15%;
-        margin-top:-30%;
+        margin-top:-10%;
         z-index: 99999;
     }
 
     .introP {
         font-size: 1rem;
         margin-left: 27%;
-        border: 2px solid red;
         min-width: 65vw;
     }
 `
@@ -83,7 +81,7 @@ const CTAWrap = styled.div`
     flex-direction:row;
     background-image: linear-gradient(to right, rgb(251,240,208), rgb(237,208,171));
     box-shadow: 1px .5px 5px 1px black;
-    border: 1px solid red;
+
 
     .CtaP{
         max-width: 90vw;
@@ -92,7 +90,6 @@ const CTAWrap = styled.div`
         text-align:center;
         padding: 5%;
         margin: 2%;
-        border: 1px solid purple;
     }
 
     .CtaButton {
@@ -101,7 +98,6 @@ const CTAWrap = styled.div`
         background-color: #17c436;
         margin:5%;
         padding: 2%;
-        border: 1px solid blue;
     }
 `
 

@@ -54,7 +54,7 @@ const DeskWrapper = styled.div `
 const IntroText2 = styled.div`
     max-width: 60vw;
     margin-left: -7%;
-    margin-top: -20vh;
+    margin-top: -10vh;
     padding: 2%;
 
     .name2 {
@@ -87,7 +87,6 @@ const CTAWrap = styled.div`
         text-align:center;
         padding: 1% 3%;
         margin-top: 2%;
-        border:1px solid orange;
 
     }
 

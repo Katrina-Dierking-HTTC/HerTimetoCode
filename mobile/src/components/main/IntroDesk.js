@@ -1,5 +1,5 @@
 import React from 'react'
-import Hi from '../../images/Hi.png'
+import hi1 from '../../images/hi1.png'
 import me from '../../images/me.png'
 
 import styled from 'styled-components'
@@ -16,7 +16,7 @@ export default function IntroDesk () {
                             </div>
 
                             <IntroText2>
-                                <img src = {Hi} className = "name2" alt = "introduction from Katrina Dierking | Founder of Her Time to Code" />
+                                <img src = {hi1} className = "name2" alt = "introduction from Katrina Dierking | Founder of Her Time to Code" />
                                 <p className = "introP">I give women the tools they need today to 
                                 become skilled web developers of tomorrow. </p>
                             
@@ -35,7 +35,6 @@ export default function IntroDesk () {
 }
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 const DeskWrapper = styled.div `
-    border: 2px solid green;
     max-width: 100vw;
     display:flex;
     position:relative;
@@ -48,30 +47,26 @@ const DeskWrapper = styled.div `
     .me2 {
         max-width: 20vw;
         padding-top:1%;
-        margin-top:-20vw;
+        margin-top:-10vw;
     }
 `
 
 const IntroText2 = styled.div`
     max-width: 60vw;
-    margin-left: -10%;
-    margin-top: 5%;
+    margin-left: -7%;
+    margin-top: -20vh;
     padding: 2%;
-    border: 1px solid red;
-    
 
     .name2 {
         max-width: 20vw;
         padding-bottom: 1%;
         margin-left: 10%;
-        margin-top:-10%;
         z-index: 99999;
     }
 
     .introP {
         font-size: 1.2rem;
         margin-left: 15%;
-        border: 1px solid blue;
     }
 `
 

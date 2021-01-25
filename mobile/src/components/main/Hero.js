@@ -19,14 +19,6 @@ export default function Hero () {
             <img src = {dots} className = "hero" alt = "hero section with call to action" />
             <img src = {mobileHTTC} className = "top" alt = "HTTC logo in cursive" />
         </HeroWrapper>
-        
-
-        {/* {isWide &&
-        <HeroWrapper2>
-            <img src = {cursive1} className = "top2" alt = "Her Time to Code Title and Subtitle" />
-        </HeroWrapper2>
-        } */}
-
     
         </>
     )
@@ -40,7 +32,7 @@ const HeroWrapper = styled.div`
 
     .hero {
         max-width: 100vw;
-        opacity: 0.25;
+        opacity: 0.2;
         z-index:0;
     }
 

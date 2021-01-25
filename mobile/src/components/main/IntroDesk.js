@@ -10,18 +10,18 @@ export default function IntroDesk () {
         <>
 
                 <section>
-                        <MeWrapper>
+                        <DeskWrapper>
                             <div className = "phoneTopPic">
-                                <img src = {me} className = "me" alt = "Katrina Dierking | Founder of Her Time to Code"/>
+                                <img src = {me} className = "me2" alt = "Katrina Dierking | Founder of Her Time to Code"/>
                             </div>
 
-                            <IntroText>
-                                <img src = {Hi} className = "name" alt = "introduction from Katrina Dierking | Founder of Her Time to Code" />
+                            <IntroText2>
+                                <img src = {Hi} className = "name2" alt = "introduction from Katrina Dierking | Founder of Her Time to Code" />
                                 <p className = "introP">I give women the tools they need today to 
                                 become skilled web developers of tomorrow. </p>
                             
-                            </IntroText>
-                        </MeWrapper>
+                            </IntroText2>
+                        </DeskWrapper>
                         <hr></hr>
 
                             <CTAWrap>
@@ -34,9 +34,9 @@ export default function IntroDesk () {
     );
 }
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-const MeWrapper = styled.div `
+const DeskWrapper = styled.div `
     border: 2px solid green;
-    max-width: 100%;
+    max-width: 100vw;
     display:flex;
     position:relative;
     flex-direction:row;
@@ -45,35 +45,38 @@ const MeWrapper = styled.div `
     z-index: 99999;
 
 
-    .me {
-        max-width: 80%;
-        padding-top:5%;
+    .me2 {
+        max-width: 20vw;
+        padding-top:1%;
+        margin-top:-20vw;
     }
 `
 
-const IntroText = styled.div`
-    max-width: 50%;
+const IntroText2 = styled.div`
+    max-width: 60vw;
     margin-left: -10%;
     margin-top: 5%;
     padding: 2%;
+    border: 1px solid red;
     
 
-    .name {
-        max-width: 117%;
-        padding-bottom: 7%;
-        margin-left: -25%;
+    .name2 {
+        max-width: 20vw;
+        padding-bottom: 1%;
+        margin-left: 10%;
         margin-top:-10%;
         z-index: 99999;
     }
 
     .introP {
-        font-size: .80rem;
-        margin-left: 3%;
+        font-size: 1.2rem;
+        margin-left: 15%;
+        border: 1px solid blue;
     }
 `
 
 const CTAWrap = styled.div`
-    margin-top: -4.1%;
+    margin-top: -2.1%;
     background-color: #EFE1CD;
     max-width: 100%;
     max-width: 100%;
@@ -84,21 +87,19 @@ const CTAWrap = styled.div`
     border: 2px solid black;
 
     .CtaP{
-        max-width: 75%;
-        font-size: .75rem;
+        min-width: 65vw;
+        font-size: 1.5rem;
         text-align:center;
-        padding: 2% 7%;
+        padding: 1% 3%;
         margin-top: 2%;
+        border:1px solid orange;
 
     }
 
     .CtaButton {
-        font-size: .70rem;
+        font-size: 1rem;
         background-color: #17c436;
         margin: 3%;
+        min-width: 20vw;
     }
-`
-
-const IntroTabWrapper = styled.div`
-    border:2px solid red;
 `

@@ -39,19 +39,17 @@ const HeroWrapper = styled.div`
     min-width:100%;
 
     .hero {
-        max-width: 100%;
+        max-width: 100vw;
         opacity: 0.25;
         z-index:0;
     }
 
     .top {
-        max-width:100vw;
+        max-width:65vw;
         position:absolute;
         padding: 0 2% 0 2%;
+        margin-left: 30vw;
     }
 `
-const HeroWrapper2 = styled.div`
-display:flex; 
-flex-direction: column;
-`
+
 

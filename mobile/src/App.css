@@ -139,8 +139,8 @@
 .oct1P, .oct2P, .oct3P{
   font-size: .60rem;
   text-align:center;
-  padding:3%;
-  margin-left: 35%;
+  /* padding:1%; */
+  margin-left: 4vw;
 }
 
 /* .oct2P {
@@ -150,7 +150,7 @@
 } */
 
 .BP, .comm {
-  margin-left: -5%;
+  margin-left: 5%;
 }
  .WB{
    padding: 17% 0% 0% 38%;

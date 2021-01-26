@@ -47,19 +47,19 @@ const DeskWrapper = styled.div `
     .me2 {
         max-width: 20vw;
         padding-top:1%;
-        margin-top:-10vw;
+        margin-top:-15vw;
     }
 `
 
 const IntroText2 = styled.div`
-    max-width: 60vw;
+    max-width: 40vw;
     margin-left: -7%;
-    margin-top: -10vh;
+    margin-top: -30vh;
     padding: 2%;
 
     .name2 {
         max-width: 20vw;
-        padding-bottom: 1%;
+        padding-bottom: .5%;
         margin-left: 10%;
         z-index: 99999;
     }
@@ -74,7 +74,6 @@ const CTAWrap = styled.div`
     margin-top: -2.1%;
     background-color: #EFE1CD;
     max-width: 100%;
-    max-width: 100%;
     display:flex;
     flex-direction:row;
     background-image: linear-gradient(to right, rgb(251,240,208), rgb(237,208,171));
@@ -83,17 +82,18 @@ const CTAWrap = styled.div`
 
     .CtaP{
         min-width: 65vw;
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align:center;
-        padding: 1% 3%;
-        margin-top: 2%;
+        // padding: 1% 1%;
+        margin-top: 1%;
 
     }
 
     .CtaButton {
         font-size: 1rem;
         background-color: #17c436;
-        margin: 3%;
+        margin: 1%;
         min-width: 20vw;
+        z-index: 99999;
     }
 `

@@ -172,31 +172,34 @@
 }
  .testP{
   /* background-color:green; */
-  position:absolute;
+  position:fixed;
   z-index:1;
   font-size: 1rem;
   color:white;
   max-width: 60%;
-  padding: 8% 6%;
+  /* padding: 1% 1%; */
   margin-left: 7%;
 }
 
+.click {
+  max-width: 50vw;
+  margin-top: -20%;
+  margin-left: 25vw;
+
+}
+
 .footer {
-  /* position:f; */
+  bottom: 0;
+  left:0;
+  /* position:fixed; */
   z-index:99999999;
-  /* margin-bottom: 0;  */
-  padding: 2%;
-  /* margin-bottom: 1%; */
-  min-width: 100%;
-  overflow:hidden;
+  padding: 1% 2%;
+  min-width: 100vw;
+  /* overflow:hidden; */
+
 }
 
 .icons {
-  /* position:fixed;
-  z-index:3; */
-  /* bottom:1%;
-  padding: 1%;*/
-  
   display:flex;
   justify-content: space-evenly;
   min-width: 100%;

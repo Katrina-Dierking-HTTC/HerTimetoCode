@@ -47,29 +47,29 @@ const MeWrapper = styled.div `
 
 
     .me {
-        max-width: 25vw;
+        max-width: 35vw;
     }
 `
 
 const IntroText = styled.div`
-    max-width: 50vw;
-    margin-left: -10%;
-    margin-top: 2%;
+    max-width: 100vw;
+    margin-left: -12%;
+    margin-top: 3.2%;
     padding: 2%;
     
 
     .name {
-        max-width: 25vw;
-        padding-bottom: 2%;
+        max-width: 35vw;
+        // padding-bottom: 1%;
         margin-left: 15%;
         margin-top:-10%;
         z-index: 99999;
     }
 
     .introP {
-        font-size: 1rem;
+        font-size: 1.1rem;
         margin-left: 27%;
-        min-width: 65vw;
+        max-width: 85vw;
     }
 `
 

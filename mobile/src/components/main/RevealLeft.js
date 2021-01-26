@@ -11,7 +11,7 @@ const RevealLeft = () => {
     return (
         <div className = "RevealBox">
            
-            <Reveal animated='rotate right' className= "rev1">
+            <Reveal animated='small fade' className= "rev1">
                 <Reveal.Content visible>
                 <Image src={oct1} alt = "step 1"/>
                 </Reveal.Content>
@@ -32,7 +32,7 @@ const RevealLeft = () => {
             </Reveal>
           
 
-            <Reveal animated='rotate left' className = "rev3">
+            <Reveal animated='small fade' className = "rev3">
                 <Reveal.Content visible>
                 <Image src={oct3} alt = "step 3"/>
                 </Reveal.Content>

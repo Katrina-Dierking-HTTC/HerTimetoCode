@@ -10,8 +10,6 @@ export default function FooterNav () {
     return (
         <>
         <div className = "footer">
-            {/* <img src={footer3} className="pink" alt="pink tie died in footer" />
-            <img src={footer2} className="blue" alt="blue tie died in footer" /> */}
             <div className="icons">
                 <a href = "/"><img src={home} className="home" alt="home icon"/></a>
                 <a href = "https://blog.hertimetocode.com"><img src={blog} className="blog" alt="blog icon" /></a>

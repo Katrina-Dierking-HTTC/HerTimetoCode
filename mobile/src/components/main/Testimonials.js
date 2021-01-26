@@ -7,6 +7,7 @@ import Btest from '../../images/Btest.png'
 import Jenn from '../../images/Jenn.png' 
 import Jtest from '../../images/Jtest.png' 
 import Ltest from '../../images/Ltest.png'
+import click from '../../images/click.png'
 import { flip } from 'react-animations'
 import styled , {keyframes} from 'styled-components'
 
@@ -42,8 +43,12 @@ export default function Testimonials () {
                 <img src = {Jenn} className = "Jenn" alt = "Jenn's testimonial" />
                 <img src = {Jtest} className = "hide4" alt = "Jenn's written testimonial" />
                 </div>
-                
+            
             </TestimonialWrapper>
+           
+            <img src = {click} className = "click" alt = "Click to vew testimonials" />
+          
+                
 
            
 
@@ -55,10 +60,8 @@ const TestimonialWrapper = styled.div`
     background-image: linear-gradient(to right, rgb(11,102,123), rgb(226,25,121));
     padding: 2%;
     margin: 8% 0% 15% 0%;
-    // position:absolute;
     z-index: 99999;
-
-    min-width: 100%;
+    min-width: 10vw;
     min-height: 10vh;
     display:flex;
   
@@ -121,4 +124,10 @@ const TestimonialWrapper = styled.div`
     }
 `
 
+// const ClickWrap = styled.div`
+//     max-width: 90vw;
+//     margin-top: 14vh;
+//     margin-left: 35vw;
+
+  
 

@@ -30,10 +30,11 @@ const HeroWrapper = styled.div`
     margin-top:2%;
     min-width:100%;
 
+
     .hero {
         max-width: 100vw;
         opacity: 0.2;
-        z-index:0;
+        // z-index:1;
     }
 
     .top {

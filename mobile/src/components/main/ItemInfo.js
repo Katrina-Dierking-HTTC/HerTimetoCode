@@ -11,12 +11,13 @@ const ItemInfo = ({  title, image, description, price}) => {
                 <div className = "infoTop">
                     <p className = "info">{title}</p>
                     <p className = "infoP">{price}</p>
+                    <Button />
                 </div>
                 <img src= {image} className = "itemImg" alt = "item for sale" />
                 <p className = "infoDesc">{description}</p>
                 
             </ul>
-            <Button />
+           
         </ItemInfoWrap>
        
     </>
@@ -26,23 +27,26 @@ const ItemInfo = ({  title, image, description, price}) => {
 export default ItemInfo;
 
 const ItemInfoWrap = styled.div`
-    border-bottom: 2px solid #e21979;
-    // padding: 2%;
+    border-right: 1px dotted #e21979;
+    border-bottom: 1px dotted #e21979;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
+    min-width: 20vw;
+    margin: 1%;
+    padding-right: 1%;
     
 
     .infoTop {
-        max-width: 90%;
-        padding: 1%;
+        max-width: 100vw;
         display:flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content:space-between;
+     
     }
     .info {
         font-size: 1.2rem;
-        max-width: 60%;
+        max-width: 80%;
     }
 
     .infoP{
@@ -52,5 +56,11 @@ const ItemInfoWrap = styled.div`
     .itemImg {
         box-shadow: 1px .5px 8px 2px black;
         max-width: 30vw;
+    }
+
+    .infoDesc {
+        background: blue;
+        border: 1px solid blue;
+        margin-right: 5%;
     }
 `

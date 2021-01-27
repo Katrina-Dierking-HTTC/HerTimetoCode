@@ -12,10 +12,9 @@ export default function Button () {
 
 const ButtonWrap = styled.div`
     background-color: #17c436;
-    border: 1px solid black;
     max-width: 25%;
     border-radius: 10%;
-    margin-left: 35%;
+    margin-left: 10%;
     margin-bottom: 3%;
 
     h3 {

@@ -27,7 +27,10 @@ export default ItemInfo;
 
 const ItemInfoWrap = styled.div`
     border-bottom: 2px solid #e21979;
-    padding: 2%;
+    // padding: 2%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
     
 
     .infoTop {

@@ -8,8 +8,7 @@ export default function Top () {
 
     const isPhone = useMediaQuery({query: '(max-width: 500px)'})
     const isTablet = useMediaQuery({query:'(min-width: 501px)'})
-    const isBetween = useMediaQuery({query:'(min-width: 501px)' && '(max-width: 800px)'})
-    const isDesktop = useMediaQuery({query: '(min-width:801px)'})
+
 
     const [open, setOpen] = useState(false);
 
@@ -109,7 +108,7 @@ const  MenuToggle = styled.div`
   margin-left: auto;
   span {
     display: block;
-    position: absolute;
+    position: relative;
     height: 2px;
     width: 100%;
     background: #17c436;

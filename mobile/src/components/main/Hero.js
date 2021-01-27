@@ -1,9 +1,9 @@
 import React from 'react'
 import dots from '../../images/dots.png'
-import cursive1 from '../../images/cursive1.png'
+
 import mobileHTTC from '../../images/mobileHTTC.png'
 import styled from 'styled-components'
-import {useMediaQuery} from 'react-responsive'
+
 
 export default function Hero () {
 

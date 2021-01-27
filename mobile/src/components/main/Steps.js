@@ -1,5 +1,5 @@
 import React from 'react'
-import Media from 'react-media'
+// import Media from 'react-media'
 import RevealLeft from './RevealLeft'
 import styled from 'styled-components'
 

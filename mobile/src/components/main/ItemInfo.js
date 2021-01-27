@@ -12,7 +12,7 @@ const ItemInfo = ({  title, image, description, price}) => {
                     <p className = "info">{title}</p>
                     <p className = "infoP">{price}</p>
                 </div>
-                <img src= {image} className = "itemImg"/>
+                <img src= {image} className = "itemImg" alt = "item for sale" />
                 <p className = "infoDesc">{description}</p>
                 
             </ul>
@@ -34,6 +34,7 @@ const ItemInfoWrap = styled.div`
         max-width: 90%;
         padding: 1%;
         display:flex;
+        flex-direction: column;
         justify-content:space-between;
     }
     .info {
@@ -47,5 +48,6 @@ const ItemInfoWrap = styled.div`
     }
     .itemImg {
         box-shadow: 1px .5px 8px 2px black;
+        max-width: 30vw;
     }
 `

@@ -5,7 +5,7 @@ export const itemData = [
         id: 1,
         title: "HTML/CSS at a Glance",
         image: 'https://blog.hertimetocode.com/wp-content/uploads/2021/01/HMTL-mock2.png',
-        description: "",
+        description: "jk;asdjfa;kldjfa",
         price: "$27"
     }, 
    

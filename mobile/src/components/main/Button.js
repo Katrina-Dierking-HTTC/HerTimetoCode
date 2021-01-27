@@ -12,14 +12,14 @@ export default function Button () {
 
 const ButtonWrap = styled.div`
     background-color: #17c436;
-    border: 1px solid black;
-    max-width: 25%;
     border-radius: 10%;
-    margin-left: 35%;
-    margin-bottom: 3%;
+    margin-left: 3vw;
+    max-width: 20vw;
+    padding:.5%;
+    max-height: 5vh;
 
     h3 {
-        font-size: 1rem;
+        font-size: .85rem;
         color:white;
         text-align:center;
         padding: 1%;

@@ -29,12 +29,14 @@ export default function ShopDesk () {
 
 const ShopBody = styled.div`
     padding: 2%;
-    border: 1px solid red;
+    max-width: 90vw;
+    margin-left: 5%;
 `
 
 const ItemWrap = styled.div`
 
     margin-bottom:5%;
-    border: 1px solid green;
-    max-width: 40vw;
+    max-width: 90vw;
+    display:flex;
+    flex-wrap:wrap;
 `

@@ -60,7 +60,6 @@ const ItemInfoWrap = styled.div`
 
     .infoDesc {
         background: blue;
-        border: 1px solid blue;
         margin-right: 5%;
     }
 `

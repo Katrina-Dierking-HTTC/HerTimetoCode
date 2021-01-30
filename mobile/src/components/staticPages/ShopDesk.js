@@ -20,6 +20,7 @@ export default function ShopDesk () {
                        <ItemCard className = "card" propsFromShop={item} key ={index} />
                    ))}
                 </ItemWrap>
+                <hr></hr>
             </ShopBody>
             <br></br>
             <FooterNav />
@@ -38,5 +39,6 @@ const ItemWrap = styled.div`
     margin-bottom:5%;
     max-width: 90vw;
     display:flex;
+    flex-direction: row;
     flex-wrap:wrap;
 `

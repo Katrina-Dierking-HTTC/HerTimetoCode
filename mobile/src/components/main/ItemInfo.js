@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 const ItemInfo = ({  title, image, description, price}) => {
     return (
-    <>
+
         <ItemInfoWrap>
             <ul>
                 <div className = "infoTop">
@@ -18,9 +18,7 @@ const ItemInfo = ({  title, image, description, price}) => {
                 
             </ul>
            
-        </ItemInfoWrap>
-       
-    </>
+        </ItemInfoWrap>  
     );
 };
 
@@ -28,11 +26,11 @@ export default ItemInfo;
 
 const ItemInfoWrap = styled.div`
     border-right: 1px dotted #e21979;
-    border-bottom: 1px dotted #e21979;
+    border: 1px dotted #e21979;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-    min-width: 20vw;
+    max-width: 30vw;
     margin: 1%;
     padding-right: 1%;
     
@@ -42,24 +40,27 @@ const ItemInfoWrap = styled.div`
         display:flex;
         flex-direction: row;
         justify-content:space-between;
+        margin-left: -7%;
      
     }
     .info {
-        font-size: 1.2rem;
+        font-size: 1rem;
         max-width: 80%;
     }
 
     .infoP{
-        font-size: 1.2rem;
-        padding:1%;
+        font-size: 1rem;
+        padding:0 1%;
     }
     .itemImg {
-        // box-shadow: 1px .5px 8px 2px black;
+        margin-left: 8%;
         max-width: 40vw;
     }
 
     .infoDesc {
-        background: blue;
+        border: .5px solid lightgrey;
         margin-right: 5%;
+        margin-left: -7%;
+        padding: 2% 4%;
     }
 `

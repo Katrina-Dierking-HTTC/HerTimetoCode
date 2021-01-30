@@ -22,6 +22,9 @@ export default ItemCard;
 
 const CardWrap = styled.div`
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+    flex-wrap:wrap;
     align-items:center;
+    max-width: 26vw;
+    margin: 1%;
 `

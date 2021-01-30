@@ -54,8 +54,8 @@ const ItemInfoWrap = styled.div`
         padding:1%;
     }
     .itemImg {
-        box-shadow: 1px .5px 8px 2px black;
-        max-width: 30vw;
+        // box-shadow: 1px .5px 8px 2px black;
+        max-width: 40vw;
     }
 
     .infoDesc {

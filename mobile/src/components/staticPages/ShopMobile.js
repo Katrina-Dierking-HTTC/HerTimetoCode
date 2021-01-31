@@ -29,9 +29,13 @@ export default function Shop () {
 
 const ShopBody = styled.div`
     padding: 2%;
+    border: 2px solid red;
 `
 
 const ItemWrap = styled.div`
 
     margin-bottom:5%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
 `

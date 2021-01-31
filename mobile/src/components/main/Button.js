@@ -15,8 +15,8 @@ const ButtonWrap = styled.div`
     border-radius: 10%;
     margin-left: 2vw;
     max-width: 20vw;
-    padding:.5%;
-    max-height: 5vh;
+    padding:1.5%;
+    max-height: 4vh;
 
     h3 {
         font-size: .85rem;

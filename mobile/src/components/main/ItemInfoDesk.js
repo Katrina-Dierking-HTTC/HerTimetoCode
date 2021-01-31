@@ -25,15 +25,14 @@ const ItemInfo = ({  title, image, description, price}) => {
 export default ItemInfo;
 
 const ItemInfoWrap = styled.div`
-    // border-right: 1px dotted #e21979;
-    // border: 1px dotted #e21979;
+    border-right: 1px dotted #e21979;
+    border: 1px dotted #e21979;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-    max-width: 43vw;
+    max-width: 30vw;
     margin: 1%;
     padding-right: 1%;
-
     
 
     .infoTop {

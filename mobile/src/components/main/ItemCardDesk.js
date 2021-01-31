@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import ItemInfo from '../main/ItemInfo'
+import ItemInfoDesk from '../main/ItemInfoDesk'
 
 
-const ItemCard = ({propsFromShop}) => {
+const ItemCardDesk = ({propsFromShop}) => {
 
     return (
         <CardWrap>
-            <ItemInfo
+            <ItemInfoDesk
                 title = {propsFromShop.title}
                 price= {propsFromShop.price}
                 image = {propsFromShop.image}
@@ -18,13 +18,13 @@ const ItemCard = ({propsFromShop}) => {
     )
 }
 
-export default ItemCard;
+export default ItemCardDesk;
 
 const CardWrap = styled.div`
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
     align-items:center;
-    max-width: 66vw;
+    max-width: 26vw;
     margin: 1%;
 `

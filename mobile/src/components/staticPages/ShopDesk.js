@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {itemData} from '../../itemData'
-import ItemCard from '../main/ItemCard'
+import ItemCardDesk from '../main/ItemCardDesk'
 import Top from '../main/Top'
 import FooterNav from '../main/FooterNav'
 import styled from 'styled-components'
@@ -17,7 +17,7 @@ export default function ShopDesk () {
 
                 <ItemWrap>
                    {data.map((item, index) => (
-                       <ItemCard className = "card" propsFromShop={item} key ={index} />
+                       <ItemCardDesk className = "card" propsFromShop={item} key ={index} />
                    ))}
                 </ItemWrap>
                 <hr></hr>

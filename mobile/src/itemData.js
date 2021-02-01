@@ -4,9 +4,10 @@ export const itemData = [
 
     {
         id: 1,
-        title: "HTML/CSS at a Glance",
+        title: 'HTML/CSS at a Glance',
         image: 'https://blog.hertimetocode.com/wp-content/uploads/2021/01/HMTL-Mockup.png',
-        description: "Get all the key points of each HTML/CSS component in one place. With over 50 quick reference cards, you can always have your much needed information right at your fingertips. Print and laminate for longer-lasting reference cards.",
+        description: 'Get all the key points of each HTML/CSS component in one place. \n\
+        With over 50 quick reference cards, you can always have your much needed information right at your fingertips. Print and laminate for longer-lasting reference cards.',
         price: "$27"
     }, 
    

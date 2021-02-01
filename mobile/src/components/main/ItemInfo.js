@@ -71,7 +71,7 @@ const ItemInfoWrap = styled.div`
     .hr {
     
         width: 100%;
-        height: 1px;
+        height: 2px;
         display: block;
         position: relative;
         margin-bottom: 0em;
@@ -84,7 +84,7 @@ const ItemInfoWrap = styled.div`
             position: absolute;
     
             width: 100%;
-            height: 1px;
+            height: 2px;
             bottom: 50%;
             left: 0;
     

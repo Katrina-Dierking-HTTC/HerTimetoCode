@@ -27,8 +27,7 @@ const ItemInfo = ({  title, image, description, price}) => {
 export default ItemInfo;
 
 const ItemInfoWrap = styled.div`
-    // border-right: 1px dotted #e21979;
-    // border: 1px dotted #e21979;
+
     display:flex;
     flex-direction:column;
     justify-content:space-between;
@@ -70,7 +69,7 @@ const ItemInfoWrap = styled.div`
     .hr {
     
         width: 100%;
-        height: 1px;
+        height: 2px;
         display: block;
         position: relative;
         margin-bottom: 0em;
@@ -83,7 +82,7 @@ const ItemInfoWrap = styled.div`
             position: absolute;
     
             width: 100%;
-            height: 1px;
+            height: 2px;
             bottom: 50%;
             left: 0;
     

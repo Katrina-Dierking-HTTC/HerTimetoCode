@@ -7,11 +7,14 @@ import styled from 'styled-components'
 export default function About () {
     return (
             <>
-            <Top /> 
-            <AboutTopWrap>
-                <h2 className = "aboutH2"> About Her Time to Code</h2>
-                
-            </AboutTopWrap>
+            <Top />
+                <AboutTopWrapContent>
+                    <h2 className = "aboutH2Header"> About Her Time to Code</h2>
+                    <div class="circle-border"></div>
+                    <div class="circle">
+                        {/* <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i> */}
+                    </div>
+                </AboutTopWrapContent>
 
             <AboutBody>
                 <h3 className = "aboutH3">Who we are</h3>
@@ -30,15 +33,59 @@ export default function About () {
     )
 }
 
-const AboutTopWrap = styled.div`
-    border: 1px solid black;
-    margin:2% 0;
-    padding: 3%;
-    background-color: teal;
+const AboutTopWrapContent = styled.div`
+    height: 70px;
+    position: relative;
+    border-bottom: 1px solid;
+    box-shadow: 5px .5px 8px 3px black;
+
+    .aboutH2Header {
+        height: 80px;
+        background: teal;
+        z-index: 0;
+        position: relative;
+        border-bottom: 2px solid black;
+        z-index: 1;
+        color:white;
+        padding-left: 38%;
+        padding-top:2%;
+      }
+      
+      .circle-border {
+        width: 60px;
+        height: 43px;
+        border-radius: 50%;
+        bottom: -32px;
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        border: 3px solid;
+        z-index: 0;
+      }
+      .circle {
+        width: 60px;
+        height: 50px;
+        background: teal;
+        border-radius: 50%;
+        bottom: -30px;;
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 30px;
+        line-height: 60px;
+        z-index: 2;
+      }
+      
 
 `
 
 const AboutBody = styled.div`
-    border: 1px solid red;
     padding: 3%;
+        height: 150px;
+        background: lightgray;
+        margin-top:-1%;
+    
 `

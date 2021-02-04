@@ -132,7 +132,7 @@
 .rev1, .rev2, .rev3 {
   min-width:100px;
   min-height:100px;
-  margin-left: -1%;
+  margin-left: 10%;
 }
 
 
@@ -140,7 +140,7 @@
   font-size: .60rem;
   text-align:center;
   /* padding:1%; */
-  margin-left: 4vw;
+  margin-left: 1vw;
 }
 
 /* .oct2P {

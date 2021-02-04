@@ -37,6 +37,7 @@ export default function Top () {
                         <Menu open={open}>
                             <MenuItem><Link to ='/'>Home</Link></MenuItem>
                             <MenuItem><Link to ='/about'>About</Link></MenuItem>
+                            <MenuItem><a href = 'https://portfolio.hertimetocode.com' target="_blank" rel="noopener noreferrer">Portfolio</a></MenuItem>
                             <MenuItem><Link to ='/shop'>Shop</Link></MenuItem>
                             <MenuItem><a href ='https://blog.hertimetocode.com' target="_blank" rel="noopener noreferrer">Blog</a></MenuItem>
                             <MenuItem><Link to ='/community'>Community</Link></MenuItem>

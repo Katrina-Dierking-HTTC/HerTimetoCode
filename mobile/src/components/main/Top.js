@@ -57,6 +57,7 @@ export default function Top () {
                     
                             <Item><Link to ='/'>Home</Link></Item>
                             <Item><Link to ='/about'>About</Link></Item>
+                            <Item><a href = 'https://portfolio.hertimetocode.com' target="_blank" rel="noopener noreferrer">Portfolio</a></Item>
                             <Item><Link to ='/shop'>Shop</Link></Item>
                             <Item><a href ='https://blog.hertimetocode.com' target="_blank" rel="noopener noreferrer">Blog</a></Item>
                             <Item><Link to ='/community'>Community</Link></Item>

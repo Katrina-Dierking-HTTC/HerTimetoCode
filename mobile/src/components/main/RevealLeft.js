@@ -13,7 +13,7 @@ const RevealLeft = () => {
            
             <Reveal animated='small fade' className= "rev1">
                 <Reveal.Content visible>
-                <Image src={oct1} alt = "step 1"/>
+                <Image src={oct1} className = "oct1" alt = "step 1"/>
                 </Reveal.Content>
                 <Reveal.Content hidden>
                 <Image src={WB1} className = "WB" />
@@ -34,7 +34,7 @@ const RevealLeft = () => {
 
             <Reveal animated='small fade' className = "rev3">
                 <Reveal.Content visible>
-                <Image src={oct3} alt = "step 3"/>
+                <Image src={oct3} className = "oct3" alt = "step 3"/>
                 </Reveal.Content>
                 <Reveal.Content hidden>
                 <Image src={WB1} className = "WB" />

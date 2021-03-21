@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 function Portfolio() {
     return (
-        <div>
+        <PortfolioContainer>
             <PortfolioHeader>
                 <h3>Katrina Dierking | Portfolio</h3>
                 <ul className = "port-lins">
@@ -17,52 +17,69 @@ function Portfolio() {
 
             <PortIntro>
                 <div className = "top-about">
-                    <div className="about-me-img"></div>
-                    <div className="animated-description"></div>
+                    <div className="about-me-img">asdfa</div>
+                    <div className="animated-description">adfa</div>
                 </div>
 
                 <div className = "bottom-about">
-                    <h3 className = "personal"></h3>
+                    <h3 className = "personal">hkjfd;akdjfas</h3>
                 </div>
             </PortIntro>
 
             <PortProjects>
                 <section className = "top-projects">
-                    <div className = "project"></div>
-                    <div className = "project"></div>
-                    <div className = "project"></div>
+                    <div className = "project">dafasd</div>
+                    <div className = "project">adfad</div>
+                    <div className = "project">adfadsf</div>
                 </section>
 
                 <section className = "bottom-projects">
-                    <div className = "project"></div>
-                    <div className = "project"></div>
-                    <div className = "project"></div>
+                    <div className = "project">dafda</div>
+                    <div className = "project">adfadf</div>
+                    <div className = "project">adfadfad</div>
                 </section>
             </PortProjects>
 
             <Skills>
-                <div className = "html-css"></div>
-                <div className = "styled-components"></div>
-                <div className = "javascript"></div>
-                <div className = "react"></div>
-                <div className = "redux"></div>
-                <div className = "node"></div>
-                <div className = "python"></div>
+                <div className = "html-css">adfad</div>
+                <div className = "styled-components">adsfasdf</div>
+                <div className = "javascript">adfad</div>
+                <div className = "react">adsfasdf</div>
+                <div className = "redux">asdfa</div>
+                <div className = "node">adsfasdf</div>
+                <div className = "python">afdad</div>
             </Skills>
 
             <WhatsNext>
-                <div className = "future-project-descriptions"></div>
-                <div className = "future-project-descriptions"></div>
-                <div className = "future-project-descriptions"></div>
+                <div className = "future-project-descriptions">akdjfas</div>
+                <div className = "future-project-descriptions">asdfa</div>
+                <div className = "future-project-descriptions">adfad</div>
             </WhatsNext>
-        </div>
+        </PortfolioContainer>
     )
 }
 
 export default Portfolio
 
-const PortfolioHeader = styled.section ``
-const PortIntro = styled.section ``
-const PortProjects = styled.section ``
-const Skills = styled.section ``
-const WhatsNext = styled.section ``
+const PortfolioContainer = styled.section `
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-contents: space-evenly;
+`
+const PortfolioHeader = styled.section `
+    border: 1px solid white;
+`
+const PortIntro = styled.section `
+    border: 1px solid red;
+`
+const PortProjects = styled.section `
+    border: 1px solid blue;
+`
+const Skills = styled.section `
+    border: 1px solid green;
+`
+const WhatsNext = styled.section `
+    border: 1px solid yellow;
+`

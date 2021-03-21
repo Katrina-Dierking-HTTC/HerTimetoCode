@@ -39,7 +39,7 @@ const DeskWrapper = styled.div `
     display:flex;
     position:relative;
     flex-direction:row;
-    margin-top: -30%;
+    margin-top: -50%;
     margin-left: 2%;
     z-index: 99999;
 

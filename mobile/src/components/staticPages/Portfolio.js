@@ -59,6 +59,24 @@ function Portfolio() {
                 <div className = "future-project-descriptions">asdfa</div>
                 <div className = "future-project-descriptions">adfad</div>
             </WhatsNext>
+
+            <FooterPort>
+                <div className = "footer-links">
+                    <ul>
+                        <a href = "#"></a>
+                        <a href = "#"></a>
+                        <a href = "#"></a>
+                        <a href = "#"></a>
+                    </ul>
+
+                    <ul className = "social">
+                        <a href = "#"></a>
+                        <a href = "#"></a>
+                        <a href = "#"></a>
+                        <a href = "#"></a>
+                    </ul>
+                </div>
+            </FooterPort>
         </PortfolioContainer>
     )
 }
@@ -168,4 +186,8 @@ const WhatsNext = styled.section `
         border: 1px solid black;
         padding: .5px;
     }
+`
+
+const FooterPort = styled.div`
+    border: 1px solid blue; 
 `

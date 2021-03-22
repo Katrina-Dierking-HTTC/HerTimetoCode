@@ -15,6 +15,7 @@ function Portfolio() {
                 </ul>
             </PortfolioHeader>
 
+            <h3 className="about-me">About Me</h3>
             <PortIntro>
                 <div className = "top-about">
                     <div className="about-me-img">asdfa</div>
@@ -26,6 +27,7 @@ function Portfolio() {
                 </div>
             </PortIntro>
 
+            <h3 className="projects-title">Projects</h3>
             <PortProjects>
                 <section className = "top-projects">
                     <div className = "project">dajhgkghkjhgkhgjhgjhfasd</div>
@@ -40,6 +42,7 @@ function Portfolio() {
                 </section>
             </PortProjects>
 
+            <h3 className = "skills-title">Skills</h3>
             <Skills>
                 <div className = "html-css">adfad</div>
                 <div className = "styled-components">adsfasdf</div>
@@ -50,6 +53,7 @@ function Portfolio() {
                 <div className = "python">afdad</div>
             </Skills>
 
+            <h3 className = "next-title">What's Next</h3>
             <WhatsNext>
                 <div className = "future-project-descriptions">akdjfas</div>
                 <div className = "future-project-descriptions">asdfa</div>
@@ -68,6 +72,11 @@ const PortfolioContainer = styled.section `
     display: flex;
     flex-direction: column;
     align-contents: space-evenly;
+
+    .about-me, .projects-title, .skills-title, .next-title {
+        background-color: slategrey;
+        padding: 2%;
+    }
 `
 const PortfolioHeader = styled.section `
     border: 1px solid white;
@@ -89,44 +98,45 @@ const PortfolioHeader = styled.section `
     }
 `
 const PortIntro = styled.section `
-    border: 1px solid red;
+    border: 1px solid  #e21979;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 1%;
-    margin-top: 1%;
+    // margin-top: .3%;
 
     .top-about {
         width: 48%;
         height: 10vh;
-        background-color: red;
+        background-color: #e21979;
         padding: 1%;
     }
     .bottom-about {
         width: 48%;
         height: 10vh; 
-        background-color:blue;
+        background-color:  #e21979;
         padding: 1%;
     }
 `
 const PortProjects = styled.section `
-    border: 1px solid blue;
+    border: 1px solid teal;
     display:flex;
     flex-direction: column; 
     // align-contents: space-around; 
-    margin-top: 1%;
+    // margin-top: 1%;
 
     .top-projects, .bottom-projects {
         display:flex; 
         flex-direction: row; 
+        justify-content: space-around; 
         padding: 1%;
         border: 1px solid black; 
         width: 100%;
-        background-color: red; 
+        background-color: lightgrey; 
     }
         .project {
             padding: 2%;
-            margin: 1%;
+            // margin: 1%;
             border: 1px solid white; 
             width: 30%;
             background-color: white;
@@ -134,10 +144,28 @@ const PortProjects = styled.section `
 }
 `
 const Skills = styled.section `
-    border: 1px solid green;
+    border: 1px solid teal;
     margin-top: 1%;
+    display:flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    padding: 1%;
+
+    div {
+        border: 1px solid black;
+        padding: .5%;
+    }
 `
 const WhatsNext = styled.section `
-    border: 1px solid yellow;
+    border: 1px solid  #e21979;
     margin-top: 1%;
+    display:flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    padding: 1%;
+
+    div {
+        border: 1px solid black;
+        padding: .5px;
+    }
 `

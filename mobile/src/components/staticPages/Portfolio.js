@@ -6,7 +6,7 @@ function Portfolio() {
     return (
         <PortfolioContainer>
             <PortfolioHeader>
-                <h3>Katrina Dierking | Portfolio</h3>
+                <h2>Katrina Dierking | Portfolio</h2>
                 <ul className = "port-lins">
                     <a href="#">LinkedIn</a>
                     <a href="#">GitHub</a>
@@ -28,7 +28,7 @@ function Portfolio() {
 
             <PortProjects>
                 <section className = "top-projects">
-                    <div className = "project">dafasd</div>
+                    <div className = "project">dajhgkghkjhgkhgjhgjhfasd</div>
                     <div className = "project">adfad</div>
                     <div className = "project">adfadsf</div>
                 </section>
@@ -62,24 +62,80 @@ function Portfolio() {
 export default Portfolio
 
 const PortfolioContainer = styled.section `
-    width: 100vw;
+    width: 80vw;
     height: 100vh;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     align-contents: space-evenly;
 `
 const PortfolioHeader = styled.section `
     border: 1px solid white;
+    display: flex; 
+    flex-direction: column; 
+    background-color: lightgrey; 
+    padding: 3%;
+
+    
+    ul {
+        flex-direction: row; 
+        align-contents: space-evenly; 
+    }
+
+    a {
+        padding: 1%;
+        border: 1px solid black;
+        margin: 2%;
+    }
 `
 const PortIntro = styled.section `
     border: 1px solid red;
+    display:flex;
+    flex-direction: row;
+    margin-top: 1%;
+
+    .top-about {
+        width: 50%;
+        height: 10vh;
+        background-color: red;
+        padding: 1%;
+    }
+    .bottom-about {
+        width: 50%;
+        height: 10vh; 
+        background-color:blue;
+        padding: 1%;
+    }
 `
 const PortProjects = styled.section `
     border: 1px solid blue;
+    display:flex;
+    flex-direction: column; 
+    // align-contents: space-around; 
+    margin-top: 1%;
+
+    .top-projects, .bottom-projects {
+        display:flex; 
+        flex-direction: row; 
+        padding: 1%;
+        border: 1px solid black; 
+        width: 100%;
+        background-color: red; 
+    }
+        .project {
+            padding: 2%;
+            margin: 1%;
+            border: 1px solid white; 
+            width: 30%;
+            background-color: white;
+    }
+}
 `
 const Skills = styled.section `
     border: 1px solid green;
+    margin-top: 1%;
 `
 const WhatsNext = styled.section `
     border: 1px solid yellow;
+    margin-top: 1%;
 `

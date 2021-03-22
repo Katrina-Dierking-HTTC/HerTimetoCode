@@ -92,16 +92,18 @@ const PortIntro = styled.section `
     border: 1px solid red;
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 1%;
     margin-top: 1%;
 
     .top-about {
-        width: 50%;
+        width: 48%;
         height: 10vh;
         background-color: red;
         padding: 1%;
     }
     .bottom-about {
-        width: 50%;
+        width: 48%;
         height: 10vh; 
         background-color:blue;
         padding: 1%;

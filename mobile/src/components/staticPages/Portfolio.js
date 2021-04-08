@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Divider, Grid, Segment, Link} from 'semantic-ui-react'
 
 
 function Portfolio() {
     return (
+      
         <PortfolioContainer>
             <PortfolioHeader>
-                <h2>Katrina Dierking | Portfolio</h2>
+                <h2>Katrina Dierking | PORT</h2>
                 <ul className = "port-lins">
                     <a href="#">LinkedIn</a>
                     <a href="#">GitHub</a>
@@ -28,19 +30,28 @@ function Portfolio() {
             </PortIntro>
 
             <h3 className="projects-title">Projects</h3>
-            <PortProjects>
+            <Segment>
+                <PortProjects>
+                <Grid columns={2} relaxed='very'>
+                <Grid.Column>
                 <section className = "top-projects">
                     <div className = "project">dajhgkghkjhgkhgjhgjhfasd</div>
                     <div className = "project">adfad</div>
                     <div className = "project">adfadsf</div>
                 </section>
-
+                </Grid.Column>
+                 <Grid.Column>
                 <section className = "bottom-projects">
                     <div className = "project">dafda</div>
                     <div className = "project">adfadf</div>
                     <div className = "project">adfadfad</div>
                 </section>
+                </Grid.Column>
+                </Grid>
+                <Divider vertical>And</Divider>
             </PortProjects>
+            </Segment>
+            
 
             <h3 className = "skills-title">Skills</h3>
             <Skills>
@@ -60,24 +71,26 @@ function Portfolio() {
                 <div className = "future-project-descriptions">adfad</div>
             </WhatsNext>
 
+            <h3 className = "footer-title">Footer</h3>
             <FooterPort>
                 <div className = "footer-links">
                     <ul>
-                        <a href = "#"></a>
-                        <a href = "#"></a>
-                        <a href = "#"></a>
-                        <a href = "#"></a>
+                        <a href = "#">adf</a>
+                        <a href = "#">dadf</a>
+                        <a href = "#">adfa</a>
+                        <a href = "#">adfa</a>
                     </ul>
 
                     <ul className = "social">
-                        <a href = "#"></a>
-                        <a href = "#"></a>
-                        <a href = "#"></a>
-                        <a href = "#"></a>
+                        <a href = "#">adaf</a>
+                        <a href = "#">adfaf</a>
+                        <a href = "#">adfaf</a>
+                        <a href = "#">adfaf</a>
                     </ul>
                 </div>
             </FooterPort>
         </PortfolioContainer>
+      
     )
 }
 
@@ -90,8 +103,9 @@ const PortfolioContainer = styled.section `
     display: flex;
     flex-direction: column;
     align-contents: space-evenly;
+    margin-bottom: 5%;
 
-    .about-me, .projects-title, .skills-title, .next-title {
+    .about-me, .projects-title, .skills-title, .next-title, .footer-title {
         background-color: slategrey;
         padding: 2%;
     }
@@ -121,7 +135,6 @@ const PortIntro = styled.section `
     flex-direction: row;
     justify-content: space-between;
     padding: 1%;
-    // margin-top: .3%;
 
     .top-about {
         width: 48%;
@@ -137,11 +150,9 @@ const PortIntro = styled.section `
     }
 `
 const PortProjects = styled.section `
-    border: 1px solid teal;
+
     display:flex;
     flex-direction: column; 
-    // align-contents: space-around; 
-    // margin-top: 1%;
 
     .top-projects, .bottom-projects {
         display:flex; 
@@ -188,6 +199,17 @@ const WhatsNext = styled.section `
     }
 `
 
-const FooterPort = styled.div`
-    border: 1px solid blue; 
+const FooterPort = styled.section`
+    // border: .02px solid blue;
+
+   .footer-links {
+        display:flex; 
+        justify-content: space-evenly;
+
+        a {
+            display:flex;
+            flex-direction: column;
+        }
+    }
+
 `

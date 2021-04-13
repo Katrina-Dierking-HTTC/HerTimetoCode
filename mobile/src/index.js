@@ -8,7 +8,7 @@ import {BrowserRouter as Router} from 'react-router-dom'
 const styleLink = document.createElement("link");
 styleLink.rel = "stylesheet";
 styleLink.href = "https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css";
-
+styleLink.href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css";
 document.head.appendChild(styleLink);
 
 

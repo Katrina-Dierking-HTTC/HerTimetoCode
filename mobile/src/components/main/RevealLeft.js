@@ -14,32 +14,35 @@ const RevealLeft = () => {
             <Reveal animated='small fade' className= "rev1">
                 <Reveal.Content visible>
                 <Image src={oct1} className = "oct1" alt = "step 1"/>
+                <p>Choose your learning path</p>
                 </Reveal.Content>
-                <Reveal.Content hidden>
+                {/* <Reveal.Content hidden>
                 <Image src={WB1} className = "WB" />
                 <p className = "oct1P">Tools</p>
-                </Reveal.Content>
+                </Reveal.Content> */}
             </Reveal>
 
             <Reveal animated='small fade' className = 'rev2'>
                 <Reveal.Content visible>
                 <Image src={oct2} alt = "step 2" className = "oct2"/>
+                <p>Decide which tools you need</p>
                 </Reveal.Content>
-                <Reveal.Content hidden>
+                {/* <Reveal.Content hidden>
                 <Image src = {Home_community} alt = "Community" className = "comm"/>
                 <p className = "oct2P"> Collaboration</p>
-                </Reveal.Content>
+                </Reveal.Content> */}
             </Reveal>
           
 
             <Reveal animated='small fade' className = "rev3">
                 <Reveal.Content visible>
                 <Image src={oct3} className = "oct3" alt = "step 3"/>
+                <p>Join the HTTC Coffee | Code | Collaboration community</p>
                 </Reveal.Content>
-                <Reveal.Content hidden>
+                {/* <Reveal.Content hidden>
                 <Image src={WB1} className = "WB" />
                 <p className = "oct3P"> Freedom</p>
-                </Reveal.Content>
+                </Reveal.Content> */}
             </Reveal>
        
         </div>

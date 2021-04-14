@@ -96,22 +96,62 @@ export default function About () {
                             </div>
                         
                     </div>
-                    <p className = "about-me plans">
-
-                    </p>
+                   
 
                 </Me>
 
                 <Goals>
-
+                <div className = "top">
+                    <img src="https://hertimetocode.com/wp-content/uploads/2021/04/success-e1618370002549.png"/>
+                    <h3 className = "about-me plans">What I'm working on now & plans for the future: </h3>
+                </div>
+                   
+                        <ul>
+                            <li>Coffee | Code | Collaborate <em>(see more in Community)</em></li>
+                            <li>Continue developing Her Time to Code learning tools & products</li>
+                            <li>Her Time to Code for middle-school & high-school homeschool girls</li>
+                            <li>Homeschooling app to gamify education while improving educational standards -- students won't even be aware their learning</li>
+                            <li>Eventual Her Time to Code Agency giving new web developers hands-on experience</li>
+                            <li>Becoming part of an amazing team as a web developer looking to make a difference for women in tech</li>
+                        </ul>   
                 </Goals>
 
                 <Projects>
+                    <div className = "top">
+                        <img src="https://hertimetocode.com/wp-content/uploads/2021/04/project-management-e1618374920289.png"/>
+                        <h3> A few of the projects I have completed <em>(and a few more I'm working on)</em>: </h3>
+                    </div>
 
+                    <Cards>
+                    <div className = "proj-card">
+                        <h4 className = "proj-title">Shh... They're learning</h4>
+                        <img src></img>
+                        <p className="proj-desc"></p>
+                        <h5 className="proj-code">Check out the code here</h5>
+                    </div>
+                    <div className = "proj-card">
+                        <h4 className = "proj-title">Shh... They're learning</h4>
+                        <img src></img>
+                        <p className="proj-desc"></p>
+                        <h5 className="proj-code">Check out the code here</h5>
+                    </div>
+                    <div className = "proj-card">
+                        <h4 className = "proj-title">Shh... They're learning</h4>
+                        <img src></img>
+                        <p className="proj-desc"></p>
+                        <h5 className="proj-code">Check out the code here</h5>
+                    </div>
+                    <div className = "proj-card">
+                        <h4 className = "proj-title">Shh... They're learning</h4>
+                        <img src></img>
+                        <p className="proj-desc"></p>
+                        <h5 className="proj-code">Check out the code here</h5>
+                    </div>
+                    </Cards>
                 </Projects>
             </AboutBody>
 
-            <FooterNav />
+            {/* <FooterNav /> */}
 
             </>
     )
@@ -146,7 +186,7 @@ const Me = styled.div`
 
       .middle {
         background: #ececec;
-        width: 100vw;
+        width: 80vw;
         padding: 2%;
         height: 100vh;
 
@@ -155,15 +195,15 @@ const Me = styled.div`
         }
 
         .pets-p {
-            margin-left: 15%;
+            margin-left: 8%;
         }
 
         .facts-box {
             border-left: 1px solid #e21979;
             display:flex;
-            justify-content: space-around;
-            max-width: 40vw;
-            margin-left: 5%;
+            max-width: 30vw;
+            margin-left: 1%;
+            padding-left: 3%;
         }
 
         .kids {
@@ -211,8 +251,47 @@ const Me = styled.div`
         }
 `
 const Goals = styled.div`
+    padding-left: 5%;
 
+    .top {
+        display:flex;
+        width: 85vw;
+        padding-top:2%;
+    }
+    
 `
 const Projects = styled.div`
+    padding-left: 5%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    justify-content:space-between;
 
+    .top {
+        display:flex;
+        width: 85vw;
+        padding-top:2%;
+    }
+
+`
+
+const Cards = styled.div`
+    display:flex;
+    justify-content: space-between;
+    width: 65vw;
+
+    .proj-card {
+        min-width:15vw;
+        height: 40vh;
+        border: 1px solid black;
+        margin-top: 3%;
+    }
+
+    .proj-title {
+        max-height: 2vh;
+        background-color: #ececec;
+        margin-top: 0%;
+        padding:2% 0 4% 4%;
+        border: 2px solid black;
+    }
 `

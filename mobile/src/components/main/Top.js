@@ -59,7 +59,7 @@ export default function Top () {
                             <Item><Link to ='/about'>About</Link></Item>
                             <Item><a href = 'https://kd-portfolio.netlify.app' target="_blank" rel="noreferrer">Portfolio</a></Item>
                             <Item><Link to ='/shop'>Shop</Link></Item>
-                            <Item><a href ='/blog' target="_blank" rel="noreferrer">Blog</a></Item>
+                            <Item><a href ='https://blog.hertimetocode.com' target="_blank" rel="noopener noreferrer">Blog</a></Item>
                             <Item><Link to ='/community'>Community</Link></Item>
                             <Item><Link to ='/contact'>Contact</Link></Item>
                       

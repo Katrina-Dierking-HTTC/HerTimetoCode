@@ -1,6 +1,4 @@
 import React from 'react'
-// import Media from 'react-media'
-import RevealLeft from './RevealLeft'
 import styled from 'styled-components'
 
 export default function Steps () {
@@ -9,16 +7,15 @@ export default function Steps () {
         <>
         
             <StepWrapper>
-                <div className="stepsContainer">
-                    <div className = "stepsBox">
-                        <RevealLeft />
+              
+                    <img src = "https://hertimetocode.com/wp-content/uploads/2021/04/steps-e1618424581376.png"/>
+                    <div className = "steps">
+                        <h4 className = "step-box">Choose your learning path.</h4>
+                        <h4 className = "step-box">Get the learning tools that best meet your needs.</h4>
+                        <h4 className = "step-box">Join the HTTC Coffee | Code | Community to build and/or strengthen your skills.</h4>
                     </div>
-                <div className="stepsDesc">
-                    <p>In just three easy steps, you can start your journey
-                    to launching your own freelancing business as a 
-                    web developer, or land your first web developer job.</p>
-                </div>
-            </div>
+                   
+         
             </StepWrapper>
        
         </>
@@ -30,21 +27,15 @@ export default function Steps () {
 //////////////////////////////////////////////////////////////////
 
 const StepWrapper = styled.div`
-    max-width: 80vw;
-    padding:5% 5% 2%;
-    margin: 0 10%;
+    margin: 2% 0 0 30%;
     display:flex;
-  
-    justify-content: space-around;
 
+    .step-box {
+        width: 20vw;
+        padding: 5% 3% 5% 5%;
+        border: 1px solid teal;
+        margin-left: 5%;
+    }
 
-    .stepsDesc {
-        font-size: 1rem;
-    
-        margin-top: -2%;
-        align-text: center;
-        padding-left: 5%;
-
-      }
 `
 

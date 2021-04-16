@@ -6,6 +6,7 @@ import styled from 'styled-components'
 export default function About () {
     return (
             <>
+            <script async data-uid="6ea6911064" src="https://hertimetocode.ck.page/6ea6911064/index.js"></script>
             <Top />
                 <AboutTopWrapContent>
                     <h3 className = "aboutH2Header"> About Katrina Dierking | Her Time to Code</h3>

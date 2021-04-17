@@ -11,7 +11,7 @@ const ItemInfo = ({  title, image, description, price}) => {
                 <div className = "infoTop">
                     <p className = "info">{title}</p>
                     <p className = "infoP">{price}</p>
-                    <Button />
+                    {/* <Button /> */}
                 </div>
                 <img src= {image} className = "itemImg" alt = "item for sale" />
                 <p className = "infoDesc">{description}</p>

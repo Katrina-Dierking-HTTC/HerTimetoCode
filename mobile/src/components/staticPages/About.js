@@ -41,7 +41,7 @@ export default function About () {
 
                         <div className="facts-box">
                             <img src="https://hertimetocode.com/wp-content/uploads/2021/04/coffee-1-e1618362800208.png"/>
-                            <p className="para"> I drink close to 3 pots of coffee every day.</p> 
+                            <p className="para"> My blood type is coffee.</p> 
                         </div>
                             
                             <br></br>
@@ -102,7 +102,7 @@ export default function About () {
                         <div className = "facts-box kids">
                             <img src="https://hertimetocode.com/wp-content/uploads/2021/04/children-e1618369097663.png" className="kids-icon"/>
                             <img src="https://hertimetocode.com/wp-content/uploads/2021/04/children-1-e1618369287757.png" className="kids-icon"/>
-                            <p className="para"> I have 4 great kids. Three older children and an amazing 8-yr-old. And while parents aren't supposed to have favorites, the 8-yr-old is clearly in the #1 spot -- at least until she hits the teen years.</p>
+                            <p className="para"> I have 4 great kids.</p>
                         </div>
                         <br></br>
                         <div className = "facts-box">

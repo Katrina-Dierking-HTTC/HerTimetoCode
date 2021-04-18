@@ -167,13 +167,13 @@ export default function About () {
                         <h5 className="proj-code">Check out the code <a href="https://github.com/Katrina-Dierking-HTTC/portfolio">here</a></h5>
                     </div>
                     <div className = "proj-card">
-                        <h4 className = "proj-title">Shh... They're learning</h4>
-                        <img src></img>
+                        <h4 className = "proj-title">Plza! Connecting Through Pizza</h4>
+                        <img src = "https://blog.hertimetocode.com/wp-content/uploads/2021/04/plza-mockp.png"></img>
                         <p className="proj-desc"></p>
-                        <h5 className="proj-code">Check out the code here</h5>
+                        <h5 className="proj-code">Check out the frontend code <a href="https://github.com/Lambda-School-Labs/lets-get-pizza-fe">here</a> and the backend code <a href ="https://github.com/Lambda-School-Labs/lets-get-pizza-be">here.</a></h5>
                     </div>
                     <div className = "proj-card">
-                        <h4 className = "proj-title">Drop and Drag</h4>
+                        <h4 className = "proj-title"></h4>Shh! They're Learning (in progress)
                         <img src></img>
                         <p className="proj-desc"></p>
                         <h5 className="proj-code">Check out the code here</h5>

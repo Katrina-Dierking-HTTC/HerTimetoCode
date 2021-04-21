@@ -1,4 +1,8 @@
-import styled from 'styled-components'
+
+import styled, {keyframes} from 'styled-components'
+import { flip } from 'react-animations'
+
+const flipAnimation = keyframes `${flip}`;
 
 export const TestimonialWrapper = styled.div`
     background-image: linear-gradient(to right, rgb(11,102,123), rgb(226,25,121));

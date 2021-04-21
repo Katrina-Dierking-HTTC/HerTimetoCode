@@ -1,7 +1,7 @@
 import React from 'react'
 import Top from '../main/Top'
 
-import styled from 'styled-components'
+import {ComingWrap, Description, IconDrop, Icon} from '../design/CommunityStyle'
 
 function Community() {
     return (
@@ -75,70 +75,3 @@ function Community() {
 
 export default Community
 
-const Body = styled.div`
-    max-width: 100vw;
-    max-height: 100vh;
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 5%;
-`
-
-const ComingWrap = styled.section`
-    border: 1px solid lightgrey;
-    max-width: 50%;
-    display:flex;
-    flex-direction: column; 
-    align-items: center;
-    padding: 5%;
-`
-
-const Description = styled.div`
-    margin-top:2vh;
-    max-width: 70%;
-    background-color:lightgrey;
-    padding: 2%;
-
-    .desc-box{
-        
-        padding: 1%;
-    }
-`
-
-const IconDrop = styled.div`
-   display:flex;
-   flex-direction: column;
-   max-width: 50%;
-   margin: 3% 0 0 8%;
-`
-
-const Icon = styled.div`
-    display:flex;
-    flex-direction:row;
-    max-width: 80%;
-    padding: 2%;
-
-    .fa-coffee {
-        color:#e21979;
-    }
-
-    .fa-fingerprint {
-        color: teal;
-    }
-
-    .fa-code{
-        color: limegreen;
-    }
-
-    .para {
-        margin-left: 7%;
-        margin-top: -1.5%;
-        font-size: .8rem;
-        padding: 2%;
-    }
-
-    .a {
-        background-color:lightgrey;
-    }
-`

@@ -131,7 +131,7 @@ export const Projects = styled.div`
 
 
 
-const Cards = styled.div`
+export const Cards = styled.div`
     display:flex;
     flex:wrap;
     min-width: 100vw;
@@ -155,17 +155,9 @@ const Cards = styled.div`
         margin-left: 12%;
     }
 `
-    const Passions = styled.section`
+export const Passions = styled.section`
     
     `
 
 
-    export {
-        AboutTopWrapContent,
-        AboutBody,
-        Me,
-        Goals,
-        Projects,
-        Cards,
-        Passions
-    }
+   

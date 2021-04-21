@@ -1,7 +1,7 @@
 import React from 'react'
 import Top from '../main/Top'
 
-import {ComingWrap, Description, IconDrop, Icon} from '../design/CommunityStyle'
+import {Body, ComingWrap, Description, IconDrop, Icon} from '../design/CommunityStyle'
 
 function Community() {
     return (

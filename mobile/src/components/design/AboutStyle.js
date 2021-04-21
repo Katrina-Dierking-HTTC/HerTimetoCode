@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const AboutTopWrapContent = styled.div`
+export const AboutTopWrapContent = styled.div`
     height: 70px;
     position: relative;
     box-shadow: 5px .5px 8px 3px black;
@@ -19,13 +19,13 @@ const AboutTopWrapContent = styled.div`
       
 `
 
-const AboutBody = styled.div`
+export const AboutBody = styled.div`
     height:100vh;
     width: 90vw;
     margin:2% 4%;
 `
 
-const Me = styled.div`
+export const Me = styled.div`
       max-width: 90vw;
       min-height: 100vh;
 
@@ -103,7 +103,7 @@ const Me = styled.div`
             background-color: grey;
         }
 `
-const Goals = styled.div`
+export const Goals = styled.div`
     padding-left: 5%;
     max-width: 77vw;
     
@@ -114,7 +114,7 @@ const Goals = styled.div`
         padding-top:2%;
     }
 `
-const Projects = styled.div`
+export const Projects = styled.div`
     padding-left: 5%;
     display:flex;
     flex-direction:column;

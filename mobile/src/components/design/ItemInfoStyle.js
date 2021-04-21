@@ -1,25 +1,27 @@
 import styled from 'styled-components'
-// import {device} from '../design/MediaQueries'
+import {size} from '../design/MediaQueries'
 
 export const ItemInfoWrap = styled.div`
-// // border-right: 1px dotted #e21979;
-// border: 1px dotted #e21979;
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-max-width: 43vw;
-margin: 1%;
-padding-right: 1%;
-padding-bottom: 4%;
 
+    display:flex;
+    flex-direction:column;
+    min-width: 90vw;
+    justify-content: space-around;
+    margin-left: 2%;
+
+
+    ul {
+        padding:5%;
+        width:50vw;
+    }
 
 
     .infoTop {
-        max-width: 100vw;
         display:flex;
-        flex-direction: row;
-        justify-content:space-between;
-        margin-left: -7%;
+        border: 1px solid black;
+        width: 80vw;
+        justify-content:space-around;
+       
     
     }
     .info {
@@ -32,15 +34,14 @@ padding-bottom: 4%;
         padding:0 1%;
     }
     .itemImg {
-        margin-left: 8%;
-        max-width: 40vw;
+        margin-left: 30%;
+        max-width: 80vw;
     }
 
     .infoDesc {
-        border: .5px solid lightgrey;
-        margin-right: 5%;
-        margin-left: -7%;
-        padding: 2% 4%;
+        border: .5px solid slategrey;
+        padding: 5%;
+        width: 80vw;
     }
 
 ///////////////////////---DIVIDER ANIMATION -----------//////////////////////////////////////////
@@ -169,6 +170,39 @@ padding-bottom: 4%;
 
         h2 {
             margin-top: 5em;
+        }
+
+//////////DESKTOP MEDIA QUERIE
+
+        @media (min-width: ${size.small}){
+            min-width: 80vw;
+            margin-left: 5%;
+           
+
+            ul {
+                padding: 5%;
+                width: 50vw;
+            }
+            
+        
+            .infoTop {
+                margin-left: 5%;
+                width: 70vw;
+            }
+        
+            .infoP{
+                font-size: 1rem;
+                padding:0 1%;
+            }
+            .itemImg {
+                margin-left: 15vw;
+                min-width: 45vw;
+            }
+        
+            .infoDesc {
+             margin-left: 5%;
+             width: 70vw;
+            }       
         }
 
 `

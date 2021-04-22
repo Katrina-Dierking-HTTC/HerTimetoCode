@@ -112,3 +112,21 @@ export const Item = styled.div`
     font-size: .85rem;
     z-index: 999990;
 `
+
+
+
+// <DropDown>
+// <div className = "wordLogo">
+//   <p className = "httcLogo"> {`<HTT`}<span className ="code"><i>{`Code />`}</i></span> </p>
+// </div>
+
+
+//       <Item><Link to ='/'>Home</Link></Item>
+//       <Item><Link to ='/about'>About</Link></Item>
+//       <Item><a href = 'https://kd-portfolio.netlify.app' target="_blank" rel="noreferrer">Portfolio</a></Item>
+//       <Item><Link to ='/shop'>Shop</Link></Item>
+//       <Item><a href ='https://blog.hertimetocode.com' target="_blank" rel="noopener noreferrer">Blog</a></Item>
+//       <Item><Link to ='/community'>Community</Link></Item>
+//       <Item><Link to ='/contact'>Contact</Link></Item>
+
+// </DropDown>         

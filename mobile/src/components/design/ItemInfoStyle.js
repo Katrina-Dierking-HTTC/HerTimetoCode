@@ -2,12 +2,12 @@ import styled from 'styled-components'
 import {size} from '../design/MediaQueries'
 
 export const ItemInfoWrap = styled.div`
-
     display:flex;
     flex-direction:column;
-    min-width: 90vw;
+    min-width: 40vw;
     justify-content: space-around;
     margin-left: 2%;
+
 
 
     ul {
@@ -171,10 +171,12 @@ export const ItemInfoWrap = styled.div`
         h2 {
             margin-top: 5em;
         }
+    }
+
 
 //////////DESKTOP MEDIA QUERIE
 
-        @media (min-width: ${size.small}){
+        @media (min-width: ${size.small}) and (max-width: ${size.med}){
             min-width: 80vw;
             margin-left: 5%;
            
@@ -203,6 +205,43 @@ export const ItemInfoWrap = styled.div`
              margin-left: 5%;
              width: 70vw;
             }       
+        }
+
+        @media (min-width: ${size.large}){ 
+  
+
+            ul {
+                width:10vw;
+            }
+
+
+            .infoTop {
+                display:flex;
+                border: 1px solid black;
+                width: 40vw;
+                justify-content:space-around;
+            
+            
+            }
+            .info {
+                font-size: 1rem;
+                max-width: 30%;
+            }
+
+            .infoP{
+                font-size: 1rem;
+                padding:0 1%;
+            }
+            .itemImg {
+                margin-left: 60%;
+                padding: 50%;
+            }
+
+            .infoDesc {
+                border: .5px solid slategrey;
+                padding: 5%;
+                width: 40vw;
+            }
         }
 
 `

@@ -1,19 +1,26 @@
-import React, {useState} from 'react'
-import {itemData} from '../../itemData'
-import {ShopBody, ItemWrap} from '../design/ShopStyle'
-import ItemCard from '../main/ItemCard'
-import Top from '../main/Top'
-import FooterNav from '../main/FooterNav'
+import React from 'react'
+// import {itemData} from '../../itemData'
+// import {ShopBody, ItemWrap} from '../design/ShopStyle'
+// import ItemCard from '../main/ItemCard'
+// import Top from '../main/Top'
+// import FooterNav from '../main/FooterNav'
+import Header from '../shop/shopHeader/header'
+import Hero from '../shop/hero/Hero'
+import MainSection from '../shop/main-section/MainSection'
+import '../../App.scss'
 
 
 
 export default function Shop () {
-    const [data] = useState(itemData);
+    // const [data] = useState(itemData);
     return (
         <>
-            <Top />
+        <Header />
+        <Hero />
+        <MainSection />
+            {/* <Top /> */}
 
-            <ShopBody>
+            {/* <ShopBody>
                 <h3>Welcome to the HTTC Store</h3>
                 <hr></hr>
 
@@ -24,7 +31,7 @@ export default function Shop () {
                 </ItemWrap>
             </ShopBody>
             <br></br>
-            <FooterNav />
+            <FooterNav /> */}
         </>
     )
 }

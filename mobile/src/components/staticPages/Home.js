@@ -5,7 +5,7 @@ import Intro from '../main/Intro'
 import Testimonials from '../main/Testimonials'
 import FooterNav from '../main/FooterNav'
 
-import '../../App.css';
+import '../../App.scss';
 import "../design/MobileStyle.css"
 
 export default function Home () {

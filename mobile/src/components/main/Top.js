@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {useMediaQuery} from 'react-responsive'
 import { Link} from 'react-router-dom'
 
+
 import {
     Wrapper, 
     HeaderWrapper, 
@@ -45,13 +46,16 @@ export default function Top () {
                     </HeaderWrapper>
                     <MenuWrapper open={open}>
                         <Menu open={open}>
-                            <MenuItem><Link to ='/'>Home</Link></MenuItem>
-                            <MenuItem><Link to ='/about'>About</Link></MenuItem>
-                            <MenuItem><a href = 'https://katrina-dierking-httc.github.io/portfolio/' target="_blank" rel="noopener noreferrer">Portfolio</a></MenuItem>
-                            <MenuItem><Link to ='/shop'>Shop</Link></MenuItem>
-                            <MenuItem><a href ='https://blog.hertimetocode.com' target="_blank" rel="noopener noreferrer">Blog</a></MenuItem>
-                            <MenuItem><Link to ='/community'>Community</Link></MenuItem>
-                            <MenuItem><Link to ='/contact'>Contact</Link></MenuItem>
+                       
+                                <MenuItem><Link to ='/'>Home</Link></MenuItem>
+                                <MenuItem><Link to ='/about'>About</Link></MenuItem>
+                                <MenuItem><a href = 'https://katrina-dierking-httc.github.io/portfolio/' target="_blank" rel="noopener noreferrer">Portfolio</a></MenuItem>
+                                <MenuItem><Link to ='/shop'>Shop</Link></MenuItem>
+                                <MenuItem><a href ='https://blog.hertimetocode.com' target="_blank" rel="noopener noreferrer">Blog</a></MenuItem>
+                                <MenuItem><Link to ='/community'>Community</Link></MenuItem>
+                                <MenuItem><Link to ='/contact'>Contact</Link></MenuItem>
+                        
+                
                           </Menu>
                     </MenuWrapper>
                </Wrapper>

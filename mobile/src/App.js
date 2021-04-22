@@ -1,5 +1,5 @@
 
-import './App.css'
+import './App.scss'
 import Home from "./components/staticPages/Home"
 import About from "./components/staticPages/About"
 import Contact from "./components/staticPages/Contact"
@@ -15,7 +15,6 @@ function App() {
   return (
     <>
     <div className="App">
-    
      </div> 
     
     <Router>
@@ -23,8 +22,8 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route path = '/about' component={About} />
         <Route path = '/contact' component={Contact} />
-        <Route path = '/shop' component={Shop} />
         <Route path = '/community' component={Community} />
+        <Route path = '/shop' component={Shop} />
         {/* <Route path = '/portfolio' component={Portfolio}/> */}
       
       </Switch>

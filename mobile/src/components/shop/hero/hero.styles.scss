@@ -1,0 +1,20 @@
+.hero-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../../images/Laptop.png') center/cover no-repeat;
+    background-size: cover;
+}
+
+.hero-title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  @media(min-width: 1024px) {
+    .hero-image {
+      font-size: 2.5rem;
+    }
+  }
+  
+  .shop-now-btn {
+    text-align: center;
+  }

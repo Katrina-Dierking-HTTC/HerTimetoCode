@@ -8,6 +8,7 @@ import Layout from '../shared/Layout'
 
 
 
+
 function Shop () {
 
     return (
@@ -17,6 +18,7 @@ function Shop () {
             <Hero />
             <MainSection />
             <FeaturedCollection/>
+
         </Layout>
         </>
 

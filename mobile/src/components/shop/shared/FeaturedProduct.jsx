@@ -17,22 +17,22 @@ const FeaturedProduct = (props) => {
       <div className='name-price'>
         <h3>{title}</h3>
         <p>$ {price}</p>
-        <p className = "descPara"> {description} </p>
-        {/* { 
-          !itemInCart && 
+      
+   
           <button 
             className='button is-black nomad-btn'
-            onClick={() => addProduct(product)}>
+            // onClick={() => {}
+            // addProduct(product)}
+            >
               ADD TO CART</button>
-        }
-        {
-          itemInCart &&
+        
           <button 
             className='button is-white nomad-btn'
             id='btn-white-outline'
-            onClick={()=> increase(product)}>
+            // onClick={()=> increase(product)}
+            >
               ADD MORE</button>
-        } */}
+       
         
 
         <button 

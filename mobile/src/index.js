@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom';
+import ProductsContextProvider from './context/ProductsContext'
 
 const styleLink = document.createElement("link");
 styleLink.rel = "stylesheet";
@@ -15,7 +16,9 @@ document.head.appendChild(styleLink);
 ReactDOM.render(
   
     <Router>
-      <App />
+      <ProductsContextProvider>
+        <App />
+      </ProductsContextProvider>
     </Router>,
 
   document.getElementById('root')

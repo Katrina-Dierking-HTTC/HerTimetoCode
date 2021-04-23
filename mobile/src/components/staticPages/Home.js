@@ -7,6 +7,7 @@ import FooterNav from '../main/FooterNav'
 
 import '../../App.scss';
 import "../design/MobileStyle.css"
+import Footer from '../shop/footer/Footer'
 
 export default function Home () {
     return (
@@ -16,6 +17,7 @@ export default function Home () {
             <Steps />
             <Testimonials />
             <FooterNav />
+            <Footer />
         </>
     );
 }

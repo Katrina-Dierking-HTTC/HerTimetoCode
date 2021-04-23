@@ -1,6 +1,6 @@
 
 
-export default itemData = [
+const itemData = [
 
     {
         id: 1,
@@ -57,4 +57,6 @@ export default itemData = [
         price: 47
     }
 
-]
+];
+
+export default itemData

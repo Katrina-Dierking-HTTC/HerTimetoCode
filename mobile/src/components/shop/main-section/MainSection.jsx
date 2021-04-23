@@ -1,7 +1,7 @@
 import React from 'react'
 import {withRouter} from 'react-router-dom'
 import HTMLGlanceSp from '../../../images/HTMLGlanceSp.png'
-import '../mainSection.styles.scss'
+import './mainSection.styles.scss'
 
 
 function MainSection({history}) {

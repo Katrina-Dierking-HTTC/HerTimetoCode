@@ -1,11 +1,14 @@
 import React, {useContext, useState, useEffect} from 'react'
 import {withRouter} from 'react-router-dom'
 import {ProductsContext } from '../../../context/ProductsContext'
+import {CartContext} from '../../../context/CartContext'
+import {isInCart} from '../../../helpers'
 import Layout from '../shared/Layout'
 import './singleProduct.styles.scss'
 
 function SingleProduct({match, history: {push} }) {
     const {products} = useContext(ProductsContext);
+    const {addProduct, cartItems} = useContext(CartContext);
     const { id } = match.params;
     const [product, setProduct] = useState(null);
 
@@ -19,6 +22,7 @@ function SingleProduct({match, history: {push} }) {
 
     if (!product) { return null }
     const { image, title, price, description } = product;
+    const itemInCart = isInCart(product, cartItems);
     
     
     return (
@@ -33,12 +37,21 @@ function SingleProduct({match, history: {push} }) {
                         <p>{price}</p>
                     </div>
                     <div className='add-to-cart-btns'>
-                        <button className='button is-white nomad-btn' id='btn-white-outline'>
-                            ADD TO CART
-                        </button>
-                        <button className='button is-black nomad-btn' id='btn-white-outline'>
-                            PROCEED TO CHECKOUT
-                        </button>
+                        {
+                            !itemInCart(product, cartItems) &&
+                            <button className='button is-white nomad-btn' id='btn-white-outline'
+                                onClick= {() => addProduct(product)}>
+                                ADD TO CART
+                            </button>
+                        }
+
+                        {
+                            itemInCart(product, cartItems) &&
+                            <button className='button is-black nomad-btn' id='btn-white-outline'
+                                onClick= {() => {}}>
+                                PROCEED TO CHECKOUT
+                            </button>
+                        }
                     </div>
                     <div className='product-description'>
                         <p>{description}</p>

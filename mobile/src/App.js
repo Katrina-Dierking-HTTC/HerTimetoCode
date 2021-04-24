@@ -10,6 +10,8 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import NotFound from './components/NotFound'
 import ShopPage from './components/shop/pages/ShopPage'
 import SingleProduct from './components/shop/single-product/SingleProduct'
+import CartPage from './components/shop/pages/cart-page/CartPage'
+import Checkout from './components/shop/checkout/Checkout'
 
 
 
@@ -28,6 +30,8 @@ function App() {
         <Route path = '/community' component={Community} />
         <Route path = '/shop' component={Shop} />
         <Route path = '/shopPage' component={ShopPage} />
+        <Route path = '/cart' component={CartPage} />
+        <Route path = '/checkout' component = {Checkout} />
         <Route path = '/product/:id' component ={SingleProduct} />
         <Route path='*' component={NotFound} />
         

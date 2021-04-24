@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../../shop/hero/hero.styles.scss';
 
 const Hero = () =>{
@@ -8,11 +9,13 @@ const Hero = () =>{
                 <div className="hero-body">
                     <div className='container'>
                         <h1 className="hero-title">
-                        Tools for the rising web developer.
+                       Web Development just got easier.
                         </h1>
                         <div className='shop-now-btn'>
-                            <button className='button is-black' id='shop-now'>
+                            <button className='button is-black' id='shop-now' >
+                            <Link to='/shopPage'>
                                 SHOP NOW
+                            </Link>
                             </button>
                         </div>
                     </div>

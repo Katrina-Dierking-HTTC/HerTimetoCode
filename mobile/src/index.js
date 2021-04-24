@@ -6,6 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router} from 'react-router-dom';
 import ProductsContextProvider from './context/ProductsContext'
 import CartContextProvider from './context/CartContext';
+import {Elements} from '@stripe/react-stripe-js';
+import {loadStripe} from '@stripe/stripe-js'
+
+const stripePromse = loadStripe(process.env.REACT_APP_PUBLISHABLE_KEY);
 
 const styleLink = document.createElement("link");
 styleLink.rel = "stylesheet";
@@ -21,6 +25,7 @@ ReactDOM.render(
       <ProductsContextProvider>
         <CartContextProvider>
           <App />
+          <Elements stripe={stripePromse}/>
         </CartContextProvider>
       </ProductsContextProvider>
     </Router>,
@@ -28,7 +33,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

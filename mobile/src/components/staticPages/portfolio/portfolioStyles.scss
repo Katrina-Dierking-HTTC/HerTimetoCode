@@ -1,0 +1,129 @@
+
+.hero-section {
+    margin-top:.5%;
+}
+
+
+.hero {
+    display:flex;
+    // flex-direction:column;
+    align-items: center;
+    width: 100vw;
+    height: 30vh;
+
+}
+
+.hero-body {
+    background-color:red;
+}
+
+.hero-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../../images/Laptop.png') center/cover no-repeat;
+    background-size: cover;
+}
+
+.hero-quote {
+    border: 1px solid white; 
+    padding: 4px;
+    width: 50vw;
+    margin: -30vh 0 2vh 0vw;
+    background-color: white;
+    color:rgba(0, 0, 0, 0.9);
+    text-align:center;
+
+    @media(min-width: 1024px) {
+        width: 20vw;
+    }
+}
+
+.hero-name {
+    font-size: 3rem;
+}
+
+.hero-container {
+    padding: 3%;
+    width: 80vw;
+}
+
+
+.hero-title {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  @media(min-width: 1024px) {
+    .hero-image {
+      font-size: 2.5rem;
+    }
+  }
+
+
+.container {
+    padding-top: 2%;
+}
+
+
+
+
+.skills-container {
+    width: 100vw;
+    background-color: rgb(226, 226, 226);
+
+
+    .skills-wrap {
+        margin-left: 25vw;
+        padding-bottom: 5%;
+    }
+    
+    @media(min-width: 1024px) {
+        padding-left: 20%;
+    }
+
+
+}
+
+.findme-box {
+    width: 40vw;
+    margin: 5vh 0 0 30vw;
+    align-content: center;
+  
+}
+
+.findme-links {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.fade-in-image {
+    animation: fadeIn 15s;
+    -webkit-animation: fadeIn 15s;
+    -moz-animation: fadeIn 15s;
+    -o-animation: fadeIn 15s;
+    -ms-animation: fadeIn 15s;
+        }
+        @keyframes fadeIn {
+            0% {opacity:0;}
+            100% {opacity:1;}
+        }
+        
+        @-moz-keyframes fadeIn {
+            0% {opacity:0;}
+            100% {opacity:1;}
+        }
+        
+        @-webkit-keyframes fadeIn {
+            0% {opacity:0;}
+            100% {opacity:1;}
+        }
+        
+        @-o-keyframes fadeIn {
+            0% {opacity:0;}
+            100% {opacity:1;}
+        }
+        
+        @-ms-keyframes fadeIn {
+            0% {opacity:0;}
+            100% {opacity:1;}
+        }

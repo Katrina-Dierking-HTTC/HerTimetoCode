@@ -6,17 +6,21 @@ export const AboutTopWrapContent = styled.div`
     box-shadow: 5px .5px 8px 3px black;
 
     .aboutH2Header {
-        height: 50px;
+        height: 70px;
         background: teal;
         position: relative;
         border-bottom: 1.5px solid black;
         color:white;
-        padding-left: 2%;
-        padding-top:2%;
+        padding: 3% 0 0 2%;
         font-size: 1rem;
         font-weight: 300;
+
+        @media (min-width: 1024px) {
+            padding-top:1%;
+        }
       }
       
+
 `
 
 export const AboutBody = styled.div`
@@ -28,10 +32,20 @@ export const AboutBody = styled.div`
 export const Me = styled.div`
       max-width: 90vw;
       min-height: 100vh;
-
+     
       .me-top {
         display:flex;
         width: 80vw;
+      }
+
+      .me-top-img {
+          width: 25vw;
+          height: 25vw;
+
+          @media (min-width: 1024px){
+              width: 10vw;
+              height:10vw;
+          }
       }
 
       .me-para-bottom {
@@ -40,12 +54,30 @@ export const Me = styled.div`
 
       .middle {
         background: #ececec;
+        box-shadow: 4px .5px 12px 2px slategrey;
         width: 80vw;
         padding: 1%;
         min-height: 100vh;
+        margin: 5% 0 0 5%;
+
+        .fun-coffee{
+            width: 6vw;
+            height: 6vh;
+
+            @media(min-width: 1024px) {
+                width: 4vw;
+                height:4vh;
+            }
+        }
 
         .pets-icon {
-            max-width: 50px;
+            width: 7vw;
+            height: 7vh;
+
+            @media(min-width: 1024px) {
+                width: 5vw;
+                height: 5vh;
+            }
         }
 
         .pets-p {
@@ -55,10 +87,36 @@ export const Me = styled.div`
         .facts-box {
             border-left: 1px solid #e21979;
             display:flex;
-            max-width: 70vw;
-            margin-left: 1%;
-            padding-left: 3%;
+            max-width: 80vw;
+            margin-left: 5%;
+            padding: 3%;
+            height: 10vh;
+
+            .kids-icon {
+                width: 7vw;
+                height: 5vh;
+
+                @media(min-width: 1024px) {
+                    width: 3vw;
+                }
+            }
+        }
+
+        .kids {
             height: 5vh;
+        }
+
+        .facts-box {
+            img{
+                width:  5vw;
+                height: 5vh;
+
+                @media (min-width: 1024px){
+                    width: 4vw;
+                    height: 2vw;
+                }
+               
+            }
         }
 
 
@@ -67,7 +125,16 @@ export const Me = styled.div`
         }
 
         .para {
-            padding-left: 2%;
+            padding-left: 4%;
+        }
+        .coffee-p {
+            margin-top: 3%;
+            padding-left: 6%;
+
+            @media(min-width: 1024px) {
+                margin-top:1%;
+                padding-left: 5%;
+            }
         }
 
         .who-I-am {
@@ -102,59 +169,60 @@ export const Me = styled.div`
         .b {
             background-color: grey;
         }
+
+        .petsImg {
+            width: 5vw;
+
+
+            @media(min-width: 1024px) {
+                width: 2vw;
+            }
+
+        }
 `
 export const Goals = styled.div`
     padding-left: 5%;
-    max-width: 77vw;
+    width: 90vw;
     
     .top {
         display:flex;
         justify-content: space-evenly;
-        width: 25vw;
-        padding-top:2%;
+        width: 80vw;
+        padding:2%;
+        border-bottom: 2px solid teal;
+        background-color:lightgrey;
+        box-shadow: 4px .5px 12px 2px slategrey;
+        margin-top:2vh;
+        
+        @media (min-width: 1024px) {
+            width: 80vw;
+        }
+
+        img {
+            width: 5vw;
+            height: 5vh;
+
+            @media (min-width: 1024px) {
+                width: 3vw;
+                margin-left: 2vw;
+            }
+        }
+
+        .plans {
+          width: 90vw;
+        
+
+            @media (min-width: 1024px) {
+                margin-left:5vw;
+            }
+        }
+
     }
 `
-export const Projects = styled.div`
-    padding-left: 5%;
-    display:flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    background: #ececec;
-
-    .top {
-        display:flex;
-        width: 45vw;
-        padding-top:1%;
-    }
-`
 
 
 
-export const Cards = styled.div`
-    display:flex;
-    flex:wrap;
-    min-width: 100vw;
 
-    .proj-card {
-        min-width:15vw;
-        height: 90vh;
-        border: 1px solid black;
-        margin: 1% 0 0 1%;
-    }
-
-    .proj-title {
-        max-height: 2vh;
-        background-color: teal;
-        margin-top: 0%;
-        padding:2% 0 4% 4%;
-        border: 2px solid black;
-    }
-
-    .proj-code {
-        margin-left: 12%;
-    }
-`
 export const Passions = styled.section`
     
     `

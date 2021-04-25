@@ -5,13 +5,13 @@ import About from "./components/staticPages/About"
 import Contact from "./components/staticPages/Contact"
 import Shop from "./components/shop/pages/Shop"
 import Community from "./components/staticPages/Community"
-// import Portfolio from "./components/staticPages/Portfolio"
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import NotFound from './components/NotFound'
 import ShopPage from './components/shop/pages/ShopPage'
 import SingleProduct from './components/shop/single-product/SingleProduct'
 import CartPage from './components/shop/pages/cart-page/CartPage'
 import Checkout from './components/shop/checkout/Checkout'
+import Portfolio from './components/staticPages/portfolio/Portfolio'
 
 
 
@@ -26,6 +26,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path = '/about' component={About} />
+        <Route Portfolio = '/portfolio' component={Portfolio}/>
         <Route path = '/contact' component={Contact} />
         <Route path = '/community' component={Community} />
         <Route path = '/shop' component={Shop} />

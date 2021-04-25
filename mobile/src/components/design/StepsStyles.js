@@ -4,6 +4,7 @@ import {size} from '../design/MediaQueries'
 export const StepWrapper = styled.div`
     display:flex;
     width: 100vw;
+    margin-top:2vw;
 
     img {
         margin-left: 4vw;

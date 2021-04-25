@@ -8,11 +8,10 @@ import Jenn from '../../images/Jenn.png'
 import Jtest from '../../images/Jtest.png' 
 import Ltest from '../../images/Ltest.png'
 import click from '../../images/click.png'
-// import { flip } from 'react-animations'
 import {TestimonialWrapper} from '../design/TestimonialStyle'
 
 
-// const flipAnimation = keyframes `${flip}`;
+
 
 export default function Testimonials () {
 

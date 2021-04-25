@@ -49,7 +49,7 @@ export default function Top () {
                        
                                 <MenuItem><Link to ='/'>Home</Link></MenuItem>
                                 {/* <MenuItem><Link to ='/about'>About</Link></MenuItem> */}
-                                <MenuItem><a href = 'https://katrina-dierking-httc.github.io/portfolio/' target="_blank" rel="noopener noreferrer">Portfolio</a></MenuItem>
+                                <MenuItem><Link to = './portfolio/'>Portfolio</Link></MenuItem>
                                 <MenuItem><Link to ='/shop'>Shop</Link></MenuItem>
                                 <MenuItem><a href ='https://blog.hertimetocode.com' target="_blank" rel="noopener noreferrer">Blog</a></MenuItem>
                                 <MenuItem><Link to ='/community'>Community</Link></MenuItem>
@@ -71,7 +71,7 @@ export default function Top () {
                     
                             <Item><Link to ='/'>Home</Link></Item>
                             {/* <Item><Link to ='/about'>About</Link></Item> */}
-                            <Item><a href = 'https://kd-portfolio.netlify.app' target="_blank" rel="noreferrer">Portfolio</a></Item>
+                            <Item><Link to = './portfolio/'>Portfolio</Link></Item>
                             <Item><Link to ='/shop'>Shop</Link></Item>
                             <Item><a href ='https://blog.hertimetocode.com' target="_blank" rel="noopener noreferrer">Blog</a></Item>
                             <Item><Link to ='/community'>Community</Link></Item>

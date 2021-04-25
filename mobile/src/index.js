@@ -9,7 +9,7 @@ import CartContextProvider from './context/CartContext';
 import {Elements} from '@stripe/react-stripe-js';
 import {loadStripe} from '@stripe/stripe-js'
 
-const stripePromse = loadStripe(process.env.REACT_APP_PUBLISHABLE_KEY);
+const stripePromise = loadStripe(process.env.REACT_APP_PUBLISHABLE_KEY);
 
 const styleLink = document.createElement("link");
 styleLink.rel = "stylesheet";
@@ -24,8 +24,9 @@ ReactDOM.render(
     
       <ProductsContextProvider>
         <CartContextProvider>
+        <Elements stripe={stripePromise}>
           <App />
-          <Elements stripe={stripePromse}/>
+        </Elements>
         </CartContextProvider>
       </ProductsContextProvider>
     </Router>,

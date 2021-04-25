@@ -22,8 +22,9 @@ export default function IntroTablet () {
                 <img src = {hi1} className = "name2" alt = "introduction from Katrina Dierking | Founder of Her Time to Code" />
             </div>
         
-            <p className = "home-intro">I give women the tools they need today to 
-            become skilled web developers of tomorrow. </p>
+            <p className = "home-intro">I'm a Full-Stack Web Developer with a passion for building life-changing applications and helping other women find freedom in technology.  
+            <br>
+            <em>Where women and tech collide, anything is possible!</em></br></p>
         </Intro>
     </IntroWrapper>
     )

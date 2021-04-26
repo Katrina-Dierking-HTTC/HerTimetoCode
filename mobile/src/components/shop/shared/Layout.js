@@ -2,10 +2,11 @@ import React from 'react'
 import Footer from '../footer/Footer'
 import Header from '../shopHeader/Header'
 
+
 function Layout({children}) {
     return (
         <>
-        <Header />
+      <Header />
         <main>
             {
                 children

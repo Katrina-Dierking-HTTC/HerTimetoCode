@@ -12,7 +12,7 @@ import SingleProduct from './components/shop/single-product/SingleProduct'
 import CartPage from './components/shop/pages/cart-page/CartPage'
 import Checkout from './components/shop/checkout/Checkout'
 import Portfolio from './components/staticPages/portfolio/Portfolio'
-import Invite from './components/main/Invite'
+
 
 
 
@@ -34,7 +34,6 @@ function App() {
         <Route path = '/shopPage' component={ShopPage} />
         <Route path = '/cart' component={CartPage} />
         <Route path = '/checkout' component = {Checkout} />
-        <Route path ='/invite' component = {Invite} />
         <Route path = '/product/:id' component ={SingleProduct} />
         <Route path='*' component={NotFound} />
         

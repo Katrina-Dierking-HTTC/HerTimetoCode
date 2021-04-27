@@ -3,12 +3,20 @@
     padding-bottom: 2%;
     box-shadow: 1px .5px 10px 1px black;
 
+    @media (min-width: 1024px) {
+        padding-top: 2vh;
+    }
+
     a {
         color:white;
     }
 }
 
 .image {
-    width: 25vw;
+    width: 80vw;
     height:10vh;
+
+    @media (min-width: 1024px) {
+        width: 25vw;
+    }
 }

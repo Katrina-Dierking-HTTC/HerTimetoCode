@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'react-router-dom'
 import styled from 'styled-components'
 import cursive1 from '../../images/cursive1.png'
-import '../design/invite.styles.scss'
+import '../design/top.styles.scss'
 
 
 function Top () {
@@ -31,8 +31,5 @@ const Id = styled.div`
     margin-bottom:1vh;
     text-align:center;
 
-    h3{
-
-    }
 
 `

@@ -1,6 +1,8 @@
 export const size = {
-    xsmall: '414px',
-    small: '415px',
+    micro:'360',
+    xsmall: '411px',
+    small: '412px',
+    smMed: '768px',
     med: '1023px',
     large: '1024px',
     xl: '1200px',

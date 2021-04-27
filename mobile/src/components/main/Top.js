@@ -1,85 +1,35 @@
-import React, {useState} from 'react'
-import {useMediaQuery} from 'react-responsive'
-import { Link} from 'react-router-dom'
+import React from 'react'
+import Link from 'react-router-dom'
+import styled from 'styled-components'
+import cursive1 from '../../images/cursive1.png'
+import '../design/top.styles.scss'
 
 
-import {
-    Wrapper, 
-    HeaderWrapper, 
-    MenuToggle, 
-    RotateContainer, 
-    Menu, 
-    MenuWrapper, 
-    MenuItem, 
-    DropDown, 
-    Item} from '../design/TopStyle'
-
-
-export default function Top () {
-
-    const isPhone = useMediaQuery({query: '(max-width: 500px)'})
-    const isTablet = useMediaQuery({query:'(min-width: 501px)'})
-
-
-    const [open, setOpen] = useState(false);
-
-    const  toggleMenu = () => {
-        setOpen(!open);
-    };
-
-
+function Top () {
     return (
-        <> 
-            {isPhone &&
-              <Wrapper>
-              <div className = "wordLogo">
-                <p className = "httcLogo"> {`<HTT`}<span className ="code"><i>{`Code />`}</i></span> </p>
-                </div>
-                    <HeaderWrapper id='header'>
-                        <MenuToggle onClick={toggleMenu} open={open}>
-                            <RotateContainer open={open}>
-                            <span  />
-                            <span  />
-                            <span  />
-                            </RotateContainer>
-                            </MenuToggle>
-                    </HeaderWrapper>
-                    <MenuWrapper open={open}>
-                        <Menu open={open}>
-                       
-                                <MenuItem><Link to ='/'>Home</Link></MenuItem>
-                                {/* <MenuItem><Link to ='/about'>About</Link></MenuItem> */}
-                                <MenuItem><Link to = './portfolio/'>Portfolio</Link></MenuItem>
-                                <MenuItem><Link to ='/shop'>Shop</Link></MenuItem>
-                                <MenuItem><a href ='https://blog.hertimetocode.com' target="_blank" rel="noopener noreferrer">Blog</a></MenuItem>
-                                <MenuItem><Link to ='/community'>Community</Link></MenuItem>
-                                <MenuItem><Link to ='/contact'>Contact</Link></MenuItem>
-                        
-                
-                          </Menu>
-                    </MenuWrapper>
-               </Wrapper>
-                }
-                
+        <>
+            <Id>
+                <h3>Katrina Dierking | Web Developer | Her Time to Code</h3>
+            </Id>
 
-                {isTablet && 
-                    <DropDown>
-                      <div className = "wordLogo">
-                        <p className = "httcLogo"> {`<HTT`}<span className ="code"><i>{`Code />`}</i></span> </p>
-                      </div>
-
-                    
-                            <Item><Link to ='/'>Home</Link></Item>
-                            {/* <Item><Link to ='/about'>About</Link></Item> */}
-                            <Item><Link to = './portfolio/'>Portfolio</Link></Item>
-                            <Item><Link to ='/shop'>Shop</Link></Item>
-                            <Item><a href ='https://blog.hertimetocode.com' target="_blank" rel="noopener noreferrer">Blog</a></Item>
-                            <Item><Link to ='/community'>Community</Link></Item>
-                            <Item><Link to ='/contact'>Contact</Link></Item>
-                      
-                    </DropDown>                
-                }
-
+            <nav class="level py-3 nav is-desktop">
+                <p class="level-item has-text-centered"><a href = '/' class="link is-info">Home</a></p>
+                <p class="level-item has-text-centered"><a href = '/about' class="link is-info">About</a></p>
+                <p class="level-item has-text-centered"><a href = "https://blog.hertimetocode.com" class="link is-info">Blog</a></p>
+                <p class="level-item has-text-centered"><img src={cursive1}alt="" class="image"/></p>
+                <p class="level-item has-text-centered"><a href = '/portfolio' class="link is-info">Portfolio</a></p>
+                <p class="level-item has-text-centered"><a href = '/shop'class="link is-info">Shop</a></p>
+                <p class="level-item has-text-centered"><a href = '/contact' class="link is-info">Contact</a></p>
+            </nav>
         </>
     )
 }
+export default Top
+
+const Id = styled.div`
+    padding: 2vh;
+    margin-bottom:1vh;
+    text-align:center;
+
+
+`

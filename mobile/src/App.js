@@ -16,6 +16,7 @@ import Portfolio from './components/staticPages/portfolio/Portfolio'
 
 
 
+
 function App() {
   return (
     <>
@@ -26,7 +27,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path = '/about' component={About} />
-        <Route Portfolio = '/portfolio' component={Portfolio}/>
+        <Route path = '/portfolio' component={Portfolio}/>
         <Route path = '/contact' component={Contact} />
         <Route path = '/community' component={Community} />
         <Route path = '/shop' component={Shop} />

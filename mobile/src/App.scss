@@ -6,6 +6,11 @@
 @import '../node_modules/bulma/sass/elements/container.sass';
 @import '../node_modules/bulma/sass/layout/hero.sass';
 
+*{
+  box-sizing: border-box;
+}
+
+
 .app {
   position: relative;
   min-height: 100vh;

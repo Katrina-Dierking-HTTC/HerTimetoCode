@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import KD from '../../images/KD.png'
 import {IntroInvWrap, IntroWrap, InviteWrap} from '../design/IntroStyles'
 
@@ -28,7 +29,7 @@ function Intro() {
                         <div className="choice-title top-two">A RECRUITER? </div>
                     </div>
                     <div className="bottom">
-                        <p className="botDesc">If you're looking for new talent to hire, check out my <a href="https://katrina-dierking.netlify.app/portfolio">portfolio.</a></p>
+                        <p className="botDesc">If you're looking for new talent to hire, check out my <Link to='/portfolio'>portfolio.</Link></p>
                     </div>
                 </div>
                 
@@ -42,7 +43,7 @@ function Intro() {
                             <div className="choice-title top-two">AN ASPIRING DEVELOPER?</div>
                     </div>
                     <div className="bottom">
-                        <p className="botDesc">If you're looking to learn HTML/CSS, JavaScript, React, etc, check out the <a href = "">HTTC shop</a> for visual aid learning tools and products.</p>
+                        <p className="botDesc">If you're looking to learn HTML/CSS, JavaScript, React, etc, check out the <Link to='/shop'>HTTC shop</Link> for visual aid learning tools and products.</p>
                     </div>
                 </div>
                 
@@ -54,7 +55,7 @@ function Intro() {
                                 <div className="choice-title top-two"><p>A BUSINESS?</p> </div>
                         </div>
                         <div className="bottom">
-                            <p className="botDesc">Do you need a website designed, built, or remodeled? Contact me <a href="https://katrina-dierking.netlify.app/contact">here</a> and we'll schedule a time to go over your business needs.</p>
+                            <p className="botDesc">Do you need a website designed, built, or remodeled? Contact me <Link to='/contact'>here</Link> and we'll schedule a time to go over your business needs.</p>
                         </div>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import blog from '../../images/blog.png'
 import cart from '../../images/cart.png'
@@ -11,9 +12,9 @@ export default function FooterNav () {
         <>
         <div className = "footer">
             <div className="icons">
-                <a href = "/"><img src={home} className="home" alt="home icon"/></a>
+                <Link to = "/"><img src={home} className="home" alt="home icon"/></Link>
                 <a href = "https://blog.hertimetocode.com"><img src={blog} className="blog" alt="blog icon" /></a>
-                <a href = "/shop"><img src={cart} className="cart" alt="shopping cart"/></a>
+                <Link to = "/shop"><img src={cart} className="cart" alt="shopping cart"/></Link>
                 <a href = "mailto:katrina@hertimetocode.com"><img src={email} className="email" alt="email icon"/></a>
             </div>
         </div>

@@ -85,11 +85,15 @@ export const InviteWrap = styled.div`
         border: 1px solid green;
         border-radius:5%;
         width: 75vw;
-        // width: 20vw;
+       
         display:flex;
         flex-direction:column;
         justify-content:space-evenly;
+        
+        cursor:pointer;
+        
         // margin:1%;
+        // width: 20vw;
     }
     .top {
 

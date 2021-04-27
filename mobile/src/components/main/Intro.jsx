@@ -1,10 +1,10 @@
 import React from 'react'
 import KD from '../../images/KD.png'
-import {IntroWrap, InviteWrap} from '../design/IntroStyles'
+import {IntroInvWrap, IntroWrap, InviteWrap} from '../design/IntroStyles'
 
 function Intro() {
     return (
-      <>
+      <IntroInvWrap>
 
         <IntroWrap>
             <div className="hero">
@@ -61,7 +61,8 @@ function Intro() {
             
            
         </InviteWrap>
-</>
+
+        </IntroInvWrap>
     
     )
 }

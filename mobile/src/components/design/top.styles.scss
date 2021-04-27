@@ -16,7 +16,11 @@
     width: 80vw;
     height:10vh;
 
-    @media (min-width: 1024px) {
-        width: 25vw;
+    @media (min-width: 1024px) and (max-width: 1200px) {
+        width: 45vw;
+    }
+    @media (min-width:1201px){
+        width: 30vw;
+        height:7vh;
     }
 }

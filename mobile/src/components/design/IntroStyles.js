@@ -1,29 +1,34 @@
 import styled from 'styled-components'
 import {size} from './MediaQueries'
 
+export const IntroInvWrap = styled.div`
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    width: 100vw;
+`
 export const IntroWrap = styled.div`
-    height: 20vh;
+    height: 28vh;
     display:flex;
     justify-content:center;
-
     margin-bottom:2%;
 
-    //height:20vh;
 
+    
 
     .hero-title{
         min-height:20vh;
         min-width: 100vw;
-        
 
-        //414
-        // height: 50vh;
-        // width: 50vw;
       }
 
     .hero {
         background-image: url('https://blog.hertimetocode.com/wp-content/uploads/2021/04/BG.png');
         height: 20vh;
+
+        @media(min-width: ${size.xl}){
+           height:30vh;
+        }
     }
 `
 
@@ -34,12 +39,22 @@ export const InviteWrap = styled.div`
     flex-direction: column;
     justify-content:space-evenly;
     align-items:center;
+    background-color: #f7f7f7;
+;
+    margin-top:1vh;
+        @media(min-width: ${size.large}) and ${size.xl} {
+            width: 50vw;
+        }
     
     .introBox{
         width: 90vw;
         padding: 1vh;
 
-        // width: 70vw;
+        @media(min-width: ${size.xxl}) {
+            width: 70vw;
+            height: 20vh;
+
+        }
     }
 
     .welcome, .AreYou {
@@ -62,51 +77,59 @@ export const InviteWrap = styled.div`
     }
 
     .boxes{
-        height: 65vh;
+        height: 85vh;
         display:flex;
         flex-direction:column;
-        justify-content:space-between;
+        justify-content:space-around;
         align-items:center;
         width: 90vw;
         margin-top:3%;
         
         
-        
-        // width: 90vw;
-        // display:flex;
-        // justify-content: space-between;
-        // align-items:center;
-        // margin-top: 5vh;
-        // border:1px solid black;
+        @media (min-width:${size.smMed}) and (max-width:${size.med}){
+        height:50vh;
+        width: 60vw;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-top: 5vh;
+        }
 
-        // width: 70vw;
+        @media(min-width:${size.large}){
+            display:flex;
+            height:12vh;
+            flex-direction:row;
+            width:90vw;
+        }
     }
     .choice {
         border: 1px solid green;
         border-radius:5%;
         width: 75vw;
-       
         display:flex;
         flex-direction:column;
         justify-content:space-evenly;
         
         cursor:pointer;
         
+        @media (min-width:${size.smMed}) and (max-width:${size.med}){
         // margin:1%;
-        // width: 20vw;
+        width: 55vw;
+        }
+
+        @media(min-width:${size.large}){
+        max-width: 27vw;
+        }
     }
     .top {
 
         display:flex;
         flex-direction:row;
-        // display:flex;
-        // flex-direction:column;
-        // justify-content: space-evenly;
-        // align-items:center;
 
-        // border: 1px solid orange;
-        // display:flex;
-        // justify-content: space-around;
+        @media(min-width:${size.large}) and (max-width:${size.xl}) {
+        justify-content: space-evenly;
+        align-items:center;
+        }
     }
 
     .choice-title {
@@ -142,23 +165,32 @@ export const InviteWrap = styled.div`
         white-space:normal;
         overflow:hidden;
         margin:2%;
+        text-align:center;
 
-    //     height: 20vh;
-    //     padding:1vh;
-    //     width: 20vw;
-    //     margin:1.2vw;
-    //     border: 1px solid white;
-    
+        @media (min-width:${size.smMed}) and (max-width:${size.med}){
+        height: 10vh;
+        padding:1vh;
+        width: 50vw;
+        margin:1.2vw;
+        }
+
+        @media(min-width:${size.large}){
+            max-width: 25vw;
+        }
     }
 
     .botDesc{
         width: 70vw;
         font-weight: 600;
 
+        @media (min-width:${size.smMed}) and (max-width:${size.med}){
+        width: 45vw;
+        height: 40vh;
+        }
 
-        // width: 20vw;
-        // height: 40vh;
-        // background-color:grey;
+        @media(min-width:${size.large})  {
+            max-width: 23vw;
+        }
     }
 
     .one, .two, .three {

@@ -27,3 +27,15 @@
       }
     }
   }
+
+  .constBox {
+    width: 10vw;
+    height: 10v;
+    padding: 3%;
+    border: 2px solid teal; 
+    box-shadow: 1px .5px 10px 1px grey;
+  }
+
+  .const {
+    font-size: 2rem; 
+  }

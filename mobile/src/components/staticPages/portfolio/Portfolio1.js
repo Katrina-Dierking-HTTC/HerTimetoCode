@@ -1,6 +1,7 @@
 import React from 'react'
 import Top from '../../main/Top'
 import Footer from '../../shop/footer/Footer'
+import {Link} from 'react-router-dom'
 import {Port, Header, Options, Samples, Vision, Skills, FindMe} from '../../design/PortStyle'
 
 function Portfolio1() {
@@ -27,21 +28,27 @@ function Portfolio1() {
         <Port>
         <Options>
             <div className = 'option one'>
-                <i className="fas fa-robot"></i>
-                <h3>Projects</h3>
-                <p>desc</p>
+                <a href = "https://github.com/Katrina-Dierking" target="_blank"><i class="fas fa-cogs"></i></a>
+                <h3 className="optTitle">PROJECTS</h3>
+                <p className = "proDesc">
+                    Checkout a few of my projects. Some are a continual work in progress. Feel free to add suggestions and feedback.</p>
             </div>
 
             <div className = 'option two'>
-                <i className="fas fa-atom"></i>
-                <h3>Blog</h3>
-                <p>desc</p>
+                <a href="https://blog.hertimetocode.com"
+                    target="_blank">
+                <i class="fas fa-pencil-alt"></i></a>
+                <h3 className="optTitle">BLOG</h3>
+                <p className = "proDesc">
+                    Follow my journey through web development. Join me as I master new concepts and create the tools to help others to do the same. 
+                </p>
             </div>
 
             <div className = 'option three'>
-                <i className="fas fa-bolt"></i>
-                <h3>About</h3>
-                <p>desc</p>
+               <Link to='./about'>
+               <i class="far fa-smile-wink"></i></Link>
+                <h3 className="optTitle">ABOUT</h3>
+                <p className = "proDesc">Am I a pet person? Do I have any crazy quirks? There's only one way to find out.</p>
             </div>
         </Options>
 
@@ -50,17 +57,27 @@ function Portfolio1() {
         </Samples>
 
         <Vision>
-            <img src="" className="visionImg" alt=""/>
+            <img src="https://images.unsplash.com/photo-1523289217630-0dd16184af8e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" className="visionImg" alt=""/>
 
             <div className="vision">
-                <icon>*</icon>
-                <h2>title</h2>
-                <p>desc</p>
-                <p>Goals</p>
-                <ul>
-                    <li><icon></icon></li>
-                    <li><icon></icon></li>
-                    <li><icon></icon></li>
+            <i class="fas fa-bullseye"></i>
+                <h2 className= "visTitle">My goals for the future in Web Development</h2>
+                <p className = "visDesc">desc</p>
+                <p className= "visGoals">Goals</p>
+                <ul className = "goalsList">
+                    <li>
+                        <icon></icon>
+                        <p></p>
+                    </li>
+                    <li>
+                        <icon></icon>
+                        <p></p>
+                    </li>
+                    <li>
+                        <icon></icon>
+                        <p></p>
+                    </li>
+                    
                 </ul>
             </div>
         </Vision>

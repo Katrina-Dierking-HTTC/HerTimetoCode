@@ -13,6 +13,8 @@ function Shop () {
 
     return (
         <>
+        <div className= 'constBox'>
+        <h2 className="const"> THE HTTP SHOP IS CURRENTLY UNDER CONSTRUCTION. PLEASE CHECK BACK LATER FOR UPDATES.</h2></div>
      
         <Layout>
             <Hero />

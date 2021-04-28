@@ -3,6 +3,7 @@ export const size = {
     xsmall: '411px',
     small: '412px',
     smMed: '768px',
+    medSm: '769px',
     med: '1023px',
     large: '1024px',
     xl: '1200px',

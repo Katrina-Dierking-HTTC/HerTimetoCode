@@ -2,7 +2,7 @@ import React from 'react'
 import Top from '../../main/Top'
 import Footer from '../../shop/footer/Footer'
 import { Link} from 'react-router-dom'
-import {Social, TopSection, Me, About, Skills, FindMe} from '../../design/PortfolioStyle'
+import {Me, About, Skills, FindMe} from '../../design/PortfolioStyle'
 
 import './portfolioStyles.scss'
 
@@ -23,11 +23,6 @@ function Portfolio() {
                     </div>
                 </div>
             
-
-                <p className="hero-quote mt-4 text-lg text-gray-300">
-                        ~ Where women, coffee, and tech collide, 
-                        <p>anything is possible ~ </p>
-                </p>
             </section>
     
         </section>

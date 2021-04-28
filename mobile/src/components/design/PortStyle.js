@@ -206,6 +206,8 @@ export const Skills = styled.div`
     // justify-content:space-around;
     // align-items:center;
 
+    background-color:#f7f7f7;
+
     ${spaceAround}
     width: 100vw;
     height: 40vh;
@@ -283,11 +285,15 @@ export const FindMe = styled.div`
        flex-direction:row;
        align-items:center;
         width: 30vw;
-        border: 1px solid red;
 
         .icon {
             width: 10vw;
             height: 10vh;
+        }
+
+        @media(min-width: ${size.xxl}) {
+            width: 15vw;
+            height:15vh;
         }
     }
 `

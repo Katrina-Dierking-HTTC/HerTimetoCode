@@ -1,13 +1,10 @@
 import React from 'react'
-import Top from '../../main/Top'
-import Footer from '../../shop/footer/Footer'
+import Top from '../main/Top'
+import Footer from '../shop/footer/Footer'
 import {Link} from 'react-router-dom'
-import skillsBG from '../../../images/skillsBG.jpg'
-import monkey from '../../../images/monkey.png'
-import email from '../../../images/email.png'
-import blog from '../../../images/blog.png'
-// import email from '../../../images/email.png'
-import {Port, Header, Options, Samples, Vision, Skills, FindMe} from '../../design/PortStyle'
+import skillsBG from '../../images/skillsBG.jpg'
+import monkey from '../../images/monkey.png'
+import {Port, Header, Options, Samples, Vision, Skills, FindMe} from '../design/PortStyle'
 
 
 function Portfolio1() {
@@ -59,7 +56,7 @@ function Portfolio1() {
         </Options>
 
         <Samples>
-            <div className = "carosel">Sample Carosel</div>
+            <div className = "carosel">Sample Carousel coming soon</div>
         </Samples>
 
         <Vision>

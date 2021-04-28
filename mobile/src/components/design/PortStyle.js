@@ -1,25 +1,41 @@
 import styled from 'styled-components'
 import {size} from './MediaQueries'
 
-// @mixin .style {
-//     display:flex;
-//     flex-direction:column;
-//     justify-content:space-between;
-//     align-items:center;
-//     width: 100vw;
-//     margin:1%;
-// }
-export const Header = styled.div`
-   border: 1px solid orange;
-`
-
-export const Port = styled.div`
+    const mixin = `
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     align-items:center;
     width: 100vw;
     margin:1%;
+    `
+
+    const flexMixin= `
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items:center;
+    `
+
+    const spaceAround= `
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        align-items:center;
+    `
+
+export const Header = styled.div`
+   border: 1px solid orange;
+`
+
+export const Port = styled.div`
+    // display:flex;
+    // flex-direction:column;
+    // justify-content:space-between;
+    // align-items:center;
+    // width: 100vw;
+    // margin:1%;
+    ${mixin}
 `
 
 export const Options = styled.div`
@@ -28,10 +44,11 @@ export const Options = styled.div`
     height: 60vh;
     margin: 3vh;
     background-color:#f7f7f7;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
+    // display:flex;
+    // flex-direction:column;
+    // justify-content:space-between;
+    // align-items:center;
+    ${flexMixin}
 
     @media(min-width:${size.large}) and (max-width: ${size.xl}){
         flex-direction:row;
@@ -50,10 +67,11 @@ export const Options = styled.div`
         height: 20vh;
         margin:2% 1% 2% 1%;
         background-color:white;
-        display:flex;
-        flex-direction:column;
-        justify-content:space-evenly;
-        align-items:center;
+        // display:flex;
+        // flex-direction:column;
+        // justify-content:space-evenly;
+        // align-items:center;
+        ${flexMixin}
         box-shadow: 1px .5px 10px 1px black;
         border-radius: 5%;
 
@@ -108,14 +126,20 @@ export const Samples = styled.div`
     margin:1% 1% 3vh 1%;
 `
 export const Vision = styled.div`
-    border: 1px solid blue;
     display:flex;
     justify-content:space-around;
-    width: 90vw;
-    argin:1% 1% 3vh 1%;
+    width: 70vw;
+    margin:1% 1% 3vh 1%;
 
     @media(max-width:${size.smMed}) {
         display:none;
+    }
+
+    @media(min-width:${size.medSm}){
+        display:flex;
+        width: 85vw;
+        height: 70vh;
+      
     }
 
     .visionImg{
@@ -132,43 +156,123 @@ export const Vision = styled.div`
     
 
     .vision{
-        background-color:pink;
         width:40vw;
         height: 40vh;
         padding-top: 1vh;
     }
 
-    .fa-bullseye {
+    .fa-bullseye, .fa-female, .fa-graduation-cap {
         width:3vw;
         height: 3vh;
+        padding-right: 3%;
     } 
-`
-export const Skills = styled.div`
-    border: 1px solid green;
-    display:flex;
-    flex-direction:column;
-    width: 85vw;
-    margin:2vh 1vh 3vh 1vh;
 
-    .skillsBox {
+    .goalsList {
+        border: 1px solid lightgrey;
+        padding: 1.5%;
+        margin-top:2%;
+    }
+
+    .visLeft{
+        display:flex;
+        padding:3%;
+        background-color:lightgrey;
+    }
+
+    .visRight {
+        height: 28vh;
         display:flex;
         flex-direction:column;
+        justify-content: space-between;
     }
 
-    .lists {
+    .visTitle {
+        font-weight: 700;
+    }
+
+    .goal {
         display:flex;
-        justify-content:space-evenly;
-        width: 80vw;
+        padding: 1%;
     }
 
-    .listOne, .listTwo {
-        border:1px solid black;
-        width: 35vw;
-        padding-bottom: 2vh;
+    .leave {
+        background-color: #f7f7f7;
+    }
+`
+export const Skills = styled.div`
+
+    // display:flex;
+    // flex-direction:column;
+    // justify-content:space-around;
+    // align-items:center;
+
+    background-color:#f7f7f7;
+
+    ${spaceAround}
+    width: 100vw;
+    height: 40vh;
+    margin:2vh 1vh 5vh 1vh;
+
+    .monkey{
+        width:7vw;
+        height:5vh;
+
+        @media (min-width:${size.xl}){
+            width: 5vw;
+        }
+    }
+    .monSkills {
+        display:flex;
+        justify-content:space-around;
+        width: 17vw;
+        align-items:center;
+        margin: 2% 0 2% 0;
+
+    }
+
+    .skillsDesc {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-items:left;
+        width: 80vw;
+        height: 15vh;
+    }
+
+    .skillsBar {
+        position:relative;
+        // text-align:center;
+    
+        .lists {
+            display:flex;
+            justify-content:space-between;
+            width: 75vw;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+       
+        }
+
+        .skillsImg{
+            height: 30vh;
+            padding: 3% 0 0 0%;
+            opacity: 0.7;
+        }
+
+        .listOne, .listTwo {
+            border:1px solid black;
+            width: 35vw;
+            height: 21vh;
+            padding: 2vh;
+            background-color: #f7f7f7;
+            opacity: 0.5;
+        }
     }
 `
 export const FindMe = styled.div`
-    border: 1px solid black;
+  
     display:flex;
     flex-direction:column;
     justify-content:space-evenly;
@@ -177,7 +281,19 @@ export const FindMe = styled.div`
     height: 20vh;
 
     .icon-links {
-        width: 50vw;
-        border: 1px solid red;
+        display:flex;
+       flex-direction:row;
+       align-items:center;
+        width: 30vw;
+
+        .icon {
+            width: 10vw;
+            height: 10vh;
+        }
+
+        @media(min-width: ${size.xxl}) {
+            width: 15vw;
+            height:15vh;
+        }
     }
 `

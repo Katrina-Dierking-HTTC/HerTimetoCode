@@ -1,12 +1,6 @@
 import styled from 'styled-components'
 
 
-export const Social = styled.div`
-`
-
-export const TopSection = styled.div `
-   
-`
 export const Me = styled.div`
     margin-top: -10vh;
 

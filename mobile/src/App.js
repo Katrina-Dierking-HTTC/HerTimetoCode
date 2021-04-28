@@ -12,6 +12,7 @@ import SingleProduct from './components/shop/single-product/SingleProduct'
 import CartPage from './components/shop/pages/cart-page/CartPage'
 import Checkout from './components/shop/checkout/Checkout'
 import Portfolio from './components/staticPages/portfolio/Portfolio'
+import Portfolio1 from './components/staticPages/portfolio/Portfolio1'
 
 
 
@@ -28,6 +29,7 @@ function App() {
         <Route exact path='/' component={Home} />
         <Route path = '/about' component={About} />
         <Route path = '/portfolio' component={Portfolio}/>
+        <Route path = '/portfolio1' component={Portfolio1}/>
         <Route path = '/contact' component={Contact} />
         <Route path = '/community' component={Community} />
         <Route path = '/shop' component={Shop} />

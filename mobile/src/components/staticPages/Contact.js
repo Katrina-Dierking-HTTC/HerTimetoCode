@@ -35,9 +35,9 @@ export default function Contact () {
             <p> I'd love to hear from you.</p>
         </ContactWrap>
 
-        <ContactForm />
+        {/* <ContactForm /> */}
 
-        {/* <IconWrap>
+        <IconWrap>
         <br></br>
     
           
@@ -68,7 +68,7 @@ export default function Contact () {
                 </a>
                 </div>
           
-        </IconWrap> */}
+        </IconWrap>
         </BodyWrap>
         <FooterNav />
 

@@ -42,7 +42,7 @@ justify-content:space-around;
 
 
 
-.icon {
+.iconSoc {
     width: 20vw;
     height: 20vh;
 
@@ -50,4 +50,11 @@ justify-content:space-around;
         width: 5vw;
     }
 }
+
+
+`
+
+export const ContForm= styled.div`
+
+  
 `

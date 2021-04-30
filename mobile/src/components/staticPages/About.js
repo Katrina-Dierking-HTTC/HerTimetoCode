@@ -44,14 +44,14 @@ export default function About () {
                         </h3>
 
                         <div className="facts-box">
-                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/coffee-1-e1618362800208.png" className="fun-coffee"/>
+                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/coffee-1-e1618362800208.png" className="fun-coffee" alt="coffee cup icon"/>
                             <p className="para coffee-p"> My blood type is coffee.</p> 
                         </div>
                             
                             <br></br>
 
                         <div className="facts-box fb2">
-                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/pet-house-e1618367293820.png" className="pets-icon"/>
+                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/pet-house-e1618367293820.png" className="pets-icon" alt="pets icon"/>
                             <p className="para"> Though I claim to not be an animal person, I always have several rescue animals in my home at a time.</p>
                         </div>
                         
@@ -65,28 +65,28 @@ export default function About () {
                         <div className="pets">
                             <div className="pets-box a">
                                    
-                                <img src="https://hertimetocode.com/wp-content/uploads/2021/04/dog-3-e1618362128796.png" className="petsImg"/>
+                                <img src="https://hertimetocode.com/wp-content/uploads/2021/04/dog-3-e1618362128796.png" className="petsImg" alt="icon of dog"/>
                                 <p className="pets-para">Lilly Rose</p>
                             </div>
 
                             <br></br>
 
                             <div className="pets-box b">
-                                <img src="https://hertimetocode.com/wp-content/uploads/2021/04/egyptian-cat-e1618362214943.png" className="petsImg"/>
+                                <img src="https://hertimetocode.com/wp-content/uploads/2021/04/egyptian-cat-e1618362214943.png" className="petsImg" alt="icon of cat"/>
                                 <p>  Dr. Bravestone</p>
                             </div>
                                 
                             <br></br>
 
                             <div className="pets-box a">
-                                <img src = "https://hertimetocode.com/wp-content/uploads/2021/04/dragon-e1618362568758.png" className="petsImg"/>
+                                <img src = "https://hertimetocode.com/wp-content/uploads/2021/04/dragon-e1618362568758.png" className="petsImg" alt="icon of dragon"/>
                                 <p>(2 Dragons:) Ice and Fire</p> 
                             </div>
                             
                             <br></br>
 
                             <div className="pets-box b">
-                                <img src="https://hertimetocode.com/wp-content/uploads/2021/04/turtle-2-e1618362753337.png" className="petsImg"/>
+                                <img src="https://hertimetocode.com/wp-content/uploads/2021/04/turtle-2-e1618362753337.png" className="petsImg" alt="icon of turtle"/>
                                 <p>
                                 Tank the Turtiose</p>
                             </div>
@@ -94,7 +94,7 @@ export default function About () {
                             <br></br>
                             
                             <div className="pets-box a">
-                                <img src="https://hertimetocode.com/wp-content/uploads/2021/04/caterpillar-e1618363150192.png" className="petsImg"/>
+                                <img src="https://hertimetocode.com/wp-content/uploads/2021/04/caterpillar-e1618363150192.png" className="petsImg" alt="caterpillar icon"/>
                                 <p>Flash</p>
                             </div>
                                
@@ -104,28 +104,28 @@ export default function About () {
                         <br></br>
                     
                         <div className = "facts-box kids">
-                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/children-e1618369097663.png" className="kids-icon"/>
-                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/children-1-e1618369287757.png" className="kids-icon"/>
+                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/children-e1618369097663.png" className="kids-icon" alt="icon of boy and girl cartoon kids"/>
+                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/children-1-e1618369287757.png" className="kids-icon" alt="icon of boy and girl cartoon kids"/>
                             <p className="para"> I have 4 great kids.</p>
                         </div>
                         <br></br>
                         <div className = "facts-box facts-icon">
-                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/gardening-e1618413855863.png" classsName="Ficon"/>
+                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/gardening-e1618413855863.png" classsName="Ficon" alt="gardening icon"/>
                             <p className="para"> Gardening is my therapy. I have to see green outside my windows. I grow most of my own food and have several hanging herb gardens inside my home as well. Getting my hands dirty makes me happy.</p>
                         </div>
                         <br></br>
                         <div className = "facts-box">
-                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/mixer-e1618413867209.png" classsName="Ficon"/>
+                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/mixer-e1618413867209.png" classsName="Ficon" alt="baking icon"/>
                             <p className="para">I bake fresh bread several times a week. I give loaves to my neighbors and take several loaves to church each Sunday morning. Baking makes me feel productive and gives me a sense of taking care of my family. <em>I also make all of our soap, bath and cleaning products.</em></p>
                         </div>
                         <br></br>
                         <div className = "facts-box">
-                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/blogger-e1618413877763.png" classsName="Ficon"/>
+                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/blogger-e1618413877763.png" classsName="Ficon" alt="writing icon"/>
                             <p className="para"> I've written several novels. I've been both traditionally published and self-published. <em>(I prefer self-publication.)</em> I am currently working on my next novel, albeit slow progression, about a young girl who fights her way out of a sex-trafficking ring that has held her captive for several years.</p>
                         </div>
                         <br></br>
                         <div className = "facts-box">
-                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/brain-e1618417481523.png" classsName="Ficon"/>
+                            <img src="https://hertimetocode.com/wp-content/uploads/2021/04/brain-e1618417481523.png" classsName="Ficon" alt="graduation icon"cd />
                             <p className="para"> I love learning. I hold several degrees <em>(in both the medical and business industry)</em> and continue to add to my knowledge and skills. I always joke that I plan to be 95 years old taking a test or writing a paper.</p>
                         </div>
                         

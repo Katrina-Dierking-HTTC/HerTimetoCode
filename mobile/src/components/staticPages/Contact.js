@@ -35,7 +35,7 @@ export default function Contact () {
             <p> I'd love to hear from you.</p>
         </ContactWrap>
 
-        {/* <ContactForm /> */}
+        {/* <ContactForm addNewContact={addNewContact} name="default name"/> */}
 
         <IconWrap>
         <br></br>

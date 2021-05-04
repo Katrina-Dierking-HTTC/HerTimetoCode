@@ -1,8 +1,6 @@
 
 import styled, {keyframes} from 'styled-components'
-import { flip } from 'react-animations'
 
-const flipAnimation = keyframes `${flip}`;
 
 export const TestimonialWrapper = styled.div`
     background-image: linear-gradient(to right, rgb(11,102,123), rgb(226,25,121));
@@ -35,7 +33,7 @@ export const TestimonialWrapper = styled.div`
     }
 
     .Lyndsi:hover, .William:hover, .Buddy:hover, .Jenn:hover {
-        animation: 1.5s ${flipAnimation};
+        
         z-index: 99999;
 
     }
@@ -53,21 +51,21 @@ export const TestimonialWrapper = styled.div`
     .William:hover + .hide2 {
         display:block;
         max-width: 90vw;
-        margin-left: -120%;
+        // margin-left: 1%;
         margin-top: -7%;
     }
 
     .Buddy:hover + .hide3{
         display:block;
         max-width: 90vw;
-        margin-left: -245%;
+        // margin-left: -245%;
         margin-top: -7%;
     }
 
     .Jenn:hover + .hide4 {
         display:block;
         max-width: 90vw;
-        margin-left: -360%;
+        // margin-left: -360%;
         margin-top: -7%;
     }
 `

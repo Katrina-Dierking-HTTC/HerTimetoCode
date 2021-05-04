@@ -4,7 +4,7 @@ import {size} from './MediaQueries'
     const mixin = `
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:space-evenly;
     align-items:center;
     width: 100vw;
     margin:1%;
@@ -25,59 +25,81 @@ import {size} from './MediaQueries'
     `
 
 export const Header = styled.div`
-   border: 1px solid orange;
+   height: 30vh;
+   margin-top:3%;
+
+   .hero-image {
+       height:30vh;
+   }
+
+   .hero-container {
+       display:flex;
+       flex-direction:column;
+       justify-content:space-between;
+       align-items:center;
+       padding:1.5%;
+       height: 25vh;
+
+       .hero-name{
+        font-family:Amarithe;
+        font-size: 3rem; 
+       }
+
+       .hero-title {
+           font-size: 1rem;
+       }
+   }
 `
 
 export const Port = styled.div`
-    // display:flex;
-    // flex-direction:column;
-    // justify-content:space-between;
-    // align-items:center;
-    // width: 100vw;
-    // margin:1%;
     ${mixin}
 `
 
 export const Options = styled.div`
 
     width: 100vw;
-    height: 60vh;
+    height: 90vh;
     margin: 3vh;
     background-color:#f7f7f7;
-    // display:flex;
-    // flex-direction:column;
-    // justify-content:space-between;
-    // align-items:center;
     ${flexMixin}
 
-    @media(min-width:${size.large}) and (max-width: ${size.xl}){
-        flex-direction:row;
-        height: 40vw; 
+    @media(min-width:${size.smMed}) and (max-width: ${size.med}){
+        height: 47vw; 
     }
     
-    @media(min-width:${size.xxl}) {
+    @media(min-width:${size.large}) and (max-width: ${size.xl}){
         flex-direction:row;
         justify-content:space-around;
-        height: 30vh;
+        height: 20vh;
+    }
+
+    @media(min-width: ${size.xxl}) {
+        flex-direction:row;
+        justify-content:space-around;
+        height:30vh;
     }
 
     .option {
         background-color: #f7f7f7;
         width: 85vw;
-        height: 20vh;
+        height: 50vh;
         margin:2% 1% 2% 1%;
+        padding: 1%;
         background-color:white;
-        // display:flex;
-        // flex-direction:column;
-        // justify-content:space-evenly;
-        // align-items:center;
         ${flexMixin}
         box-shadow: 1px .5px 10px 1px black;
         border-radius: 5%;
 
-        @media(min-width:${size.xl}){
+
+        @media(min-width:${size.large}) and (max-width: ${size.xl}){
+            width: 28vw;
+            height: 15vh;
+        }
+        @media(min-width: ${size.xxl}) {
+            flex-direction:row;
+            justify-content:space-around;
+            height:25vh;
             width: 20vw;
-            height: 25vh;
         }
 
         
@@ -103,15 +125,15 @@ export const Options = styled.div`
         }
     }
 
-    .fa-cogs, .fa-pencil-alt, .fa-smile-wink{
-        height: 2vw;
-        width: 2vw;
+    .fa-cogs, .fa-pencil-alt, .fa-address-card{
+        height: 4vw;
+        width: 4vw;
     }
     .fa-cogs{
         color:#e21979;
     }
 
-    .fa-smile-wink {
+    .fa-address-card{
         color:#17c426
     }
 
@@ -129,35 +151,48 @@ export const Vision = styled.div`
     display:flex;
     justify-content:space-around;
     width: 70vw;
-    margin:1% 1% 3vh 1%;
+    margin:1%;
+
 
     @media(max-width:${size.smMed}) {
         display:none;
     }
 
-    @media(min-width:${size.medSm}){
+    @media(min-width:${size.medSm}) and (max-width: ${size.xl}){
         display:flex;
         width: 85vw;
-        height: 70vh;
-      
+        height: 40vh;
+    }
+
+    @media(min-width: ${size.xxl}) {
+        flex-direction:row;
+        height:50vh;
     }
 
     .visionImg{
         border: 1px solid grey;
         width: 40vw;
 
-        @media(min-width:${size.xxl}) {
-            height: 60vh;
+        @media(min-width:${size.large})  and (max-width: ${size.xl}){
+            height: 35vh;
             width: 25vw;
+            margin-top:2%;
             box-shadow: 1px .5px 10px 1px grey;
         }
+
+        @media(min-width: ${size.xxl}) {
+            width: 15vw;
+            height: 45vh;
+            margin-top: 1%;
+        }
+
     }
 
     
 
     .vision{
         width:40vw;
-        height: 40vh;
+        height: 20vh;
         padding-top: 1vh;
     }
 
@@ -180,7 +215,7 @@ export const Vision = styled.div`
     }
 
     .visRight {
-        height: 28vh;
+        height: 15vh;
         display:flex;
         flex-direction:column;
         justify-content: space-between;
@@ -201,70 +236,28 @@ export const Vision = styled.div`
 `
 export const Skills = styled.div`
 
-    // display:flex;
-    // flex-direction:column;
-    // justify-content:space-around;
-    // align-items:center;
+    width: 90vw;
+    height: 20vh;
 
-    background-color:#f7f7f7;
 
-    ${spaceAround}
-    width: 100vw;
-    height: 40vh;
-    margin:2vh 1vh 5vh 1vh;
 
-    .monkey{
-        width:7vw;
-        height:5vh;
-
-        @media (min-width:${size.xl}){
-            width: 5vw;
-        }
-    }
-    .monSkills {
-        display:flex;
-        justify-content:space-around;
-        width: 17vw;
-        align-items:center;
-        margin: 2% 0 2% 0;
-
-    }
-
-    .skillsDesc {
-        display:flex;
-        flex-direction:column;
-        justify-content:space-evenly;
-        align-items:left;
-        width: 80vw;
-        height: 15vh;
-    }
-
-    .skillsBar {
-        position:relative;
-        // text-align:center;
-    
         .lists {
             display:flex;
-            justify-content:space-between;
-            width: 75vw;
+            justify-content: space-between;
+            width: 85vw;
+            height: 10vh;
 
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-       
-        }
 
-        .skillsImg{
-            height: 30vh;
-            padding: 3% 0 0 0%;
-            opacity: 0.7;
+            @media(min-width:${size.large}) and (max-width:${size.xl}){
+                width: 80vw;
+            }
+
         }
 
         .listOne, .listTwo {
             border:1px solid black;
-            width: 35vw;
-            height: 21vh;
+            width: 25vw;
+            height: 15vh;
             padding: 2vh;
             background-color: #f7f7f7;
             opacity: 0.5;

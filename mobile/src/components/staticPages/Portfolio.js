@@ -2,9 +2,8 @@ import React from 'react'
 import Top from '../main/Top'
 import Footer from '../shop/footer/Footer'
 import {Link} from 'react-router-dom'
-import skillsBG from '../../images/skillsBG.jpg'
 import monkey from '../../images/monkey.png'
-import {Port, Header, Options, Samples, Vision, Skills, FindMe} from '../design/PortStyle'
+import {Port, Header, Options, Vision, Skills, FindMe} from '../design/PortStyle'
 
 
 function Portfolio1() {
@@ -19,9 +18,9 @@ function Portfolio1() {
             <section className="hero is-info is-large hero-image">
                 <div className="hero-box">
                     <div className="hero-container">
-                        <h5 className="hero-title">Welcome to the Portfolio of</h5>
-                        <h1 className = "hero-name">Katrina Dierking</h1>
-                        <h5 className="hero-title">Full-Stack Web Developer</h5>
+                        <div><p className="hero-title">Welcome to the Portfolio of</p></div>
+                        <div><p className = "hero-name">Katrina Dierking</p></div>
+                        <div><p className="hero-title">Full-Stack Web Developer</p></div>
                     </div>
                 </div>
             </section>
@@ -31,33 +30,36 @@ function Portfolio1() {
         <Port>
         <Options>
             <div className = 'option one'>
-                <a href = "https://github.com/Katrina-Dierking" target="_blank"><i class="fas fa-cogs"></i></a>
-                <h3 className="optTitle">PROJECTS</h3>
-                <p className = "proDesc">
-                    Checkout a few of my projects. Some are a continual work in progress. Feel free to add suggestions and feedback.</p>
+                <a href = "https://github.com/Katrina-Dierking" target="_blank">
+                    <i class="fas fa-cogs"></i>
+                    <h3 className="optTitle">PROJECTS</h3>
+                    <p className = "proDesc">
+                        Checkout a few of my projects. Some are a continual work in progress. Feel free to add suggestions and feedback.</p>
+                </a>
             </div>
 
             <div className = 'option two'>
-                <a href="https://blog.hertimetocode.com"
-                    target="_blank">
-                <i class="fas fa-pencil-alt"></i></a>
+                <a href="https://blog.hertimetocode.com" target="_blank">
+                <i class="fas fa-pencil-alt"></i>
                 <h3 className="optTitle">BLOG</h3>
                 <p className = "proDesc">
                     Follow my journey through web development. Join me as I master new concepts and create the tools to help others to do the same. 
                 </p>
+                </a>
             </div>
 
             <div className = 'option three'>
                <Link to='./about'>
-               <i class="far fa-smile-wink"></i></Link>
+               <i class="far fa-address-card"></i>
                 <h3 className="optTitle">ABOUT</h3>
                 <p className = "proDesc">Am I a pet person? Do I have any crazy quirks? There's only one way to find out.</p>
+                </Link>
             </div>
         </Options>
 
-        <Samples>
+        {/* <Samples>
             <div className = "carosel">Sample Carousel coming soon</div>
-        </Samples>
+        </Samples> */}
 
         <Vision>
             <img src="https://images.unsplash.com/photo-1523289217630-0dd16184af8e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" className="visionImg" alt=""/>
@@ -69,7 +71,7 @@ function Portfolio1() {
                         <h2 className= "visTitle">My goals for the future in Web Development</h2>
                         <p className = "visDesc">It is my belief that when women and tech collide, anything is possible. Web Development can save lives. It saved mine. <em><a href="https://blog.hertimetocode.com/how-coding-saved-my-life/">Check out my blog post "Coding Saved My Life."</a></em></p>
                         
-                        <p>My passion is creating applications that change lives in practicle and amazing ways.</p>
+                        <p>My passion is creating applications that change lives in practical and amazing ways.</p>
                     </div>
                 </div>
               
@@ -80,7 +82,7 @@ function Portfolio1() {
                         <div className="goal leave">
                         <i class="fas fa-graduation-cap"></i>
                         <p className="goalDesc">
-                            I am currently building a homeschool app that gamifies educational challenges that allow students to have so much fun that they forget they are learning.
+                            I am currently building a homeschool app that gamifies educational challenges allowing students to have so much fun that they forget they are learning.
                         </p>
                         </div>
                     
@@ -104,17 +106,7 @@ function Portfolio1() {
         </Vision>
 
         <Skills>
-            <div className ="skillsDesc">
-                <div className="monSkills">
-                    <img src={monkey} className="monkey" alt="monkey icon from Wizard of Oz flying monkeys"/>
-                    <h2>I've got stills</h2>
-                    </div>
-                <p><em>and I'm not afraid to use them.</em></p>
-               
-            </div>
-
-            <div className = "skillsBar">
-                <img src={skillsBG} className="skillsImg" alt="" />
+        <h2>Skills:</h2>
                 <div className="lists">
                     <ul className = " list listOne">
                         <li>HTML/CSS</li>
@@ -141,7 +133,6 @@ function Portfolio1() {
                         <li>Slack</li>
                     </ul>
                 </div>
-            </div>
 
         </Skills>
 

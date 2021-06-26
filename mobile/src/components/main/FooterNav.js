@@ -1,23 +1,47 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-
-import blog from '../../images/blog.png'
-import cart from '../../images/cart.png'
-import email from '../../images/email.png'
-import home from '../../images/home.png'
-
+import { BottomWrapper } from '../staticPages/landing/LandingStyle'
 
 export default function FooterNav () {
     return (
-        <>
-        <div className = "footer">
-            <div className="icons">
-                <Link to = "/"><img src={home} className="home" alt="home icon"/></Link>
-                <a href = "https://blog.hertimetocode.com"><img src={blog} className="blog" alt="blog icon" /></a>
-                <Link to = "/shop"><img src={cart} className="cart" alt="shopping cart"/></Link>
-                <a href = "mailto:katrina@hertimetocode.com"><img src={email} className="email" alt="email icon"/></a>
-            </div>
-        </div>
-        </>
+        <BottomWrapper>
+                <div className = "botBtn">
+                    <Link to="/landing" className="botLink">Home</Link>
+                    <span className="BorderTopBottom"></span>
+                    <span className="BorderLeftRight"></span>
+                </div>
+
+                <div className = "botBtn">
+                    <Link to="/about" className="botLink">About</Link>
+                    <span className="BorderTopBottom"></span>
+                    <span className="BorderLeftRight"></span>
+                </div>
+
+                <div className = "botBtn">
+                    <Link to="/projects" className="botLink">Projects</Link>
+                    <span className="BorderTopBottom"></span>
+                    <span className="BorderLeftRight"></span>
+                </div>
+
+                <div className = "botBtn">
+                    <a href = "https://github.com/Katrina-Dierking"  target="_blank" rel="noreferrer" className="botLink">Github</a>
+                    <span className="BorderTopBottom"></span>
+                    <span className="BorderLeftRight"></span>
+                </div>
+
+                <div className = "botBtn">
+                    <a href = "https://www.linkedin.com/in/kalynn-dier/" target="_blank" rel="noreferrer" className="botLink">LinkedIn</a>
+                    <span className="BorderTopBottom"></span>
+                    <span className="BorderLeftRight"></span>
+                </div>
+
+                <div className = "botBtn">
+                    <Link to = "/resume" className="botLink">Resume</Link>
+                    <span className="BorderTopBottom"></span>
+                    <span className="BorderLeftRight"></span>
+                </div>
+
+            </BottomWrapper>
+        
     )
 }

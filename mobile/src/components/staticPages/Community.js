@@ -1,12 +1,12 @@
 import React from 'react'
-import Top from '../main/Top'
+
 
 import {Body, ComingWrap, Description, IconDrop, Icon} from '../design/CommunityStyle'
 
 function Community() {
     return (
         <div>
-            <Top/>
+           
 
             <Body>
 

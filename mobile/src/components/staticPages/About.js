@@ -1,17 +1,16 @@
 import React from 'react'
-import Top from '../main/Top'
+import FooterNav from '../main/FooterNav';
 import {AboutTopWrapContent,
     AboutBody,
     Me,
-    Goals,
-    Passions} from '../design/AboutStyle';
+} from '../design/AboutStyle';
 
 export default function About () {
     return (
             <>
             
             <script async data-uid="6ea6911064" src="https://hertimetocode.ck.page/6ea6911064/index.js"></script>
-            <Top />
+            {/* <Top /> */}
                 <AboutTopWrapContent>
                     <h3 className = "aboutH2Header"> About Katrina Dierking | Her Time to Code</h3>
                 </AboutTopWrapContent>
@@ -133,36 +132,9 @@ export default function About () {
                    
 
                 </Me>
-
-                <Goals>
-                <div className = "top">
-                    <img src="https://hertimetocode.com/wp-content/uploads/2021/04/success-e1618370002549.png"/>
-                    <h3 className = "about-me plans">What I'm working on now & plans for the future: </h3>
-                </div>
-                <br></br>
-                   
-                        <ul className="bullets">
-                            <li> * Coffee | Code | Collaborate <em>(see more in Community)</em></li>
-                            <li> * Continue developing Her Time to Code learning tools & products</li>
-                            <li> * Her Time to Code for middle-school & high-school homeschool girls</li>
-                            <li> * Homeschooling app to gamify education while improving educational standards -- students won't even know they're learning</li>
-                            <li> * Eventual Her Time to Code Agency giving new web developers hands-on experience</li>
-                            <li> * Becoming part of an amazing team as a web developer for a company that recognizes the value of women in tech</li>
-                        </ul>   
-
-                        <h4> and person goals ...</h4>
-                        <ul>
-                            <li> * Finish my doctorate <em> so my husband has to call me Dr. Katrina</em></li>
-                            <li> * Buy a BIG piece of land</li>
-                            <li> * Get back into running <em>(or at least walking with a purpose! ;-) </em></li>
-                        </ul>
-                        <br></br>
-                </Goals>
-
-               
-
-                <Passions></Passions>
+                <FooterNav />
             </AboutBody>
+            
             </>
              
     )
